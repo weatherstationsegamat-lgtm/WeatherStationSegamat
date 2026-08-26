@@ -1005,3 +1005,194 @@ footer{padding-top:26px;padding-bottom:26px}
     grid-row:auto;
   }
 }
+
+
+/* =========================================================
+   HEATCare V6 — mobile-first header simplification
+   Desktop stays as V5. On phones, show only essential
+   identity + station information so live weather appears fast.
+   ========================================================= */
+@media(max-width:700px){
+  /* Compact mobile masthead */
+  .v4-header{
+    display:grid;
+    grid-template-columns:1fr;
+    min-height:0;
+    gap:0;
+    padding:14px 16px 15px;
+    background:linear-gradient(145deg,#fff 0%,#fff 72%,#f1f8f5 100%);
+    box-shadow:0 1px 5px rgba(15,73,64,.06);
+  }
+
+  .v4-header:after{
+    display:none;
+  }
+
+  /* Hide the large institutional logo and long research tagline */
+  .v4-main-logo,
+  .v4-brand-divider,
+  .v4-tagline,
+  .v4-funder,
+  .v4-collaboration{
+    display:none !important;
+  }
+
+  .v4-brand{
+    display:grid;
+    grid-template-columns:1fr auto;
+    grid-template-rows:auto auto;
+    column-gap:10px;
+    row-gap:4px;
+    align-items:center;
+    width:100%;
+  }
+
+  .v4-brand-content{
+    display:contents;
+  }
+
+  .v4-wordmark{
+    grid-column:1;
+    grid-row:1;
+    line-height:1;
+  }
+
+  .v4-wordmark-red,
+  .v4-wordmark-dark{
+    font-size:1.72rem;
+  }
+
+  .v4-wordmark em{
+    font-size:.58rem;
+    margin-left:5px;
+  }
+
+  .v4-station{
+    grid-column:1 / -1;
+    grid-row:2;
+    margin-top:4px;
+  }
+
+  .v4-station-name{
+    gap:7px;
+  }
+
+  .v4-station-name strong{
+    font-size:.91rem;
+  }
+
+  .v4-pin{
+    font-size:1.05rem;
+  }
+
+  .v4-station .live-badge{
+    padding:5px 9px;
+    font-size:.61rem;
+  }
+
+  .v4-location{
+    margin-left:22px;
+    margin-top:2px;
+    font-size:.63rem;
+  }
+
+  /* Keep mission statement, but make it compact */
+  .v4-message{
+    display:block;
+    text-align:left;
+    padding:13px 0 2px;
+    margin-top:10px;
+    border-top:1px solid #e2ece9;
+  }
+
+  .v4-message strong{
+    font-size:.88rem;
+    line-height:1.3;
+  }
+
+  .v4-message strong:after{
+    width:42px;
+    height:2px;
+    margin:7px 0 0;
+  }
+
+  .v4-message span{
+    max-width:330px;
+    margin:7px 0 0;
+    font-size:.61rem;
+    line-height:1.4;
+  }
+
+  /* Language buttons only */
+  .v4-sponsors{
+    display:block;
+    width:100%;
+    margin-top:10px;
+  }
+
+  .v4-lang{
+    display:flex;
+    width:100%;
+    justify-content:flex-start;
+    gap:6px;
+    padding:0;
+  }
+
+  .v4-lang button{
+    padding:6px 10px;
+    font-size:.61rem;
+  }
+
+  /* Give the navigation less vertical weight */
+  .main-nav{
+    padding:5px 8px;
+    overflow-x:auto;
+    white-space:nowrap;
+    scrollbar-width:none;
+  }
+
+  .main-nav::-webkit-scrollbar{
+    display:none;
+  }
+
+  .main-nav a{
+    padding:8px 10px;
+    font-size:.68rem;
+  }
+}
+
+@media(max-width:450px){
+  .v4-header{
+    padding:13px 14px 14px;
+  }
+
+  .v4-wordmark-red,
+  .v4-wordmark-dark{
+    font-size:1.58rem;
+  }
+
+  .v4-wordmark em{
+    font-size:.53rem;
+  }
+
+  .v4-station-name strong{
+    font-size:.86rem;
+  }
+
+  .v4-location{
+    font-size:.61rem;
+  }
+
+  .v4-message{
+    margin-top:9px;
+    padding-top:11px;
+  }
+
+  .v4-message strong{
+    font-size:.83rem;
+  }
+
+  .v4-message span{
+    font-size:.59rem;
+  }
+}
