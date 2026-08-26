@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HEATCare Weather Station — Sungai Segamat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header v4-header">
+  <div class="v4-brand">
+    <img class="v4-main-logo" src="heatcare-logo.jpg" alt="HEATCare @ SEACO">
+
+    <div class="v4-brand-divider"></div>
+
+    <div class="v4-brand-content">
+      <div class="v4-wordmark">
+        <span class="v4-wordmark-red">H</span><span class="v4-wordmark-dark">EAT</span><span class="v4-wordmark-dark">care</span>
+        <em>at SEACO</em>
+      </div>
+
+      <div class="v4-tagline" aria-label="HEat Adaptation Through Community-based Approaches and REsearch">
+        <span class="acronym">HE</span>at
+        <span class="acronym">A</span>daptation
+        <span class="acronym">T</span>hrough
+        <span class="acronym">C</span>ommunity-based
+        <span class="acronym">A</span>pproaches and
+        <span class="acronym">RE</span>search
+      </div>
+
+      <div class="v4-station">
+        <div class="v4-station-name">
+          <span class="v4-pin">●</span>
+          <strong>Weather Station</strong>
+          <span class="live-badge"><i></i><span data-t="liveNow">LIVE</span></span>
+        </div>
+        <div class="v4-location">Sungai Segamat, Johor</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="v4-message">
+    <strong data-t="headerMessage">Monitoring today,<br>protecting tomorrow.</strong>
+    <span data-t="headerSub">Real-time weather information for a healthier and safer community.</span>
+  </div>
+
+  <div class="v4-sponsors">
+    <div class="v4-funder">
+      <small data-t="fundedShort">Funded by</small>
+      <img src="wellcome.svg" alt="Wellcome">
+    </div>
+
+    <div class="v4-collaboration">
+      <small data-t="collabShort">In collaboration with</small>
+      <div class="v4-partner-logos">
+        <img class="v4-heidelberg" src="heidelberg.svg" alt="Heidelberg Institute of Global Health">
+        <img class="v4-seaco" src="monash-wordmark.svg" alt="Monash South East Asia Community Observatory">
+        <img class="v4-monash" src="monash-university.svg" alt="Monash University">
+      </div>
+    </div>
+
+    <div class="lang v4-lang">
+      <button data-lang="en">English</button>
+      <button data-lang="ms">Bahasa Melayu</button>
+    </div>
+  </div>
+</header>
+
+<nav class="main-nav">
+ <a class="active" href="index.html">⌂ <span data-t="live">Live Weather</span></a>
+ <a href="information.html">ⓘ <span data-t="info">Weather Information</span></a>
+ <a href="information.html#station">⌖ <span data-t="aboutStation">About This Station</span></a>
+ <a href="information.html#safety">♡ <span data-t="healthSafety">Health & Safety</span></a>
+</nav>
+
+<main>
+<section class="status-bar"><div><span data-t="stationStatus">Station Status</span><b class="online">● <span data-t="online">ONLINE</span></b></div><div><span data-t="updated">Last Updated</span><b id="updatedTime">--</b></div></section>
+
+<section class="main-weather">
+ <div class="current">
+  <div class="weather-icon" id="conditionIcon">☀️</div>
+  <div><span class="overline" data-t="temperature">TEMPERATURE</span><strong id="temperature">--°C</strong><p><span data-t="feels">Feels like</span> <b id="feelsLike">--°C</b></p></div>
+  <div class="condition"><span>☁️ <span data-t="partly">Current</span></span><span class="divider">|</span><span>🌡️ <b id="condition">LOADING</b></span></div>
+  <div class="heat-alert">⚠️ <b data-t="heatAlert">Heat awareness</b><span data-t="heatAlertText"> Stay hydrated and take regular breaks.</span></div>
+ </div>
+ <div class="metric-card"><span>💧</span><small data-t="humidity">HUMIDITY</small><strong id="humidity">--%</strong><em data-t="moderate">Moderate</em></div>
+ <div class="metric-card"><span>🌧️</span><small data-t="rain">RAINFALL</small><strong id="rainfall">-- mm</strong><em data-t="today">Today</em></div>
+ <div class="metric-card"><span>🌬️</span><small data-t="wind">WIND</small><strong id="wind">-- km/h</strong><em><span data-t="direction">Direction</span> <b id="windDirection">--</b>°</em></div>
+ <div class="metric-card heat-index"><span id="heatRiskIcon">🌡️</span><small data-t="heatIndex">FEELS-LIKE TEMP</small><strong id="heatIndex">--°C</strong><em><span data-t="heatRisk">Heat risk</span>: <b id="heatRiskValue">--</b></em></div>
+</section>
+
+<section class="content-grid">
+ <article class="panel chart-panel"><div class="panel-head"><h2 data-t="trend">TEMPERATURE TREND (TODAY)</h2><select><option>24 Hours</option></select></div><div class="big-chart"><div class="ylabels"><span>40</span><span>35</span><span>30</span><span>25</span><span>20</span></div><div class="area-line"></div><div class="now-label"><b id="chartTemp">--°C</b><small id="chartTime">--</small></div><div class="xlabels"><span>12 AM</span><span>3 AM</span><span>6 AM</span><span>9 AM</span><span>12 PM</span><span>3 PM</span><span>6 PM</span><span>9 PM</span></div></div></article>
+
+ <article class="panel safety" id="safety"><div class="panel-head"><h2>🛡️ <span data-t="communitySafety">COMMUNITY HEALTH & SAFETY</span></h2></div><div class="safety-grid">
+  <div><i>💧</i><b data-t="hydrate">Stay Hydrated</b><p data-t="hydrateText">Drink plenty of water throughout the day.</p></div>
+  <div><i>🌳</i><b data-t="cool">Stay Cool</b><p data-t="coolText">Seek shade and stay in cool areas.</p></div>
+  <div><i>🧢</i><b data-t="sun">Sun Protection</b><p data-t="sunText">Wear a hat, sunglasses and sunscreen.</p></div>
+  <div><i>❤️</i><b data-t="others">Check on Others</b><p data-t="othersText">Look out for children, elderly and vulnerable people.</p></div>
+ </div><div class="info-strip">ⓘ <span data-t="signs">Know the signs of heat stress: headache, dizziness, nausea, heavy sweating.</span><a href="information.html" data-t="learn">Learn More ›</a></div></article>
+</section>
+
+<section class="content-grid lower">
+ <article class="panel forecast"><div class="panel-head"><h2 data-t="forecast">FORECAST OVERVIEW</h2><span>7 days</span></div><div class="forecast-row" id="forecastRow"></div></article>
+ <article class="panel station-card" id="station"><div class="panel-head"><h2>📍 <span data-t="stationInfo">STATION INFORMATION</span></h2></div><p><b data-t="locationLabel">Location</b><br>Sungai Segamat, Johor</p><p><b data-t="refresh">Updates automatically</b><br><span data-t="everyFive">Every minute</span></p><b class="online">● <span data-t="online">Online</span></b><small class="data-source">Open-Meteo · live refresh every minute</small></article>
+</section>
+</main>
+
+<footer><div class="footer-brand"><b>HEATCare @ SEACO</b><span data-t="footerText">Heat Risk Awareness and Technology-driven Care for Community Health</span></div><div class="footer-partner funding"><small data-t="fundedBy">The project is funded by:</small><img class="user-logo footer-wellcome" src="wellcome.svg" alt="Wellcome"></div><div class="footer-partner collaboration"><small data-t="collab">In collaboration with:</small><div class="user-logos"><img class="user-logo footer-heidelberg" src="heidelberg.svg" alt="Heidelberg Institute of Global Health"><img class="user-logo footer-monash" src="monash-wordmark.svg" alt="Monash"><img class="user-logo footer-monash-university" src="monash-university.svg" alt="Monash University"></div></div><div class="footer-note"><span data-t="dataNote">This website provides real-time weather information for Weather Station Sungai Segamat for community use.</span><br><a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> · <span data-t="updatedEvery">Updated every minute.</span></div></footer>
+<script src="script.js"></script>
+</body></html>
