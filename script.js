@@ -11,7 +11,7 @@ cool:"Stay Cool",coolText:"Seek shade and stay in cool areas.",sun:"Sun Protecti
 others:"Check on Others",othersText:"Look out for children, elderly and vulnerable people.",
 signs:"Know the signs of heat stress: headache, dizziness, nausea, heavy sweating.",learn:"Learn More ›",
 forecast:"FORECAST OVERVIEW",partlyCloudy:"Partly Cloudy",stationInfo:"STATION INFORMATION",
-stationStatus:"Station Status",online:"ONLINE",updated:"Last Updated",locationLabel:"Location",
+stationStatus:"Station Status",online:"ONLINE",dateLabel:"Date",updated:"Last Updated",locationLabel:"Location",
 refresh:"Updates automatically",everyFive:"Every minute",fundedBy:"The project is funded by:",
 collab:"In collaboration with:",footerText:"Heat Risk Awareness and Technology-driven Care for Community Health",
 dataNote:"This website provides real-time weather information for Weather Station Sungai Segamat for community use.",
@@ -42,7 +42,7 @@ sunText:"Pakai topi, cermin mata hitam dan pelindung matahari.",others:"Periksa 
 othersText:"Beri perhatian kepada kanak-kanak, warga emas dan individu yang terdedah.",
 signs:"Kenali tanda tekanan haba: sakit kepala, pening, loya dan berpeluh banyak.",learn:"Ketahui Lebih Lanjut ›",
 forecast:"GAMBARAN RAMALAN",partlyCloudy:"Berawan Sebahagian",stationInfo:"MAKLUMAT STESEN",
-stationStatus:"Status Stesen",online:"DALAM TALIAN",updated:"Kemaskini Terakhir",locationLabel:"Lokasi",
+stationStatus:"Status Stesen",online:"DALAM TALIAN",dateLabel:"Tarikh",updated:"Kemaskini Terakhir",locationLabel:"Lokasi",
 refresh:"Dikemas kini secara automatik",everyFive:"Setiap minit",fundedBy:"Projek ini dibiayai oleh:",
 collab:"Dengan kerjasama:",footerText:"Kesedaran Risiko Haba dan Penjagaan Berasaskan Teknologi untuk Kesihatan Komuniti",
 dataNote:"Laman ini menyediakan maklumat cuaca masa nyata untuk Stesen Cuaca Sungai Segamat bagi kegunaan komuniti.",
@@ -109,6 +109,12 @@ function condition(apparent){
 function fmtTime(value){
   return new Date(value).toLocaleTimeString(currentLang==="ms"?"ms-MY":"en-MY",{hour:"2-digit",minute:"2-digit"});
 }
+function fmtDate(value){
+  return new Date(value).toLocaleDateString(
+    currentLang==="ms"?"ms-MY":"en-MY",
+    {day:"2-digit",month:"short",year:"numeric"}
+  );
+}
 function fmtDay(value){
   return new Date(value+"T00:00:00").toLocaleDateString(currentLang==="ms"?"ms-MY":"en-MY",{weekday:"short"});
 }
@@ -136,6 +142,7 @@ function renderWeather(c){
   set("heatIndex",f.toFixed(1)+"°C");
   set("condition",currentLang==="ms"?q.ms:q.en);
   set("conditionIcon",q.icon);
+  set("currentDate",fmtDate(c.time));
   set("updatedTime",fmtTime(c.time));
   set("chartTemp",t.toFixed(1)+"°C");
   set("chartTime",fmtTime(c.time));

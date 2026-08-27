@@ -2240,3 +2240,25 @@ footer{
     background-position:center top!important;
   }
 }
+
+/* Date + time status strip */
+.status-bar .datetime-group{
+  display:flex!important;
+  align-items:center!important;
+  gap:9px!important;
+}
+.status-bar .datetime-group span:nth-of-type(2){
+  margin-left:15px!important;
+}
+.status-bar .datetime-group b{
+  color:#173e72!important;
+  font-weight:850!important;
+}
+@media(max-width:600px){
+  .status-bar .datetime-group{
+    gap:6px!important;
+    flex-wrap:wrap!important;
+    justify-content:flex-end!important;
+  }
+  .status-bar .datetime-group span:nth-of-type(2){margin-left:6px!important}
+}
