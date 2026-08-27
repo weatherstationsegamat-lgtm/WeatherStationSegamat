@@ -1,7 +1,7 @@
 const T={
 en:{
 live:"Live Weather",info:"Weather Information",location:"Sungai Segamat, Johor",liveNow:"LIVE",
-headerMessage:"Monitoring today, protecting tomorrow.",headerSub:"Real-time weather information for a healthier and safer community.",
+headerMessage:"Monitoring today, protecting tomorrow.",headerSub:"Real-time weather information for a healthier and safer community.",merdekaTheme:"Malaysia MADANI: Kesejahteraan Dinikmati",
 fundedShort:"Funded by",collabShort:"In collaboration with",temperature:"TEMPERATURE",feels:"Feels like",
 humidity:"HUMIDITY",rain:"RAINFALL",wind:"WIND",heatIndex:"FEELS-LIKE TEMP",direction:"Direction",
 partly:"Current",heatAlert:"Heat awareness",heatAlertText:" Stay hydrated and take regular breaks.",
@@ -31,7 +31,7 @@ weatherUnavailable:"Weather data unavailable",rainChance:"Rain chance",windDir:"
 },
 ms:{
 live:"Cuaca Semasa",info:"Maklumat Cuaca",location:"Sungai Segamat, Johor",liveNow:"LANGSUNG",
-headerMessage:"Memantau hari ini, melindungi hari esok.",headerSub:"Maklumat cuaca masa nyata untuk komuniti yang lebih sihat dan selamat.",
+headerMessage:"Memantau hari ini, melindungi hari esok.",headerSub:"Maklumat cuaca masa nyata untuk komuniti yang lebih sihat dan selamat.",merdekaTheme:"Malaysia MADANI: Kesejahteraan Dinikmati",
 fundedShort:"Dibiayai oleh",collabShort:"Dengan kerjasama",temperature:"SUHU",feels:"Terasa seperti",
 humidity:"KELEMBAPAN",rain:"HUJAN",wind:"ANGIN",heatIndex:"SUHU TERASA",direction:"Arah",
 partly:"Semasa",heatAlert:"Kesedaran haba",heatAlertText:" Minum air yang mencukupi dan berehat secara berkala.",
@@ -90,7 +90,13 @@ function lang(x){
   if(lastWeather)renderWeather(lastWeather);
   if(lastForecast)renderForecast(lastForecast);
 }
-document.querySelectorAll("[data-lang]").forEach(b=>b.onclick=()=>lang(b.dataset.lang));
+document.querySelectorAll("[data-lang]").forEach(b=>{
+  b.addEventListener("click",e=>{
+    e.preventDefault();
+    e.stopPropagation();
+    lang(b.dataset.lang);
+  });
+});
 lang(currentLang);
 
 function condition(apparent){

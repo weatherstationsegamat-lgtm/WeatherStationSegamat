@@ -6,71 +6,15 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header v4-header">
-  <div class="v4-brand">
-    <img class="v4-main-logo" src="heatcare-logo.jpg" alt="HEATCare @ SEACO">
 
-    <div class="v4-brand-divider"></div>
-
-    <div class="v4-brand-content">
-      <div class="v4-wordmark">
-        <span class="v4-wordmark-red">H</span><span class="v4-wordmark-dark">EAT</span><span class="v4-wordmark-dark">care</span>
-        <em>at SEACO</em>
-      </div>
-
-      <div class="v4-tagline" aria-label="HEat Adaptation Through Community-based Approaches and REsearch">
-        <span class="acronym">HE</span>at
-        <span class="acronym">A</span>daptation
-        <span class="acronym">T</span>hrough
-        <span class="acronym">C</span>ommunity-based
-        <span class="acronym">A</span>pproaches and
-        <span class="acronym">RE</span>search
-      </div>
-
-      <div class="v4-station">
-        <div class="v4-station-name">
-          <span class="v4-pin">●</span>
-          <strong>Weather Station</strong>
-          <span class="live-badge"><i></i><span data-t="liveNow">LIVE</span></span>
-        </div>
-        <div class="v4-location">Sungai Segamat, Johor</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="v4-message">
-    <strong data-t="headerMessage">Monitoring today,<br>protecting tomorrow.</strong>
-    <span data-t="headerSub">Real-time weather information for a healthier and safer community.</span>
-  </div>
-
-  <div class="v4-sponsors">
-    <div class="v4-funder">
-      <small data-t="fundedShort">Funded by</small>
-      <img src="wellcome.svg" alt="Wellcome">
-    </div>
-
-    <div class="v4-collaboration">
-      <small data-t="collabShort">In collaboration with</small>
-      <div class="v4-partner-logos">
-        <img class="v4-heidelberg" src="heidelberg.svg" alt="Heidelberg Institute of Global Health">
-        <img class="v4-seaco" src="monash-wordmark.svg" alt="Monash South East Asia Community Observatory">
-        <img class="v4-monash" src="monash-university.svg" alt="Monash University">
-      </div>
-    </div>
-
-    <div class="lang v4-lang">
-      <button data-lang="en">English</button>
-      <button data-lang="ms">Bahasa Melayu</button>
-    </div>
-  </div>
-</header>
-
-<nav class="main-nav">
- <a class="active" href="index.html">⌂ <span data-t="live">Live Weather</span></a>
- <a href="information.html">ⓘ <span data-t="info">Weather Information</span></a>
- <a href="information.html#station">⌖ <span data-t="aboutStation">About This Station</span></a>
- <a href="information.html#safety">♡ <span data-t="healthSafety">Health & Safety</span></a>
-</nav>
+<div class="exact-reference-top" aria-label="HEATcare Merdeka 69 header">
+  <a class="hit-nav nav-home" href="index.html" aria-label="Cuaca Semasa"></a>
+  <a class="hit-nav nav-info" href="information.html" aria-label="Maklumat Cuaca"></a>
+  <a class="hit-nav nav-station" href="information.html#station" aria-label="Tentang Stesen Ini"></a>
+  <a class="hit-nav nav-safety" href="information.html#safety" aria-label="Kesihatan dan Keselamatan"></a>
+  <button class="hit-lang lang-en" type="button" data-lang="en" aria-label="English"></button>
+  <button class="hit-lang lang-ms" type="button" data-lang="ms" aria-label="Bahasa Melayu"></button>
+</div>
 
 <main>
 <section class="status-bar"><div><span data-t="stationStatus">Station Status</span><b class="online">● <span data-t="online">ONLINE</span></b></div><div><span data-t="updated">Last Updated</span><b id="updatedTime">--</b></div></section>

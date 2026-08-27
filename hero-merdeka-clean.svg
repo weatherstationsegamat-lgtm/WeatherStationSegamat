@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 360">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#f7faff"/><stop offset=".55" stop-color="#fff"/><stop offset="1" stop-color="#f7fbff"/>
+ </linearGradient>
+ <linearGradient id="blue" x1="0" x2="1"><stop stop-color="#061b5c"/><stop offset="1" stop-color="#123e8d"/></linearGradient>
+ <linearGradient id="red" x1="0" x2="1"><stop stop-color="#c91e2b"/><stop offset="1" stop-color="#e84b50"/></linearGradient>
+</defs>
+<rect width="1800" height="360" fill="url(#bg)"/>
+<!-- controlled Jalur Gemilang wave, top only -->
+<path d="M0 0H1800V38C1530 60 1260 12 1000 48C710 87 420 36 0 82Z" fill="url(#red)"/>
+<path d="M0 82C420 36 710 87 1000 48C1260 12 1530 60 1800 38V70C1530 92 1260 45 1000 80C710 119 420 68 0 114Z" fill="#fff"/>
+<path d="M0 114C420 68 710 119 1000 80C1260 45 1530 92 1800 70V102C1530 124 1260 77 1000 112C710 151 420 100 0 146Z" fill="url(#red)"/>
+<path d="M0 146C420 100 710 151 1000 112C1260 77 1530 124 1800 102V134C1530 156 1260 109 1000 144C710 183 420 132 0 178Z" fill="#fff"/>
+<!-- left canton, kept behind logo zone -->
+<path d="M0 0H420C395 38 395 72 415 111C430 141 425 164 407 190C382 226 386 266 420 360H0Z" fill="url(#blue)"/>
+<circle cx="145" cy="92" r="72" fill="#f7c800"/>
+<circle cx="174" cy="73" r="60" fill="#09246b"/>
+<polygon points="235,92 217,98 228,114 210,105 212,124 200,108 186,122 191,103 173,110 188,96 171,86 192,87 185,69 201,82 207,62 214,84 230,71 223,89 243,84" fill="#f7c800"/>
+<!-- skyline -->
+<g fill="#b7c8d8">
+ <rect x="690" y="252" width="25" height="76"/><rect x="724" y="224" width="20" height="104"/>
+ <rect x="753" y="268" width="27" height="60"/><rect x="790" y="245" width="24" height="83"/>
+ <rect x="825" y="205" width="27" height="123"/><rect x="864" y="262" width="22" height="66"/>
+ <rect x="896" y="232" width="30" height="96"/><rect x="942" y="250" width="25" height="78"/>
+</g>
+<!-- twin towers -->
+<g fill="#7f9bb5">
+ <path d="M825 328V154h11l6-19 6 19v174zM885 328V154h11l6-19 6 19v174z"/>
+ <rect x="832" y="176" width="72" height="8"/><rect x="836" y="150" width="64" height="8"/>
+ <path d="M846 135h7v23h-7zM886 135h7v23h-7z"/>
+ <path d="M849 135h4l-2-18zM889 135h4l-2-18z"/>
+</g>
+<!-- clean people / flag silhouette -->
+<path d="M1000 330Q1110 270 1220 330Z" fill="#0a205b"/>
+<g fill="#0a205b">
+ <circle cx="1062" cy="242" r="13"/><path d="M1056 257h13l11 55h-11l-6-26-5 26h-11z"/>
+ <circle cx="1100" cy="222" r="15"/><path d="M1092 239h16l13 66h-12l-7-31-7 31h-13z"/>
+ <circle cx="1142" cy="239" r="13"/><path d="M1135 254h14l12 58h-11l-6-27-6 27h-11z"/>
+ <circle cx="1178" cy="255" r="12"/><path d="M1172 269h13l10 46h-10l-5-22-5 22h-10z"/>
+</g>
+<path d="M1100 241L1058 199" stroke="#0a205b" stroke-width="6"/>
+<path d="M1058 201V93" stroke="#0a205b" stroke-width="5"/>
+<path d="M1060 95Q1100 75 1144 96L1140 131Q1099 112 1060 130Z" fill="#d5222c"/>
+<path d="M1060 95Q1078 87 1095 87V116Q1078 111 1060 130Z" fill="#061b5c"/>
+<circle cx="1076" cy="98" r="7" fill="#f7c800"/>
+<!-- fireworks placed in open space -->
+<g fill="none" stroke-width="3">
+ <g stroke="#e3aa18"><path d="M1270 80v38M1251 99h38M1257 86l27 27M1284 86l-27 27"/></g>
+ <g stroke="#d52a31"><path d="M1515 160v42M1494 181h42M1500 166l30 30M1530 166l-30 30"/></g>
+ <g stroke="#e3aa18"><path d="M1680 86v32M1664 102h32M1668 90l24 24M1692 90l-24 24"/></g>
+</g>
+<!-- small patriotic ribbon -->
+<path d="M1190 326Q1450 286 1800 328" fill="none" stroke="#0a2b78" stroke-width="8"/>
+<path d="M1200 339Q1470 299 1800 341" fill="none" stroke="#d5232c" stroke-width="7"/>
+</svg>
