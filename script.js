@@ -90,13 +90,7 @@ function lang(x){
   if(lastWeather)renderWeather(lastWeather);
   if(lastForecast)renderForecast(lastForecast);
 }
-document.querySelectorAll("[data-lang]").forEach(b=>{
-  b.addEventListener("click",e=>{
-    e.preventDefault();
-    e.stopPropagation();
-    lang(b.dataset.lang);
-  });
-});
+document.querySelectorAll("[data-lang]").forEach(b=>b.onclick=()=>lang(b.dataset.lang));
 lang(currentLang);
 
 function condition(apparent){
@@ -112,7 +106,7 @@ function fmtTime(value){
 function fmtDate(value){
   return new Date(value).toLocaleDateString(
     currentLang==="ms"?"ms-MY":"en-MY",
-    {day:"2-digit",month:"short",year:"numeric"}
+    {day:"2-digit",month:"short",year:"numeric",timeZone:"Asia/Kuala_Lumpur"}
   );
 }
 function fmtDay(value){
