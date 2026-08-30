@@ -27,13 +27,13 @@ historyNote:"Trend visualisation",now:"Now",trendLabel:"TODAY",infoLabel:"WEATHE
 understand:"Understanding the Weather",intro:"Simple information to help the community understand weather conditions.",
 communityLabel:"COMMUNITY",simpleTitle:"Weather made simple",simpleText:"Learn what each weather measurement means and why it matters.",
 heatRisk:"Heat risk",low:"Low",high:"High",veryHigh:"Very high",comfortable:"Comfortable",
-weatherUnavailable:"Weather data unavailable",rainChance:"Rain chance",windDir:"Wind direction",stationCardLabel:"STATION",dataSources:"Data Sources",weatherSource:"Weather data: Open-Meteo",
+weatherUnavailable:"Weather data unavailable",rainChance:"Rain chance",windDir:"Wind direction",stationCardLabel:"STATION",
 stationLabel:"ABOUT THIS STATION",stationTitle:"Our Weather Stations in Segamat",stationIntro:"These weather stations are here to help our community understand what is happening with the weather around us.",
 stationLocationsTitle:"Three locations in Segamat",stationLocationsText:"The project has weather stations at three locations in the Segamat area. Together, they help us collect local weather information from the places where our community lives and works.",
 stationFundingTitle:"Supported by Wellcome Trust",stationFundingText:"The weather station work is funded by Wellcome Trust, supporting the collection of local weather information for the HEATCare project and the community.",
 stationSensorsTitle:"Sensors that measure our surroundings",stationSensorsText:"The station uses several sensors to measure weather conditions. The readings are collected automatically so that we can better understand local heat and weather patterns.",
 stationPowerTitle:"Powered by solar energy and batteries",stationPowerText:"The station does not rely on conventional grid electricity. It uses solar power together with batteries, allowing the equipment to operate independently and continue collecting data.",
-videoLabel:"WATCH & LEARN",videoTitle:"Learn About Our Weather Station",videoIntro:"Watch a short video to learn how the station works and why local weather information matters to our community.",videoEnglish:"Learn About Our Weather Station",videoMalay:"Kenali Stesen Cuaca Kami",stationCommunityText:"<b>Why does this matter to you?</b> The information from these stations helps us see local conditions more clearly. It can support better awareness of hot weather and help communities make informed decisions about staying safe."
+stationCommunityText:"<b>Why does this matter to you?</b> The information from these stations helps us see local conditions more clearly. It can support better awareness of hot weather and help communities make informed decisions about staying safe."
 },
 ms:{
 live:"Cuaca Semasa",info:"Maklumat Cuaca",location:"Sungai Segamat, Johor",liveNow:"LANGSUNG",
@@ -64,13 +64,13 @@ historyNote:"Visualisasi trend",now:"Sekarang",trendLabel:"HARI INI",infoLabel:"
 understand:"Memahami Cuaca",intro:"Maklumat ringkas untuk membantu komuniti memahami keadaan cuaca.",
 communityLabel:"KOMUNITI",simpleTitle:"Cuaca lebih mudah difahami",simpleText:"Ketahui maksud setiap ukuran cuaca dan mengapa ia penting.",
 heatRisk:"Risiko haba",low:"Rendah",high:"Tinggi",veryHigh:"Sangat tinggi",comfortable:"Selesa",
-weatherUnavailable:"Data cuaca tidak tersedia",rainChance:"Kebarangkalian hujan",windDir:"Arah angin",stationCardLabel:"STESEN",dataSources:"Sumber Data",weatherSource:"Data cuaca: Open-Meteo",
+weatherUnavailable:"Data cuaca tidak tersedia",rainChance:"Kebarangkalian hujan",windDir:"Arah angin",stationCardLabel:"STESEN",
 stationLabel:"TENTANG STESEN INI",stationTitle:"Stesen Cuaca Kami di Segamat",stationIntro:"Stesen cuaca ini diwujudkan untuk membantu komuniti memahami keadaan cuaca di sekeliling kita.",
 stationLocationsTitle:"Tiga lokasi di Segamat",stationLocationsText:"Projek ini mempunyai stesen cuaca di tiga lokasi di kawasan Segamat. Kesemuanya membantu kami mengumpul maklumat cuaca tempatan dari tempat komuniti kita tinggal dan menjalankan aktiviti harian.",
 stationFundingTitle:"Dibiayai oleh Wellcome Trust",stationFundingText:"Kerja stesen cuaca ini dibiayai oleh Wellcome Trust bagi menyokong pengumpulan maklumat cuaca tempatan untuk projek HEATCare dan kegunaan komuniti.",
 stationSensorsTitle:"Sensor untuk mengukur keadaan sekeliling",stationSensorsText:"Stesen ini menggunakan beberapa sensor untuk mengukur keadaan cuaca. Bacaan dikumpulkan secara automatik supaya kita dapat memahami corak haba dan cuaca tempatan dengan lebih baik.",
 stationPowerTitle:"Menggunakan tenaga solar dan bateri",stationPowerText:"Stesen ini tidak bergantung pada bekalan elektrik grid. Ia menggunakan tenaga solar bersama bateri, membolehkan peralatan beroperasi secara bebas dan terus mengumpul data.",
-videoLabel:"TONTON & KENALI",videoTitle:"Kenali Stesen Cuaca Kami",videoIntro:"Tonton video ringkas untuk mengetahui cara stesen ini berfungsi dan mengapa maklumat cuaca tempatan penting kepada komuniti kita.",videoEnglish:"Learn About Our Weather Station",videoMalay:"Kenali Stesen Cuaca Kami",stationCommunityText:"<b>Mengapa maklumat ini penting kepada anda?</b> Maklumat daripada stesen ini membantu kita melihat keadaan tempatan dengan lebih jelas. Ia boleh meningkatkan kesedaran tentang cuaca panas dan membantu komuniti membuat keputusan yang lebih baik untuk kekal selamat."
+stationCommunityText:"<b>Mengapa maklumat ini penting kepada anda?</b> Maklumat daripada stesen ini membantu kita melihat keadaan tempatan dengan lebih jelas. Ia boleh meningkatkan kesedaran tentang cuaca panas dan membantu komuniti membuat keputusan yang lebih baik untuk kekal selamat."
 }
 };
 
@@ -98,8 +98,8 @@ function lang(x){
     if(T[x][e.dataset.t]!==undefined)e.textContent=T[x][e.dataset.t];
   });
   document.querySelectorAll("[data-lang]").forEach(b=>b.classList.toggle("active",b.dataset.lang===x));
+  document.querySelectorAll("[data-video-lang]").forEach(v=>v.classList.toggle("is-active",v.dataset.videoLang===x));
   localStorage.setItem("heatcareLang",x);
-  document.querySelectorAll("[data-video-lang]").forEach(e=>e.style.display=e.dataset.videoLang===x?"block":"none");
   if(lastWeather)renderWeather(lastWeather);
   if(lastForecast)renderForecast(lastForecast);
 }
