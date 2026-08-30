@@ -66,10 +66,18 @@
   <div class="condition"><span>☁️ <span data-t="partly">Current</span></span><span class="divider">|</span><span>🌡️ <b id="condition">LOADING</b></span></div>
   <div class="heat-alert">⚠️ <b data-t="heatAlert">Heat awareness</b><span data-t="heatAlertText"> Stay hydrated and take regular breaks.</span></div>
  </div>
- <div class="metric-card"><span>💧</span><small data-t="humidity">HUMIDITY</small><strong id="humidity">--%</strong><em data-t="moderate">Moderate</em></div>
- <div class="metric-card"><span>🌧️</span><small data-t="rain">RAINFALL</small><strong id="rainfall">-- mm</strong><em data-t="today">Today</em></div>
- <div class="metric-card"><span>🌬️</span><small data-t="wind">WIND</small><strong id="wind">-- km/h</strong><em><span data-t="direction">Direction</span> <b id="windDirection">--</b>°</em></div>
- <div class="metric-card station-status-card"><span>📍</span><small data-t="stationCardLabel">STATION</small><strong class="station-online" id="stationCardStatus">ONLINE</strong><em>Sungai Segamat</em></div>
+ <article class="panel safety" id="safety"><div class="panel-head"><h2>🛡️ <span data-t="communitySafety">COMMUNITY HEALTH & SAFETY</span></h2></div><div class="safety-grid">
+  <div><i>💧</i><b data-t="hydrate">Stay Hydrated</b><p data-t="hydrateText">Drink plenty of water throughout the day.</p></div>
+  <div><i>🌳</i><b data-t="cool">Stay Cool</b><p data-t="coolText">Seek shade and stay in cool areas.</p></div>
+  <div><i>🧢</i><b data-t="sun">Sun Protection</b><p data-t="sunText">Wear a hat, sunglasses and sunscreen.</p></div>
+  <div><i>❤️</i><b data-t="others">Check on Others</b><p data-t="othersText">Look out for children, elderly and vulnerable people.</p></div>
+ </div><div class="info-strip">ⓘ <span data-t="signs">Know the signs of heat stress: headache, dizziness, nausea, heavy sweating.</span><a href="information.html" data-t="learn">Learn More ›</a></div></article>
+ <div class="metric-mobile-group">
+  <div class="metric-card"><span>💧</span><small data-t="humidity">HUMIDITY</small><strong id="humidity">--%</strong><em data-t="moderate">Moderate</em></div>
+  <div class="metric-card"><span>🌧️</span><small data-t="rain">RAINFALL</small><strong id="rainfall">-- mm</strong><em data-t="today">Today</em></div>
+  <div class="metric-card"><span>🌬️</span><small data-t="wind">WIND</small><strong id="wind">-- km/h</strong><em><span data-t="direction">Direction</span> <b id="windDirection">--</b>°</em></div>
+  <div class="metric-card station-status-card"><span>📍</span><small data-t="stationCardLabel">STATION</small><strong class="station-online" id="stationCardStatus">ONLINE</strong><em>Sungai Segamat</em></div>
+ </div>
 </section>
 
 <section class="content-grid">
@@ -85,17 +93,11 @@
   <div class="big-chart" id="trendChart"><div class="ylabels"></div><div class="area-line"></div><div class="xlabels"></div></div>
 </article>
 
- <article class="panel safety" id="safety"><div class="panel-head"><h2>🛡️ <span data-t="communitySafety">COMMUNITY HEALTH & SAFETY</span></h2></div><div class="safety-grid">
-  <div><i>💧</i><b data-t="hydrate">Stay Hydrated</b><p data-t="hydrateText">Drink plenty of water throughout the day.</p></div>
-  <div><i>🌳</i><b data-t="cool">Stay Cool</b><p data-t="coolText">Seek shade and stay in cool areas.</p></div>
-  <div><i>🧢</i><b data-t="sun">Sun Protection</b><p data-t="sunText">Wear a hat, sunglasses and sunscreen.</p></div>
-  <div><i>❤️</i><b data-t="others">Check on Others</b><p data-t="othersText">Look out for children, elderly and vulnerable people.</p></div>
- </div><div class="info-strip">ⓘ <span data-t="signs">Know the signs of heat stress: headache, dizziness, nausea, heavy sweating.</span><a href="information.html" data-t="learn">Learn More ›</a></div></article>
+
 </section>
 
 <section class="content-grid lower">
  <article class="panel forecast"><div class="panel-head"><h2 data-t="forecast">FORECAST OVERVIEW</h2><span>7 days</span></div><div class="forecast-row" id="forecastRow"></div></article>
- <article class="panel station-card" id="station"><div class="panel-head"><h2>📍 <span data-t="stationInfo">STATION INFORMATION</span></h2></div><p><b data-t="locationLabel">Location</b><br>Sungai Segamat, Johor</p><p><b data-t="refresh">Updates automatically</b><br><span data-t="everyFive">Every minute</span></p><b class="online">● <span data-t="online">Online</span></b></article>
 </section>
 </main>
 

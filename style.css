@@ -2293,3 +2293,103 @@ footer{
   .main-weather .current strong{font-size:2.8rem!important}
   .main-weather .heat-alert{font-size:.61rem!important}
 }
+
+
+/* V22 — phone metric cleanup: hide station status and group the three readings in one card */
+.metric-mobile-group{display:contents}
+@media(max-width:700px){
+  .main-weather{grid-template-columns:1fr!important;gap:10px!important}
+  .main-weather>.current{grid-column:1!important}
+  .metric-mobile-group{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:0!important;background:#fff!important;border:1px solid #e1ebe7!important;border-radius:18px!important;box-shadow:0 7px 22px #123b350d!important;overflow:hidden!important;padding:4px!important}
+  .metric-mobile-group>.metric-card{display:flex!important;min-height:108px!important;height:108px!important;border:0!important;border-radius:13px!important;box-shadow:none!important;padding:10px 5px!important;background:transparent!important;justify-content:center!important;align-items:center!important}
+  .metric-mobile-group>.metric-card + .metric-card{border-left:1px solid #e5ece9!important}
+  .metric-mobile-group .metric-card>span{font-size:1.55rem!important;line-height:1!important}
+  .metric-mobile-group .metric-card small{font-size:.55rem!important;letter-spacing:.08em!important;margin-top:7px!important}
+  .metric-mobile-group .metric-card strong{font-size:1.22rem!important;margin-top:5px!important;white-space:nowrap!important}
+  .metric-mobile-group .metric-card em{font-size:.56rem!important;margin-top:3px!important;white-space:nowrap!important}
+  .metric-mobile-group .station-status-card{display:none!important}
+}
+@media(max-width:420px){
+  .metric-mobile-group{padding:3px!important;border-radius:16px!important}
+  .metric-mobile-group>.metric-card{min-height:102px!important;height:102px!important;padding:8px 3px!important}
+  .metric-mobile-group .metric-card>span{font-size:1.4rem!important}
+  .metric-mobile-group .metric-card small{font-size:.5rem!important}
+  .metric-mobile-group .metric-card strong{font-size:1.12rem!important}
+  .metric-mobile-group .metric-card em{font-size:.52rem!important}
+}
+
+
+/* V23 — swap the Community Health & Safety panel with the weather readings.
+   Applied to desktop and phone: temperature first, safety second, readings third. */
+@media (min-width:701px){
+  .main-weather{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:14px!important;
+    max-width:1500px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    align-items:stretch!important;
+  }
+  .main-weather>.current{grid-column:1!important;grid-row:auto!important;order:1!important;width:100%!important;}
+  .main-weather>.safety{grid-column:1!important;grid-row:auto!important;order:2!important;width:100%!important;margin:0!important;}
+  .main-weather>.metric-mobile-group{
+    display:grid!important;
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+    gap:12px!important;
+    order:3!important;
+    width:100%!important;
+    min-width:0!important;
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+    padding:0!important;
+  }
+  .main-weather>.metric-mobile-group>.metric-card{
+    min-width:0!important;
+    width:100%!important;
+    min-height:190px!important;
+    height:190px!important;
+    border-radius:18px!important;
+    box-shadow:0 7px 24px rgba(18,59,53,.08)!important;
+    padding:16px 12px!important;
+  }
+  .content-grid{
+    grid-template-columns:1fr!important;
+  }
+  .content-grid>.safety{display:none!important;}
+}
+
+@media (max-width:700px){
+  .main-weather{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:10px!important;
+  }
+  .main-weather>.current{order:1!important;grid-column:1!important;}
+  .main-weather>.safety{
+    order:2!important;
+    grid-column:1!important;
+    width:100%!important;
+    margin:0!important;
+  }
+  .main-weather>.metric-mobile-group{
+    order:3!important;
+    grid-column:1!important;
+  }
+  .content-grid>.safety{display:none!important;}
+}
+
+/* V24 — station information moved into the top online status ribbon */
+.status-station-group{display:flex;flex-direction:column;gap:5px;min-width:0}
+.status-online-line{display:flex;align-items:center;gap:8px}
+.status-station-meta{display:flex;align-items:center;gap:16px;font-size:.78rem;color:#55706b;flex-wrap:wrap}
+.status-station-meta b{color:#173e72}
+@media(max-width:700px){
+ .status-bar{align-items:flex-start!important}
+ .status-station-group{width:100%}
+ .status-online-line{font-size:.82rem}
+ .status-station-meta{gap:6px 12px;font-size:.68rem}
+ .status-station-meta span{white-space:nowrap}
+ .status-bar .datetime-group{width:100%;justify-content:space-between!important;font-size:.68rem}
+}
