@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Weather Information — HEATCare Weather Station</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="approved-reference-header" aria-label="HEATcare Merdeka 69 header"></div>
+
+<section class="header-partner-strip" aria-label="Project partners">
+  <div class="partner-funder">
+    <small data-t="fundedShort">Funded by</small>
+    <img src="wellcome.svg" alt="Wellcome Trust">
+  </div>
+  <div class="partner-divider" aria-hidden="true"></div>
+
+  <div class="partner-collab">
+    <small data-t="collabShort">In collaboration with</small>
+    <img src="heidelberg.svg" alt="Heidelberg Institute of Global Health">
+  </div>
+
+  <div class="partner-kkm">
+    <strong id="kkmName" data-t="kkmName">MINISTRY OF HEALTH MALAYSIA</strong>
+  </div>
+  <div class="partner-divider" aria-hidden="true"></div>
+
+  <div class="partner-research">
+    <small>Research and Data Collection by</small>
+    <div class="partner-research-logos">
+      <img class="partner-monash" src="monash-university.png" alt="Monash University">
+      <img class="partner-seaco" src="seaco.png" alt="Monash South East Asia Community Observatory (SEACO)">
+    </div>
+  </div>
+</section>
+
+<nav class="main-nav" aria-label="Main navigation">
+  <a href="index.html">⌂ <span data-t="live">Live Weather</span></a>
+  <a class="active" href="information.html">ⓘ <span data-t="info">Weather Information</span></a>
+  <a href="information.html#station">⌖ <span data-t="aboutStation">About This Station</span></a>
+  <a href="information.html#safety">♡ <span data-t="healthSafety">Health &amp; Safety</span></a>
+  <div class="nav-language" aria-label="Language selection">
+    <button type="button" data-lang="ms">BM</button>
+    <button type="button" data-lang="en">EN</button>
+  </div>
+</nav>
+
+<main class="info-main">
+  <section class="info-hero">
+    <div class="eyebrow" data-t="infoLabel">WEATHER INFORMATION</div>
+    <h1 data-t="understand">Understanding the Weather</h1>
+    <p data-t="intro">Simple information to help the community understand weather conditions.</p>
+  </section>
+
+  <section class="station-story" id="station">
+    <div class="station-story-head">
+      <div>
+        <div class="eyebrow" data-t="stationLabel">ABOUT THIS STATION</div>
+        <h2 data-t="stationTitle">Our Weather Stations in Segamat</h2>
+        <p data-t="stationIntro">These weather stations are here to help our community understand what is happening with the weather around us.</p>
+      </div>
+      <div class="station-badge">☀️ 🔋</div>
+    </div>
+    <div class="station-story-grid">
+      <article>
+        <div class="station-number">01</div>
+        <h3 data-t="stationLocationsTitle">Three locations in Segamat</h3>
+        <p data-t="stationLocationsText">The project has weather stations at three locations in the Segamat area. Together, they help us collect local weather information from the places where our community lives and works.</p>
+      </article>
+      <article>
+        <div class="station-number">02</div>
+        <h3 data-t="stationFundingTitle">Supported by Wellcome Trust</h3>
+        <p data-t="stationFundingText">The weather station work is funded by Wellcome Trust, supporting the collection of local weather information for the HEATCare project and the community.</p>
+      </article>
+      <article>
+        <div class="station-number">03</div>
+        <h3 data-t="stationSensorsTitle">Sensors that measure our surroundings</h3>
+        <p data-t="stationSensorsText">The station uses several sensors to measure weather conditions. The readings are collected automatically so that we can better understand local heat and weather patterns.</p>
+      </article>
+      <article>
+        <div class="station-number">04</div>
+        <h3 data-t="stationPowerTitle">Powered by solar energy and batteries</h3>
+        <p data-t="stationPowerText">The station does not rely on conventional grid electricity. It uses solar power together with batteries, allowing the equipment to operate independently and continue collecting data.</p>
+      </article>
+    </div>
+    <div class="station-community-note">
+      <span>💡</span>
+      <p data-t="stationCommunityText"><b>Why does this matter to you?</b> The information from these stations helps us see local conditions more clearly. It can support better awareness of hot weather and help communities make informed decisions about staying safe.</p>
+    </div>
+  </section>
+
+  <section class="info-banner">
+    <div class="banner-icon">🌤️</div>
+    <div>
+      <div class="eyebrow" data-t="communityLabel">COMMUNITY</div>
+      <h2 data-t="simpleTitle">Weather made simple</h2>
+      <p data-t="simpleText">Learn what each weather measurement means and why it matters.</p>
+    </div>
+  </section>
+
+  <section class="info-cards">
+    <article class="info-card">
+      <div class="info-icon temp">🌡️</div>
+      <div class="info-card-tag" data-t="whatItMeans">WHAT IT MEANS</div>
+      <h2 data-t="temperature">Temperature</h2>
+      <p data-t="tempText">Temperature tells us how warm or cool the air is. Higher temperatures can increase heat stress, especially during outdoor activities.</p>
+      <div class="why"><b data-t="whyMatters">Why it matters</b><span data-t="tempWhy">Higher temperatures can increase heat strain, especially outdoors.</span></div>
+    </article>
+
+    <article class="info-card">
+      <div class="info-icon humidity">💧</div>
+      <div class="info-card-tag" data-t="whatItMeans">WHAT IT MEANS</div>
+      <h2 data-t="humidity">Humidity</h2>
+      <p data-t="humidityText">High humidity can make the body feel hotter because sweat evaporates more slowly.</p>
+      <div class="why"><b data-t="whyMatters">Why it matters</b><span data-t="humidityWhy">High humidity can make hot weather feel more uncomfortable.</span></div>
+    </article>
+
+    <article class="info-card">
+      <div class="info-icon rain">🌧️</div>
+      <div class="info-card-tag" data-t="whatItMeans">WHAT IT MEANS</div>
+      <h2 data-t="rain">Rainfall</h2>
+      <p data-t="rainText">Rainfall shows how much rain has been recorded at the weather station.</p>
+      <div class="why"><b data-t="whyMatters">Why it matters</b><span data-t="rainWhy">Rainfall helps us understand recent local weather conditions.</span></div>
+    </article>
+
+    <article class="info-card">
+      <div class="info-icon wind">🌬️</div>
+      <div class="info-card-tag" data-t="whatItMeans">WHAT IT MEANS</div>
+      <h2 data-t="wind">Wind Speed</h2>
+      <p data-t="windText">Moving air can help the body lose heat and may make outdoor conditions feel more comfortable.</p>
+      <div class="why"><b data-t="whyMatters">Why it matters</b><span data-t="windWhy">Wind affects how warm or comfortable outdoor conditions feel.</span></div>
+    </article>
+  </section>
+
+  <section class="heat-guide" id="safety">
+    <div>
+      <div class="eyebrow" data-t="communityLabel">COMMUNITY</div>
+      <h2 data-t="heatGuide">When the weather feels hot</h2>
+      <p data-t="heatGuideText">Use the live readings as a simple guide and take sensible steps to stay comfortable and hydrated.</p>
+    </div>
+    <div class="guide-points">
+      <span>💧 <b data-t="hydrate">Stay hydrated</b></span>
+      <span>🌳 <b data-t="cool">Stay cool</b></span>
+      <span>🧢 <b data-t="sun">Protect yourself from the sun</b></span>
+    </div>
+  </section>
+
+  <section class="history-panel">
+    <div class="panel-head">
+      <div><div class="eyebrow" data-t="trendLabel">TODAY</div><h2 data-t="history">Weather History</h2></div>
+      <span class="history-note" data-t="historyNote">Trend visualisation</span>
+    </div>
+    <div class="info-chart"><div class="info-chart-line"></div><div class="chart-labels"><span>00:00</span><span>06:00</span><span>12:00</span><span>18:00</span><span data-t="now">Now</span></div></div>
+    <p class="muted" data-t="chartNote">Temperature trend is currently based on Open-Meteo hourly weather data and will later be replaced by the project weather station data.</p>
+  </section>
+</main>
+<footer><div class="footer-brand"><b>HEATCare @ SEACO</b><span data-t="footerText">Heat Risk Awareness and Technology-driven Care for Community Health</span></div><div class="footer-partner funding"><small data-t="fundedBy">The project is funded by:</small><img class="user-logo footer-wellcome" src="wellcome.svg" alt="Wellcome"></div><div class="footer-partner collaboration"><small data-t="collab">In collaboration with:</small><div class="user-logos"><img class="user-logo footer-heidelberg" src="heidelberg.svg" alt="Heidelberg Institute of Global Health"></div></div><div class="footer-note"><span data-t="dataNote">This website provides real-time weather information for Weather Station Sungai Segamat for community use.</span><br><a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> · <span data-t="updatedEvery">Updated every 5 minutes.</span></div></footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -71,6 +71,18 @@ footer .user-logos{justify-content:flex-start}
 .monash-logo{width:82px;height:34px}
 .monash-university-logo{width:112px;height:44px}
 .partner-block small{letter-spacing:.02em}
+
+.station-story{background:#fff;border:1px solid #dfe9e6;border-radius:24px;padding:28px 30px;margin-bottom:18px;box-shadow:0 8px 24px #123b350a}
+.station-story-head{display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid #e5ecea;padding-bottom:20px;margin-bottom:18px}
+.station-story-head h2{font-size:1.7rem;margin:5px 0 7px;color:#092f72}.station-story-head p{margin:0;color:#64746f;line-height:1.55;max-width:780px}
+.station-badge{min-width:76px;height:76px;border-radius:22px;background:#eef6ff;display:grid;place-items:center;font-size:2rem}
+.station-story-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.station-story-grid article{background:#f8fbfa;border:1px solid #e3ece9;border-radius:17px;padding:19px 20px}
+.station-number{font-size:.67rem;font-weight:900;letter-spacing:.1em;color:#e5232b;margin-bottom:7px}
+.station-story-grid h3{font-size:1.02rem;color:#092f72;margin:0 0 7px}.station-story-grid p{font-size:.82rem;color:#667772;line-height:1.6;margin:0}
+.station-community-note{display:flex;align-items:flex-start;gap:12px;background:#fff7df;border:1px solid #f1df9d;border-radius:16px;padding:15px 17px;margin-top:16px}.station-community-note span{font-size:1.35rem}.station-community-note p{margin:0;color:#715b2c;font-size:.8rem;line-height:1.55}.station-community-note b{color:#5c461e}
+@media(max-width:700px){.station-story{padding:22px 18px}.station-story-head{align-items:flex-start}.station-badge{min-width:58px;height:58px;font-size:1.5rem}.station-story-grid{grid-template-columns:1fr}}
+
 .info-main{max-width:1180px;margin:auto;padding:38px 24px 60px}
 .info-hero{padding:8px 0 26px}
 .info-hero h1{font-size:2.65rem;letter-spacing:-.045em;margin:7px 0 8px}
@@ -1703,3 +1715,480 @@ footer{
 .status-bar .datetime-group{display:flex!important;align-items:center!important;gap:8px!important;}
 .status-bar #currentDate{display:inline-block!important;min-width:92px!important;color:#173e72!important;font-weight:800!important;}
 .status-bar #updatedTime{display:inline-block!important;color:#173e72!important;font-weight:850!important;}
+
+
+/* =========================================================
+   NEW MERDEKA HEADER + PARTNER STRIP
+   ========================================================= */
+.approved-reference-header{
+  position:relative!important;
+  width:100%!important;
+  aspect-ratio:2170/725!important;
+  min-height:0!important;
+  overflow:hidden!important;
+  background:#fff url("merdeka-main-header.png") center center/100% 100% no-repeat!important;
+  border:0!important;
+  box-shadow:none!important;
+  z-index:1!important;
+}
+.header-partner-strip{
+  width:100%;
+  min-height:112px;
+  display:grid;
+  grid-template-columns:170px 1px 310px 1fr 1px 470px;
+  align-items:center;
+  gap:22px;
+  padding:8px 5% 14px;
+  box-sizing:border-box;
+  background:#fff;
+  border-bottom:1px solid #dfe6eb;
+  box-shadow:0 2px 10px rgba(0,0,0,.04);
+}
+.header-partner-strip > *{transform:translateY(-5px);}
+
+.partner-funder,.partner-collab,.partner-research{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+}
+.header-partner-strip small{
+  display:block;
+  color:#626f78;
+  font-size:.62rem;
+  font-weight:700;
+  margin-bottom:7px;
+  white-space:nowrap;
+}
+.partner-funder img{width:76px;height:48px;object-fit:contain;object-position:left center}
+.partner-collab img{width:190px;height:48px;object-fit:contain;object-position:left center}
+.partner-divider{width:1px;height:70px;background:#d5dde3}
+.partner-kkm{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#111827;
+  line-height:1.25;
+  min-width:0;
+}
+.partner-kkm strong{font-size:1.05rem;letter-spacing:.01em}
+.partner-research{min-width:0}
+.partner-research-logos{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  min-width:0;
+}
+.partner-research-logos img{display:block;object-fit:contain}
+.partner-monash{width:215px;height:68px}
+.partner-seaco{width:205px;height:58px}
+.header-partner-strip + .main-nav{
+  min-height:60px!important;
+  display:flex!important;
+  align-items:center!important;
+  gap:5px!important;
+  background:#071f63!important;
+  padding:0 3.5%!important;
+}
+.header-partner-strip + .main-nav a{
+  color:#fff!important;
+  text-decoration:none!important;
+  padding:14px 18px!important;
+  border-radius:0 0 22px 22px!important;
+  font-size:.88rem!important;
+  font-weight:700!important;
+}
+.header-partner-strip + .main-nav a.active{background:#e5232b!important}
+@media(max-width:1050px){
+  .header-partner-strip{
+    grid-template-columns:140px 1px 220px 1fr 1px 1fr;
+    gap:14px;
+    padding:12px 3%;
+  }
+  .partner-research{grid-column:auto}
+  .partner-research{grid-column:1/-1;align-items:center;padding-top:4px}
+  .partner-research-logos{justify-content:center}
+  .partner-divider{height:58px}
+}
+@media(max-width:700px){
+  .approved-reference-header{aspect-ratio:2170/725;background-size:auto 100%!important;background-position:center top!important}
+  .header-partner-strip{grid-template-columns:1fr;gap:10px;padding:14px 5%}
+  .partner-divider{display:none}
+  .partner-funder,.partner-collab,.partner-kkm,.partner-research{align-items:center;text-align:center}
+  .partner-research-logos{flex-wrap:wrap;justify-content:center}
+  .header-partner-strip + .main-nav{overflow-x:auto;white-space:nowrap}
+}
+
+
+/* Header language switcher */
+.header-partner-strip + .main-nav{
+  position:relative!important;
+}
+.nav-language{
+  margin-left:auto!important;
+  display:flex!important;
+  align-items:center!important;
+  gap:0!important;
+  border:1px solid rgba(255,255,255,.75)!important;
+  border-radius:8px!important;
+  overflow:hidden!important;
+  background:#fff!important;
+}
+.nav-language button{
+  border:0!important;
+  background:#fff!important;
+  color:#0a2f70!important;
+  font:inherit!important;
+  font-weight:800!important;
+  font-size:.75rem!important;
+  padding:7px 12px!important;
+  cursor:pointer!important;
+}
+.nav-language button.active{
+  background:#0a2f70!important;
+  color:#fff!important;
+}
+@media(max-width:700px){
+  .nav-language{margin-left:10px!important;flex:0 0 auto!important}
+}
+
+/* =========================================================
+   FINAL HEADER POLISH — compact transition to partner strip
+   ========================================================= */
+.approved-reference-header{
+  aspect-ratio:2170/610!important;
+  background-size:100% 100%!important;
+}
+.header-partner-strip{
+  min-height:104px!important;
+  padding:6px 4.5% 10px!important;
+  gap:18px!important;
+}
+.header-partner-strip > *{transform:translateY(-2px)!important;}
+.partner-divider{height:64px!important;}
+.partner-kkm strong{font-size:1.08rem!important;}
+.partner-monash{width:225px!important;height:70px!important;}
+.partner-seaco{width:210px!important;height:60px!important;}
+.header-partner-strip + .main-nav{min-height:58px!important;}
+
+@media(max-width:1050px){
+  .header-partner-strip{padding:8px 3%!important;gap:12px!important;}
+  .partner-monash{width:190px!important;height:62px!important;}
+  .partner-seaco{width:185px!important;height:56px!important;}
+}
+@media(max-width:700px){
+  .approved-reference-header{aspect-ratio:2170/610!important;background-size:auto 100%!important;}
+  .header-partner-strip{padding:12px 5%!important;gap:10px!important;}
+}
+
+/* Three temperature trend charts */
+.trend-card{min-width:0}.trend-card .panel-head{align-items:center}.chart-source{font-size:11px;color:#718096;background:#f3f6f8;border:1px solid #dce4e8;padding:5px 9px;border-radius:999px}.trend-card .big-chart{height:300px;position:relative;padding:18px 18px 38px 48px;box-sizing:border-box;overflow:hidden}.trend-card .trend-svg{position:absolute;left:48px;right:18px;top:18px;bottom:38px;width:calc(100% - 66px);height:calc(100% - 56px);overflow:visible}.trend-card .ylabels{position:absolute;left:0;top:16px;bottom:38px;width:38px;display:flex;flex-direction:column;justify-content:space-between;color:#7a8b98;font-size:11px;text-align:right}.trend-card .xlabels{position:absolute;left:48px;right:18px;bottom:8px;display:flex;justify-content:space-between;color:#7a8b98;font-size:10px}.trend-card .area-line{position:absolute;left:48px;right:18px;top:18px;bottom:38px;background:repeating-linear-gradient(to bottom,rgba(95,130,145,.12) 0,rgba(95,130,145,.12) 1px,transparent 1px,transparent 25%);pointer-events:none}@media(max-width:900px){.trend-card .big-chart{height:260px}.trend-card .xlabels{font-size:9px}}
+
+
+/* =========================================================
+   COMMUNITY MAP + MOBILE POLISH
+   ========================================================= */
+.station-map-card{
+  margin:22px 0 24px;
+  padding:20px;
+  border:1px solid #dce6ed;
+  border-radius:22px;
+  background:linear-gradient(180deg,#f8fbfd 0%,#fff 100%);
+}
+.station-map-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:12px}
+.station-map-head h3{margin:3px 0 0;color:#102d57;font-size:1.18rem}
+.station-map-head>span{background:#eaf2f7;color:#29465d;border-radius:999px;padding:7px 11px;font-size:.75rem;font-weight:800;white-space:nowrap}
+.simple-map{height:280px;position:relative;overflow:hidden;border-radius:18px;background:linear-gradient(145deg,#eef7f5,#f8f4ea);border:1px solid #d8e3df}
+.simple-map:before,.simple-map:after{content:"";position:absolute;border-radius:50%;background:rgba(126,166,137,.12)}
+.simple-map:before{width:250px;height:150px;left:-40px;bottom:-55px}.simple-map:after{width:260px;height:170px;right:-55px;top:-70px}
+.map-road{position:absolute;height:7px;background:#fff;border:1px solid #d9dfdf;border-radius:99px;transform-origin:left center;box-shadow:0 1px 2px rgba(20,45,60,.05)}
+.road-a{width:68%;left:8%;top:62%;transform:rotate(-13deg)}
+.road-b{width:55%;left:30%;top:31%;transform:rotate(48deg)}
+.road-c{width:45%;left:44%;top:72%;transform:rotate(-50deg)}
+.map-label{position:absolute;z-index:2;display:grid;grid-template-columns:16px auto;column-gap:8px;align-items:center;background:#fff;padding:9px 12px;border-radius:12px;box-shadow:0 5px 18px rgba(31,58,72,.10);border:1px solid #e0e7e9}
+.map-label b{font-size:.78rem;color:#183451}.map-label small{grid-column:2;color:#72808a;font-size:.62rem;margin-top:1px}
+.map-dot,.legend-dot{width:12px;height:12px;border-radius:50%;display:inline-block}.map-dot.active,.legend-dot.active{background:#21a36b;box-shadow:0 0 0 4px rgba(33,163,107,.12)}.map-dot.coming,.legend-dot.coming{background:#e7a62a;box-shadow:0 0 0 4px rgba(231,166,42,.13)}
+.label-chaah{left:10%;top:20%}.label-bekok{left:48%;top:15%}.label-segamat{right:8%;bottom:17%}
+.map-legend{display:flex;gap:20px;flex-wrap:wrap;margin-top:12px;color:#66757f;font-size:.72rem;font-weight:700}.map-legend span{display:flex;align-items:center;gap:7px}
+.station-story-grid article{min-height:170px}
+@media(max-width:700px){
+  body{overflow-x:hidden}
+  .approved-reference-header{aspect-ratio:2170/610!important;background-size:auto 100%!important;background-position:center top!important}
+  .header-partner-strip{min-height:0!important;padding:12px 16px 14px!important;gap:10px!important}
+  .partner-funder img{width:70px;height:42px}.partner-collab img{width:175px;height:42px}.partner-monash{width:190px!important;height:58px!important}.partner-seaco{width:175px!important;height:52px!important}
+  .partner-kkm strong{font-size:.95rem!important}
+  .header-partner-strip + .main-nav{min-height:52px!important;padding:0 10px!important;overflow-x:auto!important;scrollbar-width:none}
+  .header-partner-strip + .main-nav::-webkit-scrollbar{display:none}
+  .header-partner-strip + .main-nav a{padding:12px 13px!important;font-size:.76rem!important;flex:0 0 auto}
+  .nav-language{margin-left:4px!important}
+  .nav-language button{padding:6px 9px!important;font-size:.7rem!important}
+  main,.info-main{width:100%;box-sizing:border-box}
+  .status-bar{margin:10px 12px!important;padding:10px 12px!important;gap:10px;flex-wrap:wrap}
+  .main-weather,.content-grid,.content-grid.lower{grid-template-columns:1fr!important;gap:12px!important;margin-left:12px!important;margin-right:12px!important}
+  .current{min-height:0!important;padding:18px!important}.metric-card{min-height:130px!important}
+  .trend-card .big-chart{height:230px!important;padding-left:40px!important}.trend-card .trend-svg{left:40px!important;width:calc(100% - 58px)!important}.trend-card .xlabels{left:40px!important}
+  .panel{border-radius:18px!important}.panel-head{padding:14px 15px!important}.panel-head h2{font-size:.86rem!important}
+  .forecast-row{overflow-x:auto!important;justify-content:flex-start!important}
+  .station-map-card{padding:14px;margin:16px 0}.simple-map{height:230px}.map-label{padding:7px 9px}.map-label b{font-size:.7rem}.map-label small{font-size:.57rem}.label-chaah{left:5%;top:18%}.label-bekok{left:42%;top:11%}.label-segamat{right:4%;bottom:10%}
+  .station-story-grid{grid-template-columns:1fr!important}.station-story{padding:16px!important}.station-story-head{gap:10px!important}.station-story-head h2{font-size:1.35rem!important}
+  footer{grid-template-columns:1fr!important;padding:24px 16px!important;gap:16px!important;text-align:center}.footer-partner{align-items:center!important}.footer-note{text-align:center!important}
+}
+
+
+/* Community polish: air quality + unified footer sources */
+.air-quality{border-top:4px solid #6f9fb8!important}
+.air-quality strong{font-size:2rem!important}
+.footer-logo-row{display:flex!important;align-items:center!important;gap:16px!important;flex-wrap:wrap!important}
+.footer-logo-row .footer-heidelberg{width:145px!important;height:50px!important}
+.footer-logo-row .footer-monash-university{width:150px!important;height:54px!important}
+.footer-logo-row .footer-seaco{width:145px!important;height:50px!important;object-fit:contain!important}
+.footer-kkm{font-size:.72rem!important;font-weight:900!important;line-height:1.2!important;max-width:150px!important;color:#fff!important;text-align:center!important}
+.footer-note strong{display:inline-block!important;margin-bottom:5px!important}
+@media(max-width:620px){
+  .air-quality strong{font-size:1.7rem!important}
+  .footer-logo-row{justify-content:center!important;gap:12px!important}
+  .footer-logo-row .footer-heidelberg{width:125px!important;height:44px!important}
+  .footer-logo-row .footer-monash-university{width:135px!important;height:48px!important}
+  .footer-logo-row .footer-seaco{width:125px!important;height:44px!important}
+  .footer-kkm{font-size:.65rem!important;max-width:130px!important}
+}
+
+
+/* Current weather layout: temperature centered on top, five compact cards below */
+.main-weather{
+  grid-template-columns:1fr!important;
+  gap:12px!important;
+  align-items:stretch!important;
+}
+.current{
+  width:min(720px,100%)!important;
+  margin:0 auto!important;
+  grid-template-columns:1fr!important;
+  text-align:center!important;
+  justify-items:center!important;
+  padding:28px 30px 20px!important;
+}
+.current .weather-icon{grid-row:auto!important;font-size:4rem!important}
+.current>div:nth-child(2){text-align:center!important}
+.current .condition{grid-column:auto!important;justify-content:center!important}
+.current .heat-alert{grid-column:auto!important;width:100%!important;text-align:left!important}
+.main-weather>.metric-card{
+  width:100%!important;
+}
+.main-weather{
+  display:grid!important;
+  grid-template-columns:1fr!important;
+}
+.main-weather>.metric-card{
+  min-height:150px!important;
+}
+.main-weather>.metric-card:nth-child(2),
+.main-weather>.metric-card:nth-child(3),
+.main-weather>.metric-card:nth-child(4),
+.main-weather>.metric-card:nth-child(5),
+.main-weather>.metric-card:nth-child(6){
+  min-width:0!important;
+}
+@media(min-width:901px){
+  .main-weather{grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:12px!important}
+  .main-weather>.current{grid-column:1/-1!important}
+  .main-weather>.metric-card{grid-column:auto!important}
+}
+.station-status-card{border-top:4px solid #1a9b76!important}
+.station-status-card .station-online{color:#188b68!important;font-size:1.8rem!important}
+.station-status-card em{color:#536c66!important}
+@media(max-width:900px){
+  .current{width:100%!important}
+  .main-weather>.metric-card{min-height:130px!important}
+}
+@media(max-width:700px){
+  .current{padding:22px 18px 16px!important}
+  .current strong{font-size:3.6rem!important}
+  .current .condition{font-size:.72rem!important}
+}
+
+/* V15 — compact metric row: smaller cards, centered under temperature */
+@media (min-width:901px){
+  .main-weather{grid-template-columns:1fr!important;gap:14px!important}
+  .main-weather>.current{grid-column:1/-1!important}
+  .main-weather>.metric-card{
+    width:100%!important;
+    min-height:135px!important;
+    padding:15px 12px!important;
+  }
+  .main-weather:after{content:"";display:block}
+  /* Put the five metric cards into a centered, narrower row */
+  .main-weather{
+    display:grid!important;
+    grid-template-columns:repeat(5,minmax(150px,1fr))!important;
+    max-width:1280px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+  .main-weather>.current{grid-column:1/-1!important; width:min(620px,100%)!important}
+  .main-weather>.metric-card:nth-child(2){grid-column:1}
+  .main-weather>.metric-card:nth-child(3){grid-column:2}
+  .main-weather>.metric-card:nth-child(4){grid-column:3}
+  .main-weather>.metric-card:nth-child(5){grid-column:4}
+  .main-weather>.metric-card:nth-child(6){grid-column:5}
+  .metric-card>span{font-size:1.65rem!important}
+  .metric-card small{font-size:.61rem!important;margin-top:7px!important}
+  .metric-card strong{font-size:1.48rem!important;margin-top:5px!important}
+  .metric-card em{font-size:.64rem!important}
+  .air-quality strong{font-size:1.75rem!important}
+  .station-status-card .station-online{font-size:1.65rem!important}
+}
+@media (max-width:900px){
+  .main-weather>.metric-card{min-height:125px!important}
+}
+@media (max-width:700px){
+  .main-weather>.metric-card{min-height:118px!important;padding:14px 11px!important}
+  .metric-card>span{font-size:1.55rem!important}
+  .metric-card strong{font-size:1.4rem!important}
+}
+
+
+/* V16 — four compact cards under the centered temperature card */
+@media (min-width:901px){
+  .main-weather{
+    grid-template-columns:repeat(4,minmax(170px,1fr))!important;
+    max-width:1050px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    gap:12px!important;
+  }
+  .main-weather>.current{grid-column:1/-1!important;width:min(620px,100%)!important;}
+  .main-weather>.metric-card{grid-column:auto!important;min-height:125px!important;padding:14px 11px!important;}
+  .metric-card>span{font-size:1.55rem!important;}
+  .metric-card small{font-size:.61rem!important;margin-top:7px!important;}
+  .metric-card strong{font-size:1.42rem!important;margin-top:5px!important;}
+  .metric-card em{font-size:.63rem!important;}
+}
+@media (max-width:900px){
+  .main-weather{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+  .main-weather>.current{grid-column:1/-1!important;}
+}
+@media (max-width:450px){
+  .main-weather{grid-template-columns:1fr!important;}
+  .main-weather>.current{grid-column:auto!important;}
+}
+
+/* V17: Align all current-weather cards in one row */
+@media(min-width:1051px){
+  .main-weather{
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:12px;
+    align-items:stretch;
+  }
+  .main-weather .current,
+  .main-weather .metric-card{
+    min-width:0;
+    min-height:220px;
+    height:220px;
+  }
+  .main-weather .current{
+    padding:20px 18px 15px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    gap:5px;
+  }
+  .main-weather .weather-icon{font-size:3.4rem;line-height:1;margin:0 0 2px}
+  .main-weather .current strong{font-size:3.1rem;line-height:1.05}
+  .main-weather .current p{margin:4px 0 0}
+  .main-weather .condition{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    font-size:.72rem;
+  }
+  .main-weather .heat-alert{
+    width:100%;
+    margin-top:6px;
+    font-size:.66rem;
+    text-align:left;
+  }
+  .main-weather .metric-card{
+    padding:16px 12px;
+    align-items:center;
+    text-align:center;
+  }
+}
+
+@media(min-width:701px) and (max-width:1050px){
+  .main-weather{grid-template-columns:repeat(4,minmax(0,1fr));}
+  .main-weather .current{grid-column:1/-1;}
+}
+
+/* Single trend chart with selectable range */
+.trend-single{grid-column:1/-1}.trend-head{gap:14px}.trend-tabs{display:flex;gap:6px}.trend-tab{border:1px solid #d5e1dd;background:#fff;color:#52706a;border-radius:999px;padding:7px 12px;font-size:.72rem;font-weight:800;cursor:pointer}.trend-tab.active{background:#064f45;color:#fff;border-color:#064f45}.trend-single .big-chart{height:300px}
+@media(max-width:700px){.trend-single .big-chart{height:230px!important}.trend-head{align-items:flex-start!important;flex-direction:column}.trend-tabs{width:100%}.trend-tab{flex:1;padding:8px 7px;font-size:.7rem}}
+
+/* V19 — final desktop alignment: five weather cards in one row; trend + safety side-by-side */
+@media (min-width:1051px){
+  .main-weather{
+    grid-template-columns:repeat(5,minmax(0,1fr))!important;
+    max-width:1500px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    gap:12px!important;
+    align-items:stretch!important;
+  }
+  .main-weather>.current{
+    grid-column:auto!important;
+    grid-row:1!important;
+    width:100%!important;
+    min-width:0!important;
+    min-height:230px!important;
+    height:230px!important;
+    padding:18px 18px 14px!important;
+  }
+  .main-weather>.metric-card{
+    grid-row:1!important;
+    grid-column:auto!important;
+    min-height:230px!important;
+    height:230px!important;
+    width:100%!important;
+    padding:14px 10px!important;
+  }
+  .main-weather .current .weather-icon{font-size:3.25rem!important}
+  .main-weather .current strong{font-size:3rem!important}
+  .main-weather .heat-alert{margin-top:5px!important;padding:8px 10px!important;font-size:.64rem!important}
+
+  .content-grid{
+    grid-template-columns:1.2fr 1fr!important;
+    gap:14px!important;
+    align-items:stretch!important;
+  }
+  .content-grid .trend-single{
+    grid-column:auto!important;
+    width:100%!important;
+  }
+  .content-grid .safety{
+    grid-column:auto!important;
+    width:100%!important;
+  }
+}
+
+@media (min-width:701px) and (max-width:1050px){
+  .main-weather>.current{grid-column:1/-1!important;}
+  .content-grid .trend-single{grid-column:auto!important;}
+}
+
+@media (max-width:700px){
+  .content-grid{grid-template-columns:1fr!important;}
+  .content-grid .trend-single,.content-grid .safety{grid-column:auto!important;}
+  .main-weather>.current{grid-column:1/-1!important;}
+}
+
+/* V20 footer visibility fix */
+footer{background:#fff!important;color:#17322e!important;border:1px solid #e1ebe7!important;box-shadow:0 7px 22px rgba(18,59,53,.08)!important;}
+footer .footer-brand b, footer .footer-brand span, footer small, footer .footer-note, footer .footer-note span, footer .footer-note strong{color:#17322e!important;}
+footer .footer-kkm{color:#17322e!important;}
+footer .footer-note a{color:#087564!important;}
+footer .footer-logo-row{background:#fff!important;}
+@media(max-width:620px){footer{border-radius:18px!important;}}

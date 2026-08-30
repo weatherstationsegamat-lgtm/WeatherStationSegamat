@@ -1,11 +1,11 @@
 const T={
 en:{
 live:"Live Weather",info:"Weather Information",location:"Sungai Segamat, Johor",liveNow:"LIVE",
-headerMessage:"Monitoring today, protecting tomorrow.",headerSub:"Real-time weather information for a healthier and safer community.",merdekaTheme:"Malaysia MADANI: Kesejahteraan Dinikmati",
+headerMessage:"Monitoring today, protecting tomorrow.",headerSub:"Real-time weather information for a healthier and safer community.",merdekaTheme:"Malaysia MADANI: Kesejahteraan Dinikmati",kkmName:"MINISTRY OF HEALTH MALAYSIA",
 fundedShort:"Funded by",collabShort:"In collaboration with",temperature:"TEMPERATURE",feels:"Feels like",
 humidity:"HUMIDITY",rain:"RAINFALL",wind:"WIND",heatIndex:"FEELS-LIKE TEMP",direction:"Direction",
 partly:"Current",heatAlert:"Heat awareness",heatAlertText:" Stay hydrated and take regular breaks.",
-moderate:"Moderate",today:"Today",hot:"Hot",trend:"TEMPERATURE TREND (TODAY)",
+moderate:"Moderate",today:"Today",hot:"Hot",trend:"TEMPERATURE TREND (TODAY)",trendTitle:"TEMPERATURE TREND",trend24Short:"Today",trend7Short:"7 Days",trend30Short:"30 Days",
 communitySafety:"COMMUNITY HEALTH & SAFETY",hydrate:"Stay Hydrated",hydrateText:"Drink plenty of water throughout the day.",
 cool:"Stay Cool",coolText:"Seek shade and stay in cool areas.",sun:"Sun Protection",sunText:"Wear a hat, sunglasses and sunscreen.",
 others:"Check on Others",othersText:"Look out for children, elderly and vulnerable people.",
@@ -27,15 +27,21 @@ historyNote:"Trend visualisation",now:"Now",trendLabel:"TODAY",infoLabel:"WEATHE
 understand:"Understanding the Weather",intro:"Simple information to help the community understand weather conditions.",
 communityLabel:"COMMUNITY",simpleTitle:"Weather made simple",simpleText:"Learn what each weather measurement means and why it matters.",
 heatRisk:"Heat risk",low:"Low",high:"High",veryHigh:"Very high",comfortable:"Comfortable",
-weatherUnavailable:"Weather data unavailable",rainChance:"Rain chance",windDir:"Wind direction"
+weatherUnavailable:"Weather data unavailable",rainChance:"Rain chance",windDir:"Wind direction",stationCardLabel:"STATION",dataSources:"Data Sources",weatherSource:"Weather data: Open-Meteo",
+stationLabel:"ABOUT THIS STATION",stationTitle:"Our Weather Stations in Segamat",stationIntro:"These weather stations are here to help our community understand what is happening with the weather around us.",
+stationLocationsTitle:"Three locations in Segamat",stationLocationsText:"The project has weather stations at three locations in the Segamat area. Together, they help us collect local weather information from the places where our community lives and works.",
+stationFundingTitle:"Supported by Wellcome Trust",stationFundingText:"The weather station work is funded by Wellcome Trust, supporting the collection of local weather information for the HEATCare project and the community.",
+stationSensorsTitle:"Sensors that measure our surroundings",stationSensorsText:"The station uses several sensors to measure weather conditions. The readings are collected automatically so that we can better understand local heat and weather patterns.",
+stationPowerTitle:"Powered by solar energy and batteries",stationPowerText:"The station does not rely on conventional grid electricity. It uses solar power together with batteries, allowing the equipment to operate independently and continue collecting data.",
+stationCommunityText:"Why does this matter to you? The information from these stations helps us see local conditions more clearly. It can support better awareness of hot weather and help communities make informed decisions about staying safe."
 },
 ms:{
 live:"Cuaca Semasa",info:"Maklumat Cuaca",location:"Sungai Segamat, Johor",liveNow:"LANGSUNG",
-headerMessage:"Memantau hari ini, melindungi hari esok.",headerSub:"Maklumat cuaca masa nyata untuk komuniti yang lebih sihat dan selamat.",merdekaTheme:"Malaysia MADANI: Kesejahteraan Dinikmati",
+headerMessage:"Memantau hari ini, melindungi hari esok.",headerSub:"Maklumat cuaca masa nyata untuk komuniti yang lebih sihat dan selamat.",merdekaTheme:"Malaysia MADANI: Kesejahteraan Dinikmati",kkmName:"KEMENTERIAN KESIHATAN MALAYSIA",
 fundedShort:"Dibiayai oleh",collabShort:"Dengan kerjasama",temperature:"SUHU",feels:"Terasa seperti",
 humidity:"KELEMBAPAN",rain:"HUJAN",wind:"ANGIN",heatIndex:"SUHU TERASA",direction:"Arah",
 partly:"Semasa",heatAlert:"Kesedaran haba",heatAlertText:" Minum air yang mencukupi dan berehat secara berkala.",
-moderate:"Sederhana",today:"Hari ini",hot:"Panas",trend:"TREND SUHU (HARI INI)",
+moderate:"Sederhana",today:"Hari ini",hot:"Panas",trend:"TREND SUHU (HARI INI)",trendTitle:"TREND SUHU",trend24Short:"Hari Ini",trend7Short:"7 Hari",trend30Short:"30 Hari",
 communitySafety:"KESIHATAN & KESELAMATAN KOMUNITI",hydrate:"Kekal Terhidrat",hydrateText:"Minum air secukupnya sepanjang hari.",
 cool:"Kekal Sejuk",coolText:"Cari tempat teduh dan kekal di kawasan yang sejuk.",sun:"Perlindungan Matahari",
 sunText:"Pakai topi, cermin mata hitam dan pelindung matahari.",others:"Periksa Orang Lain",
@@ -58,7 +64,13 @@ historyNote:"Visualisasi trend",now:"Sekarang",trendLabel:"HARI INI",infoLabel:"
 understand:"Memahami Cuaca",intro:"Maklumat ringkas untuk membantu komuniti memahami keadaan cuaca.",
 communityLabel:"KOMUNITI",simpleTitle:"Cuaca lebih mudah difahami",simpleText:"Ketahui maksud setiap ukuran cuaca dan mengapa ia penting.",
 heatRisk:"Risiko haba",low:"Rendah",high:"Tinggi",veryHigh:"Sangat tinggi",comfortable:"Selesa",
-weatherUnavailable:"Data cuaca tidak tersedia",rainChance:"Kebarangkalian hujan",windDir:"Arah angin"
+weatherUnavailable:"Data cuaca tidak tersedia",rainChance:"Kebarangkalian hujan",windDir:"Arah angin",stationCardLabel:"STESEN",dataSources:"Sumber Data",weatherSource:"Data cuaca: Open-Meteo",
+stationLabel:"TENTANG STESEN INI",stationTitle:"Stesen Cuaca Kami di Segamat",stationIntro:"Stesen cuaca ini diwujudkan untuk membantu komuniti memahami keadaan cuaca di sekeliling kita.",
+stationLocationsTitle:"Tiga lokasi di Segamat",stationLocationsText:"Projek ini mempunyai stesen cuaca di tiga lokasi di kawasan Segamat. Kesemuanya membantu kami mengumpul maklumat cuaca tempatan dari tempat komuniti kita tinggal dan menjalankan aktiviti harian.",
+stationFundingTitle:"Dibiayai oleh Wellcome Trust",stationFundingText:"Kerja stesen cuaca ini dibiayai oleh Wellcome Trust bagi menyokong pengumpulan maklumat cuaca tempatan untuk projek HEATCare dan kegunaan komuniti.",
+stationSensorsTitle:"Sensor untuk mengukur keadaan sekeliling",stationSensorsText:"Stesen ini menggunakan beberapa sensor untuk mengukur keadaan cuaca. Bacaan dikumpulkan secara automatik supaya kita dapat memahami corak haba dan cuaca tempatan dengan lebih baik.",
+stationPowerTitle:"Menggunakan tenaga solar dan bateri",stationPowerText:"Stesen ini tidak bergantung pada bekalan elektrik grid. Ia menggunakan tenaga solar bersama bateri, membolehkan peralatan beroperasi secara bebas dan terus mengumpul data.",
+stationCommunityText:"Mengapa maklumat ini penting kepada anda? Maklumat daripada stesen ini membantu kita melihat keadaan tempatan dengan lebih jelas. Ia boleh meningkatkan kesedaran tentang cuaca panas dan membantu komuniti membuat keputusan yang lebih baik untuk kekal selamat."
 }
 };
 
@@ -172,65 +184,73 @@ function renderForecast(data){
   });
 }
 
-function renderTrend(data){
-  const chart=document.querySelector(".big-chart");
-  if(!chart)return;
-
-  const today=new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Kuala_Lumpur"});
-  const times=data.hourly.time;
-  const temps=data.hourly.temperature_2m;
-  const currentHour=new Date().getHours();
-
-  // Build 8 points for 00,03,06,...21 using today's hourly forecast.
-  const points=[];
-  for(let hour=0;hour<24;hour+=3){
-    const idx=times.findIndex(t=>t.startsWith(today+"T"+String(hour).padStart(2,"0")+":00"));
-    if(idx>=0)points.push({hour,temp:Number(temps[idx])});
-  }
-  if(points.length<2)return;
-
-  const values=points.map(p=>p.temp);
-  const min=Math.floor(Math.min(...values)-2);
-  const max=Math.ceil(Math.max(...values)+2);
-  const range=Math.max(1,max-min);
-
+function drawTrend(chartId, points, labels){
+  const chart=document.getElementById(chartId); if(!chart || points.length<2)return;
+  const values=points.map(p=>Number(p.value)).filter(Number.isFinite); if(values.length<2)return;
+  const min=Math.floor(Math.min(...values)-1), max=Math.ceil(Math.max(...values)+1), range=Math.max(1,max-min);
   let svg=chart.querySelector(".trend-svg");
   if(!svg){
     svg=document.createElementNS("http://www.w3.org/2000/svg","svg");
-    svg.classList.add("trend-svg");
-    svg.setAttribute("viewBox","0 0 800 240");
-    svg.setAttribute("preserveAspectRatio","none");
-    chart.appendChild(svg);
+    svg.classList.add("trend-svg"); svg.setAttribute("viewBox","0 0 800 220"); svg.setAttribute("preserveAspectRatio","none"); chart.appendChild(svg);
   }
-
   const coords=points.map((p,i)=>{
-    const x=20+(i/(points.length-1))*755;
-    const y=205-((p.temp-min)/range)*165;
-    return [x,y];
+    const x=18+(i/(points.length-1))*764, y=198-((Number(p.value)-min)/range)*170; return [x,y];
   });
   const line=coords.map(p=>p.join(",")).join(" ");
-  const area=`M ${coords[0][0]} ${coords[0][1]} `+
-    coords.slice(1).map(p=>`L ${p[0]} ${p[1]}`).join(" ")+
-    ` L ${coords.at(-1)[0]} 205 L ${coords[0][0]} 205 Z`;
+  const area=`M ${coords[0][0]} ${coords[0][1]} `+coords.slice(1).map(p=>`L ${p[0]} ${p[1]}`).join(" ")+` L ${coords.at(-1)[0]} 198 L ${coords[0][0]} 198 Z`;
+  svg.innerHTML=`<defs><linearGradient id="fill-${chartId}" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f0a143" stop-opacity=".28"/><stop offset="100%" stop-color="#f0a143" stop-opacity="0"/></linearGradient></defs><path d="${area}" fill="url(#fill-${chartId})"></path><polyline points="${line}" fill="none" stroke="#ed8a24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></polyline>${coords.map((p,i)=>`<circle cx="${p[0]}" cy="${p[1]}" r="4" fill="#fff" stroke="#ed8a24" stroke-width="3"><title>${labels[i]} — ${Number(points[i].value).toFixed(1)}°C</title></circle>`).join("")}`;
+  chart.querySelector('.ylabels').innerHTML=[max,Math.round(max-range*.25),Math.round(max-range*.5),Math.round(max-range*.75),min].map(v=>`<span>${v}°</span>`).join('');
+  chart.querySelector('.xlabels').innerHTML=labels.map(x=>`<span>${x}</span>`).join('');
+}
 
-  svg.innerHTML=`
-    <defs>
-      <linearGradient id="trendFill" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#f0a143" stop-opacity=".28"/>
-        <stop offset="100%" stop-color="#f0a143" stop-opacity="0"/>
-      </linearGradient>
-    </defs>
-    <path d="${area}" fill="url(#trendFill)"></path>
-    <polyline points="${line}" fill="none" stroke="#ed8a24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></polyline>
-    ${coords.map((p,i)=>`<circle cx="${p[0]}" cy="${p[1]}" r="4" fill="#fff" stroke="#ed8a24" stroke-width="3"><title>${points[i].hour}:00 — ${points[i].temp.toFixed(1)}°C</title></circle>`).join("")}
-  `;
+let trendData={today:[],days7:[],days30:[]};
+let activeTrendRange='24';
 
-  const ylabels=chart.querySelector(".ylabels");
-  if(ylabels){
-    ylabels.innerHTML=[max,Math.round(max-range*.25),Math.round(max-range*.5),Math.round(max-range*.75),min]
-      .map(v=>`<span>${v}</span>`).join("");
+function renderTrendRange(range){
+  const chartId='trendChart';
+  if(range==='24'){
+    const points=trendData.today;
+    drawTrend(chartId,points,points.map(p=>p.label));
+  }else if(range==='7'){
+    const points=trendData.days7;
+    drawTrend(chartId,points,points.map(p=>new Date(p.date+'T00:00:00').toLocaleDateString(currentLang==='ms'?'ms-MY':'en-US',{weekday:'short'})));
+  }else{
+    const points=trendData.days30;
+    drawTrend(chartId,points,points.map((p,i)=>i%5===0?new Date(p.date+'T00:00:00').toLocaleDateString(currentLang==='ms'?'ms-MY':'en-US',{day:'numeric',month:'short'}):''));
   }
 }
+
+function renderTrend(data){
+  const today=new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Kuala_Lumpur"});
+  const times=data.hourly.time, temps=data.hourly.temperature_2m;
+  const points=[];
+  for(let hour=0;hour<24;hour+=3){
+    const idx=times.findIndex(t=>t.startsWith(today+"T"+String(hour).padStart(2,"0")+":00"));
+    if(idx>=0)points.push({value:Number(temps[idx]),label:String(hour).padStart(2,'0')+":00"});
+  }
+  trendData.today=points;
+  renderTrendRange(activeTrendRange);
+}
+
+async function loadTrendHistory(){
+  try{
+    const url=`https://archive-api.open-meteo.com/v1/archive?latitude=${LATITUDE}&longitude=${LONGITUDE}&start_date=${new Date(Date.now()-29*86400000).toLocaleDateString('en-CA',{timeZone:'Asia/Kuala_Lumpur'})}&end_date=${new Date(Date.now()-86400000).toLocaleDateString('en-CA',{timeZone:'Asia/Kuala_Lumpur'})}&daily=temperature_2m_mean&timezone=Asia%2FKuala_Lumpur`;
+    const r=await fetch(url,{cache:'no-store'}); if(!r.ok)throw Error('history'); const d=await r.json();
+    const days=d.daily.time.map((date,i)=>({date,value:Number(d.daily.temperature_2m_mean[i])}));
+    trendData.days7=days.slice(-7);
+    trendData.days30=days;
+    if(activeTrendRange!=='24')renderTrendRange(activeTrendRange);
+  }catch(e){ console.warn('History unavailable',e); }
+}
+
+document.addEventListener('click',e=>{
+  const tab=e.target.closest('.trend-tab');
+  if(!tab)return;
+  activeTrendRange=tab.dataset.range;
+  document.querySelectorAll('.trend-tab').forEach(b=>b.classList.toggle('active',b===tab));
+  renderTrendRange(activeTrendRange);
+});
+
 
 async function loadWeather(){
   try{
@@ -240,6 +260,7 @@ async function loadWeather(){
     renderWeather(data.current);
     renderForecast(data);
     renderTrend(data);
+    loadTrendHistory();
 
     const status=document.querySelector(".status-bar .online");
     if(status){

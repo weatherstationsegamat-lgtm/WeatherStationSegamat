@@ -40,8 +40,8 @@
 <nav class="main-nav" aria-label="Main navigation">
   <a class="active" href="index.html">⌂ <span data-t="live">Cuaca Semasa</span></a>
   <a href="information.html">ⓘ <span data-t="info">Maklumat Cuaca</span></a>
-  <a href="station.html">⌖ <span data-t="aboutStation">Tentang Stesen Ini</span></a>
-  <a href="safety.html">♡ <span data-t="healthSafety">Kesihatan &amp; Keselamatan</span></a>
+  <a href="information.html#station">⌖ <span data-t="aboutStation">Tentang Stesen Ini</span></a>
+  <a href="information.html#safety">♡ <span data-t="healthSafety">Kesihatan &amp; Keselamatan</span></a>
   <div class="nav-language" aria-label="Language selection">
     <button type="button" data-lang="ms">BM</button>
     <button type="button" data-lang="en">EN</button>
@@ -69,21 +69,11 @@
  <div class="metric-card"><span>💧</span><small data-t="humidity">HUMIDITY</small><strong id="humidity">--%</strong><em data-t="moderate">Moderate</em></div>
  <div class="metric-card"><span>🌧️</span><small data-t="rain">RAINFALL</small><strong id="rainfall">-- mm</strong><em data-t="today">Today</em></div>
  <div class="metric-card"><span>🌬️</span><small data-t="wind">WIND</small><strong id="wind">-- km/h</strong><em><span data-t="direction">Direction</span> <b id="windDirection">--</b>°</em></div>
- <div class="metric-card station-status-card"><span>📍</span><small data-t="stationCardLabel">STATION</small><strong class="station-online" id="stationCardStatus">ONLINE</strong><em>Sungai Segamat</em></div>
+ <div class="metric-card heat-index"><span id="heatRiskIcon">🌡️</span><small data-t="heatIndex">FEELS-LIKE TEMP</small><strong id="heatIndex">--°C</strong><em><span data-t="heatRisk">Heat risk</span>: <b id="heatRiskValue">--</b></em></div>
 </section>
 
 <section class="content-grid">
- <article class="panel chart-panel trend-card trend-single">
-  <div class="panel-head trend-head">
-    <h2>🌡️ <span data-t="trendTitle">TEMPERATURE TREND</span></h2>
-    <div class="trend-tabs" role="tablist" aria-label="Temperature trend range">
-      <button class="trend-tab active" type="button" data-range="24" data-t="trend24Short">Hari Ini</button>
-      <button class="trend-tab" type="button" data-range="7" data-t="trend7Short">7 Hari</button>
-      <button class="trend-tab" type="button" data-range="30" data-t="trend30Short">30 Hari</button>
-    </div>
-  </div>
-  <div class="big-chart" id="trendChart"><div class="ylabels"></div><div class="area-line"></div><div class="xlabels"></div></div>
-</article>
+ <article class="panel chart-panel"><div class="panel-head"><h2 data-t="trend">TEMPERATURE TREND (TODAY)</h2><select><option>24 Hours</option></select></div><div class="big-chart"><div class="ylabels"><span>40</span><span>35</span><span>30</span><span>25</span><span>20</span></div><div class="area-line"></div><div class="now-label"><b id="chartTemp">--°C</b><small id="chartTime">--</small></div><div class="xlabels"><span>12 AM</span><span>3 AM</span><span>6 AM</span><span>9 AM</span><span>12 PM</span><span>3 PM</span><span>6 PM</span><span>9 PM</span></div></div></article>
 
  <article class="panel safety" id="safety"><div class="panel-head"><h2>🛡️ <span data-t="communitySafety">COMMUNITY HEALTH & SAFETY</span></h2></div><div class="safety-grid">
   <div><i>💧</i><b data-t="hydrate">Stay Hydrated</b><p data-t="hydrateText">Drink plenty of water throughout the day.</p></div>
@@ -95,15 +85,10 @@
 
 <section class="content-grid lower">
  <article class="panel forecast"><div class="panel-head"><h2 data-t="forecast">FORECAST OVERVIEW</h2><span>7 days</span></div><div class="forecast-row" id="forecastRow"></div></article>
- <article class="panel station-card" id="station"><div class="panel-head"><h2>📍 <span data-t="stationInfo">STATION INFORMATION</span></h2></div><p><b data-t="locationLabel">Location</b><br>Sungai Segamat, Johor</p><p><b data-t="refresh">Updates automatically</b><br><span data-t="everyFive">Every minute</span></p><b class="online">● <span data-t="online">Online</span></b></article>
+ <article class="panel station-card" id="station"><div class="panel-head"><h2>📍 <span data-t="stationInfo">STATION INFORMATION</span></h2></div><p><b data-t="locationLabel">Location</b><br>Sungai Segamat, Johor</p><p><b data-t="refresh">Updates automatically</b><br><span data-t="everyFive">Every minute</span></p><b class="online">● <span data-t="online">Online</span></b><small class="data-source">Open-Meteo · live refresh every minute</small></article>
 </section>
 </main>
 
-<footer>
- <div class="footer-brand"><b>HEATCare @ SEACO</b><span data-t="footerText">Heat Risk Awareness and Technology-driven Care for Community Health</span></div>
- <div class="footer-partner funding"><small data-t="fundedBy">The project is funded by:</small><img class="user-logo footer-wellcome" src="wellcome.svg" alt="Wellcome Trust"></div>
- <div class="footer-partner collaboration"><small data-t="collab">In collaboration with:</small><div class="user-logos footer-logo-row"><img class="user-logo footer-heidelberg" src="heidelberg.svg" alt="Heidelberg Institute of Global Health"><span class="footer-kkm">KEMENTERIAN KESIHATAN MALAYSIA</span><img class="user-logo footer-monash-university" src="monash-university.png" alt="Monash University"><img class="user-logo footer-seaco" src="seaco.png" alt="SEACO"></div></div>
- <div class="footer-note"><strong data-t="dataSources">Data Sources</strong><br><span data-t="weatherSource">Weather data: Open-Meteo</span><br><span data-t="updatedEvery">Updated every minute.</span></div>
-</footer>
+<footer><div class="footer-brand"><b>HEATCare @ SEACO</b><span data-t="footerText">Heat Risk Awareness and Technology-driven Care for Community Health</span></div><div class="footer-partner funding"><small data-t="fundedBy">The project is funded by:</small><img class="user-logo footer-wellcome" src="wellcome.svg" alt="Wellcome"></div><div class="footer-partner collaboration"><small data-t="collab">In collaboration with:</small><div class="user-logos"><img class="user-logo footer-heidelberg" src="heidelberg.svg" alt="Heidelberg Institute of Global Health"></div></div><div class="footer-note"><span data-t="dataNote">This website provides real-time weather information for Weather Station Sungai Segamat for community use.</span><br><a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> · <span data-t="updatedEvery">Updated every minute.</span></div></footer>
 <script src="script.js"></script>
 </body></html>
