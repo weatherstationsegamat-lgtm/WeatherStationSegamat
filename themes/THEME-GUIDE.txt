@@ -1,0 +1,29 @@
+HEATCare Theme Guide
+====================
+
+The website is set up so the campaign/event header can be changed in ONE place.
+
+Current theme:
+  merdeka
+
+To switch to a future theme:
+1. Put the new header image in this /themes folder.
+2. Open themes/theme-config.js
+3. Add the theme to HEATCARE_THEMES, for example:
+
+  hariMalaysia: {
+    header: 'themes/hari-malaysia-header.png',
+    label: 'HEATcare Hari Malaysia header'
+  }
+
+4. Change:
+
+  const ACTIVE_THEME = 'merdeka';
+
+   to:
+
+  const ACTIVE_THEME = 'hariMalaysia';
+
+All pages use the same theme automatically.
+
+Do not edit the four HTML pages just to change the campaign header.

@@ -2,7 +2,7 @@ const T={
 en:{
 live:"Live Weather",info:"Weather Information",location:"Sungai Segamat, Johor",liveNow:"LIVE",
 headerMessage:"Monitoring today, protecting tomorrow.",headerSub:"Real-time weather information for a healthier and safer community.",merdekaTheme:"Malaysia MADANI: Kesejahteraan Dinikmati",kkmName:"MINISTRY OF HEALTH MALAYSIA",
-fundedShort:"Funded by",collabShort:"In collaboration with",temperature:"TEMPERATURE",feels:"Feels like",
+fundedShort:"Funded by",collabShort:"In collaboration with",researchBy:"Research and Data Collection by",temperature:"TEMPERATURE",feels:"Feels like",
 humidity:"HUMIDITY",rain:"RAINFALL",wind:"WIND",heatIndex:"FEELS-LIKE TEMP",direction:"Direction",
 partly:"Current",heatAlert:"Heat awareness",heatAlertText:" Stay hydrated and take regular breaks.",
 moderate:"Moderate",today:"Today",hot:"Hot",trend:"TEMPERATURE TREND (TODAY)",trendTitle:"TEMPERATURE TREND",trend24Short:"Today",trend7Short:"7 Days",trend30Short:"30 Days",
@@ -38,7 +38,7 @@ videoLabel:"WATCH & LEARN",videoTitle:"Learn About Our Weather Station",videoInt
 ms:{
 live:"Cuaca Semasa",info:"Maklumat Cuaca",location:"Sungai Segamat, Johor",liveNow:"LANGSUNG",
 headerMessage:"Memantau hari ini, melindungi hari esok.",headerSub:"Maklumat cuaca masa nyata untuk komuniti yang lebih sihat dan selamat.",merdekaTheme:"Malaysia MADANI: Kesejahteraan Dinikmati",kkmName:"KEMENTERIAN KESIHATAN MALAYSIA",
-fundedShort:"Dibiayai oleh",collabShort:"Dengan kerjasama",temperature:"SUHU",feels:"Terasa seperti",
+fundedShort:"Dibiayai oleh",collabShort:"Dengan kerjasama",researchBy:"Penyelidikan dan Pengumpulan Data oleh",temperature:"SUHU",feels:"Terasa seperti",
 humidity:"KELEMBAPAN",rain:"HUJAN",wind:"ANGIN",heatIndex:"SUHU TERASA",direction:"Arah",
 partly:"Semasa",heatAlert:"Kesedaran haba",heatAlertText:" Minum air yang mencukupi dan berehat secara berkala.",
 moderate:"Sederhana",today:"Hari ini",hot:"Panas",trend:"TREND SUHU (HARI INI)",trendTitle:"TREND SUHU",trend24Short:"Hari Ini",trend7Short:"7 Hari",trend30Short:"30 Hari",

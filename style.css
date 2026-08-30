@@ -2429,3 +2429,25 @@ footer{
   .station-video-card{border-radius:15px}
   .video-caption{padding:10px 12px;font-size:.76rem}
 }
+
+
+/* V30 — final polish: accessibility, video loading, and small-screen stability */
+img{max-width:100%;}
+button:focus-visible,a:focus-visible{outline:3px solid rgba(15,108,91,.28);outline-offset:2px;}
+.station-video-card{scroll-margin-top:16px;}
+@media(max-width:700px){
+  .info-main,.info-hero,.station-story,.station-video-section{min-width:0;}
+  .station-video-section p{overflow-wrap:anywhere;}
+  .video-frame{min-height:0;}
+  .video-caption{line-height:1.35;}
+  .footer-brand span{display:block;line-height:1.45;}
+}
+@media(max-width:420px){
+  .station-video-section h2{line-height:1.2;}
+  .station-video-card{width:100%;}
+}
+
+/* THEME SYSTEM — campaign header is controlled from themes/theme-config.js */
+.approved-reference-header{
+  background-image:var(--site-header-image, url("merdeka-main-header.png"))!important;
+}
