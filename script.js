@@ -33,7 +33,7 @@ stationLocationsTitle:"Three locations in Segamat",stationLocationsText:"The pro
 stationFundingTitle:"Supported by Wellcome Trust",stationFundingText:"The weather station work is funded by Wellcome Trust, supporting the collection of local weather information for the HEATCare project and the community.",
 stationSensorsTitle:"Sensors that measure our surroundings",stationSensorsText:"The station uses several sensors to measure weather conditions. The readings are collected automatically so that we can better understand local heat and weather patterns.",
 stationPowerTitle:"Powered by solar energy and batteries",stationPowerText:"The station does not rely on conventional grid electricity. It uses solar power together with batteries, allowing the equipment to operate independently and continue collecting data.",
-stationCommunityText:"Why does this matter to you? The information from these stations helps us see local conditions more clearly. It can support better awareness of hot weather and help communities make informed decisions about staying safe."
+stationCommunityText:"<b>Why does this matter to you?</b> The information from these stations helps us see local conditions more clearly. It can support better awareness of hot weather and help communities make informed decisions about staying safe."
 },
 ms:{
 live:"Cuaca Semasa",info:"Maklumat Cuaca",location:"Sungai Segamat, Johor",liveNow:"LANGSUNG",
@@ -70,7 +70,7 @@ stationLocationsTitle:"Tiga lokasi di Segamat",stationLocationsText:"Projek ini 
 stationFundingTitle:"Dibiayai oleh Wellcome Trust",stationFundingText:"Kerja stesen cuaca ini dibiayai oleh Wellcome Trust bagi menyokong pengumpulan maklumat cuaca tempatan untuk projek HEATCare dan kegunaan komuniti.",
 stationSensorsTitle:"Sensor untuk mengukur keadaan sekeliling",stationSensorsText:"Stesen ini menggunakan beberapa sensor untuk mengukur keadaan cuaca. Bacaan dikumpulkan secara automatik supaya kita dapat memahami corak haba dan cuaca tempatan dengan lebih baik.",
 stationPowerTitle:"Menggunakan tenaga solar dan bateri",stationPowerText:"Stesen ini tidak bergantung pada bekalan elektrik grid. Ia menggunakan tenaga solar bersama bateri, membolehkan peralatan beroperasi secara bebas dan terus mengumpul data.",
-stationCommunityText:"Mengapa maklumat ini penting kepada anda? Maklumat daripada stesen ini membantu kita melihat keadaan tempatan dengan lebih jelas. Ia boleh meningkatkan kesedaran tentang cuaca panas dan membantu komuniti membuat keputusan yang lebih baik untuk kekal selamat."
+stationCommunityText:"<b>Mengapa maklumat ini penting kepada anda?</b> Maklumat daripada stesen ini membantu kita melihat keadaan tempatan dengan lebih jelas. Ia boleh meningkatkan kesedaran tentang cuaca panas dan membantu komuniti membuat keputusan yang lebih baik untuk kekal selamat."
 }
 };
 

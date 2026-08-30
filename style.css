@@ -2185,10 +2185,111 @@ footer{
   .main-weather>.current{grid-column:1/-1!important;}
 }
 
-/* V20 footer visibility fix */
-footer{background:#fff!important;color:#17322e!important;border:1px solid #e1ebe7!important;box-shadow:0 7px 22px rgba(18,59,53,.08)!important;}
-footer .footer-brand b, footer .footer-brand span, footer small, footer .footer-note, footer .footer-note span, footer .footer-note strong{color:#17322e!important;}
-footer .footer-kkm{color:#17322e!important;}
-footer .footer-note a{color:#087564!important;}
-footer .footer-logo-row{background:#fff!important;}
-@media(max-width:620px){footer{border-radius:18px!important;}}
+
+/* V21 — mobile-first header/footer cleanup */
+.site-footer{background:#fff!important;color:#19302d!important;border-top:1px solid #dce7e3!important;box-shadow:0 -2px 12px rgba(16,39,36,.04)!important;}
+.site-footer b{color:#173d37!important}
+.site-footer span{color:#61736e!important}
+.site-footer small{color:#657570!important}
+.site-footer .footer-note{color:#61736e!important}
+.site-footer .footer-note a{color:#0b6659!important}
+.site-footer .footer-kkm{color:#132c28!important}
+.site-footer .footer-logo-row{align-items:center!important}
+.site-footer .research-footer{min-width:0!important}
+
+/* Keep the partner band compact on phones instead of stacking five large blocks. */
+@media(max-width:700px){
+  .approved-reference-header{
+    aspect-ratio:2170/610!important;
+    background-size:cover!important;
+    background-position:center top!important;
+  }
+  .header-partner-strip{
+    display:grid!important;
+    grid-template-columns:90px minmax(0,1fr)!important;
+    grid-template-areas:
+      "fund collab"
+      "kkm research"!important;
+    align-items:center!important;
+    gap:8px 14px!important;
+    min-height:0!important;
+    padding:10px 14px 12px!important;
+    overflow:hidden!important;
+  }
+  .header-partner-strip>.partner-divider{display:none!important}
+  .header-partner-strip>.partner-funder{grid-area:fund!important;align-items:flex-start!important;min-width:0!important}
+  .header-partner-strip>.partner-collab{grid-area:collab!important;align-items:flex-start!important;min-width:0!important}
+  .header-partner-strip>.partner-kkm{grid-area:kkm!important;align-items:center!important;min-width:0!important;padding:2px 0!important}
+  .header-partner-strip>.partner-research{grid-area:research!important;align-items:flex-start!important;min-width:0!important}
+  .header-partner-strip small{font-size:.55rem!important;margin-bottom:4px!important;white-space:nowrap!important}
+  .partner-funder img{width:58px!important;height:36px!important;object-position:left center!important}
+  .partner-collab img{width:145px!important;height:38px!important;object-position:left center!important}
+  .partner-kkm strong{font-size:.62rem!important;line-height:1.18!important;text-align:left!important}
+  .partner-research-logos{display:flex!important;align-items:center!important;gap:7px!important;max-width:100%!important;overflow:hidden!important}
+  .partner-monash{width:105px!important;height:38px!important;object-fit:contain!important}
+  .partner-seaco{width:95px!important;height:34px!important;object-fit:contain!important}
+
+  .header-partner-strip + .main-nav{
+    min-height:50px!important;
+    padding:0 8px!important;
+    gap:3px!important;
+    overflow-x:auto!important;
+    overflow-y:hidden!important;
+    -webkit-overflow-scrolling:touch!important;
+  }
+  .header-partner-strip + .main-nav a{
+    flex:0 0 auto!important;
+    padding:12px 12px!important;
+    font-size:.72rem!important;
+    border-radius:0 0 17px 17px!important;
+  }
+  .nav-language{flex:0 0 auto!important;margin-left:4px!important}
+
+  /* Don't clip the alert or current-weather content. */
+  .main-weather{gap:10px!important;margin-top:10px!important}
+  .main-weather .current{height:auto!important;min-height:0!important;overflow:visible!important;padding:18px 14px 14px!important}
+  .main-weather .current .weather-icon{font-size:3rem!important}
+  .main-weather .current strong{font-size:3rem!important;line-height:1.02!important}
+  .main-weather .heat-alert{font-size:.64rem!important;line-height:1.35!important;padding:8px 10px!important;margin-top:5px!important;white-space:normal!important;overflow:visible!important}
+
+  /* One-column reading cards, with comfortable tap targets. */
+  .main-weather>.metric-card{min-height:112px!important;height:auto!important;padding:13px 10px!important}
+
+  /* Trend and safety remain separate sections on phone; both stay readable. */
+  .content-grid{grid-template-columns:1fr!important;gap:12px!important}
+  .content-grid .trend-single,.content-grid .safety{grid-column:auto!important}
+  .trend-head{gap:10px!important}
+  .trend-tabs{width:100%!important}
+  .trend-tab{min-height:36px!important}
+
+  /* Unified white footer on every page. */
+  .site-footer{
+    grid-template-columns:1fr 1fr!important;
+    padding:22px 14px!important;
+    gap:18px 14px!important;
+    text-align:left!important;
+  }
+  .site-footer .footer-brand{grid-column:1/-1!important}
+  .site-footer .funding{align-items:flex-start!important}
+  .site-footer .collaboration{align-items:flex-start!important}
+  .site-footer .research-footer{grid-column:1/-1!important;align-items:center!important}
+  .site-footer .footer-note{grid-column:1/-1!important;text-align:left!important;border-top:1px solid #e3ece9!important;padding-top:12px!important}
+  .site-footer .footer-logo-row{justify-content:flex-start!important;gap:10px!important;flex-wrap:wrap!important}
+  .site-footer .footer-wellcome{width:82px!important;height:38px!important}
+  .site-footer .footer-heidelberg{width:125px!important;height:42px!important}
+  .site-footer .footer-monash-university{width:132px!important;height:46px!important}
+  .site-footer .footer-seaco{width:125px!important;height:42px!important}
+  .site-footer .footer-kkm{font-size:.62rem!important;max-width:150px!important;text-align:left!important;line-height:1.25!important}
+}
+
+@media(max-width:420px){
+  .header-partner-strip{grid-template-columns:82px minmax(0,1fr)!important;gap:7px 10px!important;padding:9px 11px 10px!important}
+  .partner-collab img{width:132px!important;height:35px!important}
+  .partner-monash{width:92px!important;height:34px!important}
+  .partner-seaco{width:88px!important;height:31px!important}
+  .partner-kkm strong{font-size:.57rem!important}
+  .header-partner-strip small{font-size:.5rem!important}
+  .header-partner-strip + .main-nav a{padding:11px 10px!important;font-size:.68rem!important}
+  .main-weather .current strong{font-size:2.8rem!important}
+  .main-weather .heat-alert{font-size:.61rem!important}
+}
