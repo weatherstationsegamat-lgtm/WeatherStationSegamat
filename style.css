@@ -3431,3 +3431,78 @@ button:focus-visible,a:focus-visible,select:focus-visible{
 @media(max-width:760px){
   .status-bar .visitor-stat{margin-left:0!important}
 }
+
+/* MOBILE POLISH — desktop layout unchanged */
+@media (max-width:700px){
+  body{overflow-x:hidden!important}
+  .approved-reference-header{
+    height:auto!important; min-height:0!important;
+    aspect-ratio:1397/347!important;
+    background-size:100% auto!important;
+    background-position:left top!important;
+    background-repeat:no-repeat!important;
+  }
+  .main-nav,.header-partner-strip + .main-nav{
+    min-height:54px!important;height:54px!important;
+    padding:0 10px!important;gap:2px!important;
+    overflow-x:auto!important;overflow-y:hidden!important;
+    -webkit-overflow-scrolling:touch!important;
+    scrollbar-width:none!important;flex-wrap:nowrap!important;
+  }
+  .main-nav::-webkit-scrollbar{display:none!important}
+  .main-nav a,.header-partner-strip + .main-nav a{
+    flex:0 0 auto!important;white-space:nowrap!important;
+    font-size:.72rem!important;padding:12px 11px!important;
+    min-height:44px!important;display:flex!important;
+    align-items:center!important;justify-content:center!important;
+  }
+  .nav-language{flex:0 0 auto!important;margin-left:auto!important}
+  .status-bar{
+    display:grid!important;grid-template-columns:1fr .8fr 1.45fr!important;
+    align-items:center!important;gap:8px!important;
+    margin:12px 10px!important;padding:11px 10px!important;
+    border-radius:14px!important;min-height:68px!important;
+  }
+  .status-bar>div{min-width:0!important;justify-content:center!important;text-align:center!important}
+  .status-bar>div:first-child,.status-bar .visitor-stat{
+    flex-direction:column!important;gap:3px!important;
+  }
+  .status-bar .visitor-stat{margin-left:0!important}
+  .status-bar .visitor-stat span,.status-bar>div:first-child>span,
+  .status-bar .datetime-group>span{font-size:.56rem!important;line-height:1.15!important}
+  .status-bar .visitor-stat b,.status-bar>div:first-child b{font-size:.68rem!important}
+  .status-bar .datetime-group{
+    display:grid!important;grid-template-columns:auto 1fr!important;
+    gap:2px 5px!important;align-items:center!important;text-align:left!important;
+  }
+  .status-bar #currentDate{
+    min-width:0!important;font-size:.62rem!important;
+    line-height:1.15!important;white-space:normal!important;
+  }
+  .status-bar #updatedTime{font-size:.68rem!important;white-space:nowrap!important}
+  .main-weather{margin:0 10px!important;gap:10px!important}
+  .current{padding:18px 14px 14px!important;border-radius:16px!important}
+  .current .weather-icon{font-size:3rem!important}
+  .current strong{font-size:3rem!important}
+  .current p{font-size:.72rem!important}
+  .current .condition{font-size:.66rem!important;gap:7px!important}
+  .current .heat-alert{font-size:.64rem!important;padding:8px 9px!important}
+  .main-weather>.metric-card{
+    min-height:112px!important;padding:13px 10px!important;border-radius:15px!important
+  }
+  .metric-card>span{font-size:2rem!important}
+  .metric-card strong{font-size:1.45rem!important}
+  .metric-card small{font-size:.58rem!important}
+  .content-grid,.lower{margin-left:10px!important;margin-right:10px!important;gap:10px!important}
+  .panel{padding:14px!important;border-radius:15px!important}
+  .site-footer{padding:22px 14px!important;gap:18px!important}
+  .site-footer .footer-logo-row{justify-content:flex-start!important;gap:10px!important}
+}
+@media (max-width:420px){
+  .main-nav a,.header-partner-strip + .main-nav a{
+    font-size:.68rem!important;padding-left:9px!important;padding-right:9px!important
+  }
+  .status-bar{grid-template-columns:.95fr .75fr 1.5fr!important;padding-left:8px!important;padding-right:8px!important}
+  .status-bar #currentDate{font-size:.57rem!important}
+  .status-bar #updatedTime{font-size:.62rem!important}
+}
