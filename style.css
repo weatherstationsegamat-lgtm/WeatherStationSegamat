@@ -1,14 +1,14 @@
-*{box-sizing:border-box}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:#f4f8f7;color:#102724}.site-header{min-height:112px;display:flex;align-items:center;justify-content:space-between;gap:22px;padding:14px 3.5%;background:linear-gradient(110deg,#fff 45%,#eef7f3);border-bottom:1px solid #dfe9e5}.brand-area{display:flex;align-items:center;gap:13px;min-width:350px}.logo{width:102px;height:86px;object-fit:contain}.station-title{display:flex;flex-direction:column;gap:7px}.station-title b{font-size:1.7rem}.station-title span{font-size:.92rem;color:#536863;font-weight:650}.live-badge{background:#e5f6ef;color:#157766;border-radius:18px;padding:7px 11px;font-size:.72rem;font-weight:800}.live-badge i{display:inline-block;width:7px;height:7px;background:#22a67f;border-radius:50%;margin-right:5px}.header-centre{display:flex;flex-direction:column;text-align:center;max-width:300px}.header-centre b{font-size:1rem;color:#176d61}.header-centre span{font-size:.72rem;color:#74837f;margin-top:5px;line-height:1.4}.sponsor-area{display:flex;align-items:center;gap:18px}.sponsor-area>div>small,footer small{display:block;font-size:.63rem;color:#6e7c78;margin-bottom:4px}.sponsor-area img{max-width:88px;max-height:30px;object-fit:contain}.mini-logos{display:flex;align-items:center;gap:9px}.mini-logos img{max-width:88px!important;max-height:30px!important}.lang{white-space:nowrap}.lang button{border:1px solid #cbd9d5;background:#fff;border-radius:20px;padding:8px 11px;margin-left:3px;cursor:pointer}.lang button.active{background:#123b35;color:#fff}.main-nav{display:flex;gap:6px;background:#064f45;padding:8px 3.5%}.main-nav a{color:#e9f5f1;text-decoration:none;padding:11px 15px;border-radius:10px;font-size:.82rem;font-weight:700}.main-nav a.active{background:#087564}.status-bar{background:#fff;border-radius:14px;box-shadow:0 5px 20px #123b350d;display:flex;justify-content:flex-end;gap:45px;padding:13px 20px;margin-bottom:14px}.status-bar div{display:flex;gap:10px;align-items:center}.status-bar span{font-size:.68rem;color:#73827e}.status-bar b{font-size:.75rem}.online{color:#1a8b6f}.main-weather{display:grid;grid-template-columns:2.25fr repeat(4,1fr);gap:10px}.current,.metric-card{background:#fff;border:1px solid #e1ebe7;border-radius:20px;box-shadow:0 7px 22px #123b350d}.current{padding:25px 25px 18px;display:grid;grid-template-columns:auto 1fr;gap:8px 18px;align-items:center}.weather-icon{font-size:4.2rem;grid-row:span 2}.overline{font-size:.65rem;letter-spacing:.13em;color:#247b6e;font-weight:800}.current strong{display:block;font-size:4rem;letter-spacing:-.07em;line-height:1}.current p{margin:5px 0 0;color:#53635e}.current p b{color:#e33c35}.condition{grid-column:2;display:flex;gap:10px;font-size:.77rem;color:#5c6d68}.condition b{color:#e24a3f}.divider{color:#bdc9c5}.heat-alert{grid-column:1/-1;background:#fff4dc;border:1px solid #f1dfb5;border-radius:10px;padding:9px 11px;font-size:.7rem;color:#775616;margin-top:3px}.metric-card{padding:18px 15px;display:flex;flex-direction:column;justify-content:center;min-height:185px}.metric-card>span{font-size:1.8rem}.metric-card small{font-size:.65rem;letter-spacing:.1em;font-weight:800;color:#657571;margin-top:9px}.metric-card strong{font-size:1.65rem;margin-top:7px}.metric-card em{font-style:normal;font-size:.68rem;color:#237b6f;margin-top:4px}.heat-index strong{color:#d55b2b}.content-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:14px;margin-top:14px}.panel{background:#fff;border:1px solid #e0eae7;border-radius:19px;padding:18px;box-shadow:0 7px 22px #123b350d}.panel-head{display:flex;justify-content:space-between;align-items:center}.panel-head h2{font-size:.86rem;margin:0;letter-spacing:.04em}.panel-head select{border:1px solid #d5e1dd;border-radius:14px;padding:5px 9px;background:#fff}.big-chart{height:260px;position:relative;margin-top:15px;border-left:1px solid #dfe8e5;border-bottom:1px solid #dfe8e5;background:repeating-linear-gradient(0deg,#eef3f1 0,#eef3f1 1px,transparent 1px,transparent 48px)}.ylabels{position:absolute;left:-24px;top:0;height:210px;display:flex;flex-direction:column;justify-content:space-between;color:#8a9894;font-size:.65rem}.xlabels{position:absolute;left:0;right:0;bottom:-18px;display:flex;justify-content:space-between;color:#8a9894;font-size:.62rem}.area-line{position:absolute;left:4%;right:3%;top:54px;height:150px;background:linear-gradient(180deg,#f7a43d30,transparent);clip-path:polygon(0 72%,4% 76%,10% 78%,18% 78%,25% 68%,32% 53%,40% 40%,48% 28%,56% 18%,64% 21%,72% 14%,80% 30%,88% 44%,96% 52%,100% 55%,100% 100%,0 100%);border-bottom:3px solid #ed8a24}.now-label{position:absolute;left:48%;top:42px;background:#fff;border:1px solid #f28d2b;border-radius:9px;padding:6px 9px;color:#e87918;box-shadow:0 4px 10px #e8791820}.now-label b{display:block;font-size:.9rem}.now-label small{font-size:.6rem;color:#667}.safety{background:#fff}.safety h2{color:#147664}.safety-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:16px}.safety-grid>div{padding:12px 9px;border-radius:14px;text-align:center}.safety-grid>div:nth-child(1){background:#eef8ff}.safety-grid>div:nth-child(2){background:#eef9f0}.safety-grid>div:nth-child(3){background:#fff7e7}.safety-grid>div:nth-child(4){background:#fff0f0}.safety-grid i{font-style:normal;font-size:1.8rem;display:block}.safety-grid b{display:block;font-size:.73rem;margin-top:6px}.safety-grid p{font-size:.62rem;line-height:1.45;color:#687772}.info-strip{margin-top:12px;padding:9px 11px;background:#e9f7f3;border-radius:10px;font-size:.66rem;color:#41615a;display:flex;gap:7px;align-items:center}.info-strip a{margin-left:auto;color:#167568;border:1px solid #8ac4b7;border-radius:14px;padding:5px 8px;text-decoration:none}.lower{grid-template-columns:2fr 1fr}.forecast-row{display:grid;grid-template-columns:repeat(5,1fr);margin-top:14px}.forecast-day{text-align:center;border-left:1px solid #e4ece9;padding:6px}.forecast-day:first-child{border:0}.forecast-day span{display:block;font-size:1.8rem;margin:8px 0}.forecast-day strong{display:block;font-size:.8rem}.forecast-day small{font-size:.62rem;color:#74827e}.today{background:#f0f8f5;border-radius:12px}.station-card p{font-size:.76rem;line-height:1.5;color:#667671}.station-card b{font-size:.72rem}footer{margin-top:18px;background:#064f45;color:#e8f4f1;padding:22px 4%;display:grid;grid-template-columns:1.2fr .8fr 1fr 1.4fr;gap:20px;align-items:center;font-size:.7rem}footer b{display:block;font-size:.82rem}footer span{display:block;color:#b8d4cd;margin-top:5px;line-height:1.45}footer img{max-width:90px;max-height:32px;object-fit:contain}.footer-note{color:#b8d4cd;line-height:1.6}.footer-note a{color:#fff}@media(max-width:1050px){.site-header{flex-wrap:wrap}.header-centre{order:3;width:100%;max-width:none}.sponsor-area{margin-left:auto}.main-weather{grid-template-columns:1.8fr repeat(2,1fr)}.content-grid{grid-template-columns:1fr}.lower{grid-template-columns:1fr}}@media(max-width:700px){.site-header{align-items:flex-start}.brand-area{min-width:0}.logo{width:82px;height:72px}.station-title b{font-size:1.3rem}.sponsor-area{width:100%;justify-content:space-between}.main-weather{grid-template-columns:1fr 1fr}.current{grid-column:1/-1}.safety-grid{grid-template-columns:1fr 1fr}.forecast-row{overflow-x:auto}.forecast-day{min-width:105px}footer{grid-template-columns:1fr 1fr}.status-bar{justify-content:space-between;gap:10px}.main-nav{overflow-x:auto;white-space:nowrap}}@media(max-width:450px){.main-weather{grid-template-columns:1fr}.current{grid-column:auto}.current strong{font-size:3.3rem}.header-centre{display:none}.lang button{padding:7px 8px}.safety-grid{grid-template-columns:1fr 1fr}footer{grid-template-columns:1fr}}
+*{box-sizing:border-box}body{margin:0;font-family:"Helvetica Neue","Arial Narrow","Roboto",Arial,sans-serif;background:#f4f8f7;color:#102724}.site-header{min-height:112px;display:flex;align-items:center;justify-content:space-between;gap:22px;padding:14px 3.5%;background:linear-gradient(110deg,#fff 45%,#eef7f3);border-bottom:1px solid #dfe9e5}.brand-area{display:flex;align-items:center;gap:13px;min-width:350px}.logo{width:102px;height:86px;object-fit:contain}.station-title{display:flex;flex-direction:column;gap:7px}.station-title b{font-size:1.7rem}.station-title span{font-size:.92rem;color:#526369;font-weight:650}.live-badge{background:#e5f5f6;color:#135779;border-radius:18px;padding:7px 11px;font-size:.72rem;font-weight:800}.live-badge i{display:inline-block;width:7px;height:7px;background:#1f8ca9;border-radius:50%;margin-right:5px}.header-centre{display:flex;flex-direction:column;text-align:center;max-width:300px}.header-centre b{font-size:1rem;color:#154e6f}.header-centre span{font-size:.72rem;color:#74837f;margin-top:5px;line-height:1.4}.sponsor-area{display:flex;align-items:center;gap:18px}.sponsor-area>div>small,footer small{display:block;font-size:.63rem;color:#6e7c78;margin-bottom:4px}.sponsor-area img{max-width:88px;max-height:30px;object-fit:contain}.mini-logos{display:flex;align-items:center;gap:9px}.mini-logos img{max-width:88px!important;max-height:30px!important}.lang{white-space:nowrap}.lang button{border:1px solid #cbd9d5;background:#fff;border-radius:20px;padding:8px 11px;margin-left:3px;cursor:pointer}.lang button.active{background:#0a2e6d;color:#fff}.main-nav{display:flex;gap:6px;background:#043451;padding:8px 3.5%}.main-nav a{color:#e9f5f1;text-decoration:none;padding:11px 15px;border-radius:10px;font-size:.82rem;font-weight:700}.main-nav a.active{background:#054f78}.status-bar{background:#fff;border-radius:14px;box-shadow:0 5px 20px #0a2e6d0d;display:flex;justify-content:flex-end;gap:45px;padding:13px 20px;margin-bottom:14px}.status-bar div{display:flex;gap:10px;align-items:center}.status-bar span{font-size:.68rem;color:#73827e}.status-bar b{font-size:.75rem}.online{color:#006dae}.main-weather{display:grid;grid-template-columns:2.25fr repeat(4,1fr);gap:10px}.current,.metric-card{background:#fff;border:1px solid #e1ebe7;border-radius:20px;box-shadow:0 7px 22px #0a2e6d0d}.current{padding:25px 25px 18px;display:grid;grid-template-columns:auto 1fr;gap:8px 18px;align-items:center}.weather-icon{font-size:4.2rem;grid-row:span 2}.overline{font-size:.65rem;letter-spacing:.13em;color:#225c7d;font-weight:800}.current strong{display:block;font-size:4rem;letter-spacing:-.07em;line-height:1}.current p{margin:5px 0 0;color:#536063}.current p b{color:#e33c35}.condition{grid-column:2;display:flex;gap:10px;font-size:.77rem;color:#5c6a6d}.condition b{color:#e24a3f}.divider{color:#bdc9c5}.heat-alert{grid-column:1/-1;background:#fff4dc;border:1px solid #f1dfb5;border-radius:10px;padding:9px 11px;font-size:.7rem;color:#775616;margin-top:3px}.metric-card{padding:18px 15px;display:flex;flex-direction:column;justify-content:center;min-height:185px}.metric-card>span{font-size:1.8rem}.metric-card small{font-size:.65rem;letter-spacing:.1em;font-weight:800;color:#657175;margin-top:9px}.metric-card strong{font-size:1.65rem;margin-top:7px}.metric-card em{font-style:normal;font-size:.68rem;color:#215b7d;margin-top:4px}.heat-index strong{color:#d55b2b}.content-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:14px;margin-top:14px}.panel{background:#fff;border:1px solid #e0eae7;border-radius:19px;padding:18px;box-shadow:0 7px 22px #0a2e6d0d}.panel-head{display:flex;justify-content:space-between;align-items:center}.panel-head h2{font-size:.86rem;margin:0;letter-spacing:.04em}.panel-head select{border:1px solid #d5e1dd;border-radius:14px;padding:5px 9px;background:#fff}.big-chart{height:260px;position:relative;margin-top:15px;border-left:1px solid #dfe8e5;border-bottom:1px solid #dfe8e5;background:repeating-linear-gradient(0deg,#eef3f1 0,#eef3f1 1px,transparent 1px,transparent 48px)}.ylabels{position:absolute;left:-24px;top:0;height:210px;display:flex;flex-direction:column;justify-content:space-between;color:#8a9894;font-size:.65rem}.xlabels{position:absolute;left:0;right:0;bottom:-18px;display:flex;justify-content:space-between;color:#8a9894;font-size:.62rem}.area-line{position:absolute;left:4%;right:3%;top:54px;height:150px;background:linear-gradient(180deg,#f7a43d30,transparent);clip-path:polygon(0 72%,4% 76%,10% 78%,18% 78%,25% 68%,32% 53%,40% 40%,48% 28%,56% 18%,64% 21%,72% 14%,80% 30%,88% 44%,96% 52%,100% 55%,100% 100%,0 100%);border-bottom:3px solid #006DAE}.now-label{position:absolute;left:48%;top:42px;background:#fff;border:1px solid #f28d2b;border-radius:9px;padding:6px 9px;color:#e87918;box-shadow:0 4px 10px #e8791820}.now-label b{display:block;font-size:.9rem}.now-label small{font-size:.6rem;color:#667}.safety{background:#fff}.safety h2{color:#125778}.safety-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:16px}.safety-grid>div{padding:12px 9px;border-radius:14px;text-align:center}.safety-grid>div:nth-child(1){background:#eaf3fb}.safety-grid>div:nth-child(2){background:#eaf3fb}.safety-grid>div:nth-child(3){background:#eaf3fb}.safety-grid>div:nth-child(4){background:#eaf3fb}.safety-grid i{font-style:normal;font-size:1.8rem;display:block}.safety-grid b{display:block;font-size:.73rem;margin-top:6px}.safety-grid p{font-size:.62rem;line-height:1.45;color:#687772}.info-strip{margin-top:12px;padding:9px 11px;background:#eaf3fb;border-radius:10px;font-size:.66rem;color:#405862;display:flex;gap:7px;align-items:center}.info-strip a{margin-left:auto;color:#145277;border:1px solid #89b4c5;border-radius:14px;padding:5px 8px;text-decoration:none}.lower{grid-template-columns:2fr 1fr}.forecast-row{display:grid;grid-template-columns:repeat(5,1fr);margin-top:14px}.forecast-day{text-align:center;border-left:1px solid #e4ece9;padding:6px}.forecast-day:first-child{border:0}.forecast-day span{display:block;font-size:1.8rem;margin:8px 0}.forecast-day strong{display:block;font-size:.8rem}.forecast-day small{font-size:.62rem;color:#74827e}.today{background:#eaf3fb;border-radius:12px}.station-card p{font-size:.76rem;line-height:1.5;color:#667376}.station-card b{font-size:.72rem}footer{margin-top:18px;background:#043451;color:#e8f4f1;padding:22px 4%;display:grid;grid-template-columns:1.2fr .8fr 1fr 1.4fr;gap:20px;align-items:center;font-size:.7rem}footer b{display:block;font-size:.82rem}footer span{display:block;color:#b7cdd5;margin-top:5px;line-height:1.45}footer img{max-width:90px;max-height:32px;object-fit:contain}.footer-note{color:#b7cdd5;line-height:1.6}.footer-note a{color:#fff}@media(max-width:1050px){.site-header{flex-wrap:wrap}.header-centre{order:3;width:100%;max-width:none}.sponsor-area{margin-left:auto}.main-weather{grid-template-columns:1.8fr repeat(2,1fr)}.content-grid{grid-template-columns:1fr}.lower{grid-template-columns:1fr}}@media(max-width:700px){.site-header{align-items:flex-start}.brand-area{min-width:0}.logo{width:82px;height:72px}.station-title b{font-size:1.3rem}.sponsor-area{width:100%;justify-content:space-between}.main-weather{grid-template-columns:1fr 1fr}.current{grid-column:1/-1}.safety-grid{grid-template-columns:1fr 1fr}.forecast-row{overflow-x:auto}.forecast-day{min-width:105px}footer{grid-template-columns:1fr 1fr}.status-bar{justify-content:space-between;gap:10px}.main-nav{overflow-x:auto;white-space:nowrap}}@media(max-width:450px){.main-weather{grid-template-columns:1fr}.current{grid-column:auto}.current strong{font-size:3.3rem}.header-centre{display:none}.lang button{padding:7px 8px}.safety-grid{grid-template-columns:1fr 1fr}footer{grid-template-columns:1fr}}
 
 html,body{width:100%;max-width:100%;overflow-x:hidden}
 main,.site-header,.main-nav,footer{max-width:100%;min-width:0}
 .main-weather,.content-grid,.lower{min-width:0}
 .main-weather>*,.content-grid>*{min-width:0}
 .partner-block{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
-.partner-name{font-size:.88rem;font-weight:800;letter-spacing:.01em;color:#153d37}
+.partner-name{font-size:.88rem;font-weight:800;letter-spacing:.01em;color:#142f3e}
 .partner-name.wellcome{font-size:1.05rem;color:#222}
 .partner-names{display:flex;align-items:center;gap:10px}
-.partner-names span{font-weight:800;font-size:.76rem;color:#234c45;white-space:nowrap}
+.partner-names span{font-weight:800;font-size:.76rem;color:#223e4d;white-space:nowrap}
 .footer-partner .partner-name{display:block;margin-top:4px}
 footer .partner-names{margin-top:4px}
 .current{overflow:hidden}
@@ -72,39 +72,39 @@ footer .user-logos{justify-content:flex-start}
 .monash-university-logo{width:112px;height:44px}
 .partner-block small{letter-spacing:.02em}
 
-.station-story{background:#fff;border:1px solid #dfe9e6;border-radius:24px;padding:28px 30px;margin-bottom:18px;box-shadow:0 8px 24px #123b350a}
+.station-story{background:#fff;border:1px solid #dfe9e6;border-radius:24px;padding:28px 30px;margin-bottom:18px;box-shadow:0 8px 24px #0a2e6d0a}
 .station-story-head{display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid #e5ecea;padding-bottom:20px;margin-bottom:18px}
-.station-story-head h2{font-size:1.7rem;margin:5px 0 7px;color:#092f72}.station-story-head p{margin:0;color:#64746f;line-height:1.55;max-width:780px}
+.station-story-head h2{font-size:1.7rem;margin:5px 0 7px;color:#092f72}.station-story-head p{margin:0;color:#647174;line-height:1.55;max-width:780px}
 .station-badge{min-width:76px;height:76px;border-radius:22px;background:#eef6ff;display:grid;place-items:center;font-size:2rem}
 .station-story-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .station-story-grid article{background:#f8fbfa;border:1px solid #e3ece9;border-radius:17px;padding:19px 20px}
-.station-number{font-size:.67rem;font-weight:900;letter-spacing:.1em;color:#e5232b;margin-bottom:7px}
-.station-story-grid h3{font-size:1.02rem;color:#092f72;margin:0 0 7px}.station-story-grid p{font-size:.82rem;color:#667772;line-height:1.6;margin:0}
+.station-number{font-size:.67rem;font-weight:900;letter-spacing:.1em;color:#0a2e6d;margin-bottom:7px}
+.station-story-grid h3{font-size:1.02rem;color:#092f72;margin:0 0 7px}.station-story-grid p{font-size:.82rem;color:#667477;line-height:1.6;margin:0}
 .station-community-note{display:flex;align-items:flex-start;gap:12px;background:#fff7df;border:1px solid #f1df9d;border-radius:16px;padding:15px 17px;margin-top:16px}.station-community-note span{font-size:1.35rem}.station-community-note p{margin:0;color:#715b2c;font-size:.8rem;line-height:1.55}.station-community-note b{color:#5c461e}
 @media(max-width:700px){.station-story{padding:22px 18px}.station-story-head{align-items:flex-start}.station-badge{min-width:58px;height:58px;font-size:1.5rem}.station-story-grid{grid-template-columns:1fr}}
 
 .info-main{max-width:1180px;margin:auto;padding:38px 24px 60px}
 .info-hero{padding:8px 0 26px}
 .info-hero h1{font-size:2.65rem;letter-spacing:-.045em;margin:7px 0 8px}
-.info-hero p{font-size:1.02rem;color:#63736e;margin:0;max-width:720px}
-.info-banner{display:flex;align-items:center;gap:20px;background:linear-gradient(115deg,#e5f5f0,#fff);border:1px solid #d6e9e3;border-radius:24px;padding:25px 30px;margin-bottom:18px;box-shadow:0 10px 28px #123b3509}
-.banner-icon{width:66px;height:66px;border-radius:18px;background:#fff;display:grid;place-items:center;font-size:2.2rem;box-shadow:0 6px 18px #123b3510}
-.info-banner h2{font-size:1.45rem;margin:4px 0}.info-banner p{margin:0;color:#667772}
+.info-hero p{font-size:1.02rem;color:#637073;margin:0;max-width:720px}
+.info-banner{display:flex;align-items:center;gap:20px;background:linear-gradient(115deg,#e5f2f5,#fff);border:1px solid #d6e6e9;border-radius:24px;padding:25px 30px;margin-bottom:18px;box-shadow:0 10px 28px #0a2e6d09}
+.banner-icon{width:66px;height:66px;border-radius:18px;background:#fff;display:grid;place-items:center;font-size:2.2rem;box-shadow:0 6px 18px #0a2e6d10}
+.info-banner h2{font-size:1.45rem;margin:4px 0}.info-banner p{margin:0;color:#667477}
 .info-cards{display:grid;grid-template-columns:1fr 1fr;gap:17px}
-.info-card{background:#fff;border:1px solid #e0eae7;border-radius:22px;padding:25px;box-shadow:0 8px 24px #123b350a;position:relative;overflow:hidden}
-.info-card:before{content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:#1b8375}
+.info-card{background:#fff;border:1px solid #e0eae7;border-radius:22px;padding:25px;box-shadow:0 8px 24px #0a2e6d0a;position:relative;overflow:hidden}
+.info-card:before{content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:#185d86}
 .info-icon{font-size:2.15rem;width:54px;height:54px;display:grid;place-items:center;border-radius:15px;background:#eef7f4}
-.info-card-tag{font-size:.61rem;letter-spacing:.13em;font-weight:800;color:#238173;margin-top:17px}
-.info-card h2{font-size:1.4rem;margin:4px 0 8px}.info-card p{color:#63736e;line-height:1.65;margin:0}
-.why{display:flex;gap:8px;margin-top:17px;padding:12px 13px;border-radius:12px;background:#f3f8f6;font-size:.72rem;color:#61726d;line-height:1.45}
-.why b{color:#1b7165;white-space:nowrap}
-.heat-guide{display:flex;justify-content:space-between;gap:30px;align-items:center;margin-top:18px;background:#0a5a4f;color:#fff;border-radius:22px;padding:25px 28px}
-.heat-guide .eyebrow{color:#a8ddd3}.heat-guide h2{margin:4px 0;font-size:1.4rem}.heat-guide p{margin:0;color:#cce4df;max-width:650px;line-height:1.55}
+.info-card-tag{font-size:.61rem;letter-spacing:.13em;font-weight:800;color:#216083;margin-top:17px}
+.info-card h2{font-size:1.4rem;margin:4px 0 8px}.info-card p{color:#637073;line-height:1.65;margin:0}
+.why{display:flex;gap:8px;margin-top:17px;padding:12px 13px;border-radius:12px;background:#f3f8f6;font-size:.72rem;color:#616f72;line-height:1.45}
+.why b{color:#195273;white-space:nowrap}
+.heat-guide{display:flex;justify-content:space-between;gap:30px;align-items:center;margin-top:18px;background:#083d5c;color:#fff;border-radius:22px;padding:25px 28px}
+.heat-guide .eyebrow{color:#a7ccde}.heat-guide h2{margin:4px 0;font-size:1.4rem}.heat-guide p{margin:0;color:#cbdde5;max-width:650px;line-height:1.55}
 .guide-points{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}.guide-points span{background:#ffffff12;border:1px solid #ffffff25;border-radius:15px;padding:10px 12px;font-size:.72rem;white-space:nowrap}
-.history-panel{background:#fff;border:1px solid #e0eae7;border-radius:22px;padding:24px;margin-top:18px;box-shadow:0 8px 24px #123b350a}
+.history-panel{background:#fff;border:1px solid #e0eae7;border-radius:22px;padding:24px;margin-top:18px;box-shadow:0 8px 24px #0a2e6d0a}
 .history-note{font-size:.68rem;color:#879691;border:1px solid #dce7e3;padding:6px 10px;border-radius:14px}
 .info-chart{height:220px;margin-top:18px;border-radius:15px;background:repeating-linear-gradient(0deg,#eef3f1 0,#eef3f1 1px,transparent 1px,transparent 44px);position:relative;overflow:hidden;border-left:1px solid #e1eae7;border-bottom:1px solid #e1eae7}
-.info-chart-line{position:absolute;left:3%;right:3%;bottom:38px;height:120px;background:linear-gradient(180deg,#f0a14328,transparent);clip-path:polygon(0 74%,8% 70%,17% 72%,26% 63%,36% 54%,45% 42%,55% 28%,64% 33%,73% 18%,82% 27%,91% 44%,100% 36%,100% 100%,0 100%);border-top:3px solid #ed8a24}
+.info-chart-line{position:absolute;left:3%;right:3%;bottom:38px;height:120px;background:linear-gradient(180deg,#006DAE28,transparent);clip-path:polygon(0 74%,8% 70%,17% 72%,26% 63%,36% 54%,45% 42%,55% 28%,64% 33%,73% 18%,82% 27%,91% 44%,100% 36%,100% 100%,0 100%);border-top:3px solid #006DAE}
 .info-chart .chart-labels{position:absolute;left:3%;right:3%;bottom:9px;display:flex;justify-content:space-between;color:#8b9995;font-size:.66rem}
 .muted{color:#8a9894;font-size:.76rem}
 @media(max-width:900px){.sponsor-area{width:100%;justify-content:flex-end}.info-cards{grid-template-columns:1fr}.heat-guide{flex-direction:column;align-items:flex-start}.guide-points{justify-content:flex-start}}
@@ -127,14 +127,14 @@ footer .user-logos{justify-content:flex-start}
 /* Live data / forecast upgrades */
 .forecast-row{min-width:0}
 .forecast-day{position:relative}
-.forecast-day em{display:block;font-style:normal;font-size:.58rem;color:#237b6f;margin-top:5px}
+.forecast-day em{display:block;font-style:normal;font-size:.58rem;color:#215b7d;margin-top:5px}
 .trend-svg{position:absolute;inset:0;width:100%;height:220px;overflow:visible;pointer-events:auto}
 .big-chart .area-line{display:none}
 .big-chart .now-label{z-index:3}
 .metric-card.heat-index[data-risk="very-high"] strong{color:#c63b2f}
 .metric-card.heat-index[data-risk="high"] strong{color:#d55b2b}
 .metric-card.heat-index[data-risk="moderate"] strong{color:#c98520}
-.metric-card.heat-index[data-risk="low"] strong{color:#237b6f}
+.metric-card.heat-index[data-risk="low"] strong{color:#215b7d}
 .status-bar .online.offline{color:#c83c35}
 .data-source{display:block;color:#84928e;font-size:.62rem;margin-top:8px;font-weight:600}
 @media(max-width:700px){
@@ -264,7 +264,7 @@ footer{padding-top:26px;padding-bottom:26px}
   font-weight:400;
 }
 .v4-wordmark em{
-  color:#17685d;
+  color:#154a6a;
   font-size:.95rem;
   font-style:normal;
   font-weight:750;
@@ -275,7 +275,7 @@ footer{padding-top:26px;padding-bottom:26px}
   max-width:610px;
   margin-top:10px;
   color:#2f3c39;
-  font-family:"Segoe Print","Bradley Hand","Comic Sans MS",cursive;
+  font-family:"Helvetica Neue","Arial Narrow","Roboto Condensed",Arial,sans-serif;
   font-style:italic;
   font-size:.84rem;
   line-height:1.55;
@@ -293,7 +293,7 @@ footer{padding-top:26px;padding-bottom:26px}
   gap:9px;
 }
 .v4-station-name strong{
-  color:#183d38;
+  color:#172f3e;
   font-size:1.12rem;
 }
 .v4-pin{
@@ -304,7 +304,7 @@ footer{padding-top:26px;padding-bottom:26px}
 .v4-location{
   margin-left:28px;
   margin-top:4px;
-  color:#5a6a65;
+  color:#5a676a;
   font-size:.76rem;
   font-weight:650;
 }
@@ -323,7 +323,7 @@ footer{padding-top:26px;padding-bottom:26px}
 }
 .v4-message strong{
   display:block;
-  color:#146a5d;
+  color:#124c6c;
   font-size:1rem;
   line-height:1.35;
 }
@@ -331,7 +331,7 @@ footer{padding-top:26px;padding-bottom:26px}
   display:block;
   max-width:280px;
   margin:9px auto 0;
-  color:#697a75;
+  color:#69777a;
   font-size:.68rem;
   line-height:1.5;
 }
@@ -355,7 +355,7 @@ footer{padding-top:26px;padding-bottom:26px}
 .v4-funder small,
 .v4-collaboration small{
   display:block;
-  color:#6b7b76;
+  color:#6b787b;
   font-size:.57rem;
   margin-bottom:7px;
   white-space:nowrap;
@@ -736,7 +736,7 @@ footer{padding-top:26px;padding-bottom:26px}
   background:#d7e4e0;
 }
 .v4-wordmark{
-  font-family:Arial,Helvetica,sans-serif;
+  font-family:"Helvetica Neue","Arial Narrow","Roboto",Arial,sans-serif;
   letter-spacing:-.055em;
 }
 .v4-wordmark-red{
@@ -748,17 +748,17 @@ footer{padding-top:26px;padding-bottom:26px}
   font-weight:400;
 }
 .v4-wordmark em{
-  font-family:Arial,Helvetica,sans-serif;
+  font-family:"Helvetica Neue","Arial Narrow","Roboto",Arial,sans-serif;
   font-size:.83rem;
   font-weight:700;
   letter-spacing:0;
-  color:#14685d;
+  color:#12496a;
   margin-left:8px;
 }
 .v4-tagline{
   max-width:570px;
   margin-top:8px;
-  font-family:"Segoe Print","Bradley Hand","Comic Sans MS",cursive;
+  font-family:"Helvetica Neue","Arial Narrow","Roboto Condensed",Arial,sans-serif;
   font-size:.75rem;
   line-height:1.55;
   color:#263b37;
@@ -771,7 +771,7 @@ footer{padding-top:26px;padding-bottom:26px}
 }
 .v4-station-name strong{
   font-size:1.06rem;
-  color:#173d38;
+  color:#162f3e;
 }
 .v4-pin{
   font-size:1.32rem;
@@ -780,7 +780,7 @@ footer{padding-top:26px;padding-bottom:26px}
   margin-left:28px;
   margin-top:4px;
   font-size:.69rem;
-  color:#526761;
+  color:#516368;
 }
 
 /* Center mission */
@@ -789,7 +789,7 @@ footer{padding-top:26px;padding-bottom:26px}
   padding:0 14px;
 }
 .v4-message strong{
-  color:#09685d;
+  color:#07436a;
   font-size:1rem;
   line-height:1.38;
 }
@@ -799,14 +799,14 @@ footer{padding-top:26px;padding-bottom:26px}
   width:72px;
   height:2px;
   margin:12px auto 0;
-  background:#13806f;
+  background:#105a83;
   border-radius:2px;
 }
 .v4-message span{
   max-width:270px;
   margin-top:12px;
   font-size:.66rem;
-  color:#64746f;
+  color:#647174;
 }
 
 /* Sponsors: all logos aligned in one horizontal row */
@@ -1273,7 +1273,7 @@ footer{padding-top:26px;padding-bottom:26px}
   max-width:470px!important;
   margin:0!important;
   color:#173e78!important;
-  font-family:"Segoe Print","Bradley Hand","Comic Sans MS",cursive!important;
+  font-family:"Helvetica Neue","Arial Narrow","Roboto Condensed",Arial,sans-serif!important;
   font-size:1.12rem!important;
   line-height:1.45!important;
   font-weight:700!important;
@@ -1296,7 +1296,7 @@ footer{padding-top:26px;padding-bottom:26px}
   font-weight:650!important;
 }
 .v4-station .live-badge{
-  background:#19a75b!important;
+  background:#15aba7!important;
   color:#fff!important;
   border-radius:8px!important;
   padding:7px 11px!important;
@@ -1325,7 +1325,7 @@ footer{padding-top:26px;padding-bottom:26px}
   box-shadow:0 6px 16px rgba(0,35,75,.18)!important;
 }
 .v4-message strong{
-  color:#075c52!important;
+  color:#053b5e!important;
   font-size:1.08rem!important;
 }
 .merdeka-theme{
@@ -1381,7 +1381,7 @@ footer{padding-top:26px;padding-bottom:26px}
   display:flex!important;
   align-items:center!important;
   gap:8px!important;
-  background:linear-gradient(90deg,#00564d 0%,#00675b 52%,#004e48 100%)!important;
+  background:linear-gradient(90deg,#003356 0%,#003e67 52%,#002c4e 100%)!important;
   padding:7px 3.5%!important;
 }
 .main-nav a{
@@ -1427,7 +1427,7 @@ footer{padding-top:26px;padding-bottom:26px}
 /* Footer stays clean and patriotic */
 footer{
   margin-top:18px!important;
-  background:linear-gradient(90deg,#063e3a,#07594f,#063e3a)!important;
+  background:linear-gradient(90deg,#05263f,#053a5b,#05263f)!important;
 }
 
 /* Responsive */
@@ -1511,13 +1511,13 @@ footer{
 }
 .hero-centre .v4-pin{color:#d72b2d!important;font-size:1.15rem!important}
 .hero-centre .live-badge{
-  background:#1aa35b!important;
+  background:#17a6a4!important;
   border-radius:6px!important;
   padding:6px 10px!important;
 }
 .merdeka-slogan{
   margin:20px 0 0 28px!important;
-  font-family:"Segoe Print","Bradley Hand","Comic Sans MS",cursive!important;
+  font-family:"Helvetica Neue","Arial Narrow","Roboto Condensed",Arial,sans-serif!important;
   text-align:center!important;
   max-width:380px!important;
   color:#0a2f76!important;
@@ -1541,7 +1541,7 @@ footer{
   border-bottom:4px solid #d51f2a!important;
   box-shadow:inset 0 -4px 0 #f3c500!important;
   color:#082d6f!important;
-  font-family:Inter,Segoe UI,Arial,sans-serif!important;
+  font-family:"Helvetica Neue","Arial Narrow","Roboto",Arial,sans-serif!important;
   font-size:.78rem!important;
   font-weight:900!important;
   letter-spacing:.16em!important;
@@ -1552,7 +1552,7 @@ footer{
 }
 .merdeka-script{
   color:#082b70!important;
-  font-family:"Segoe Print","Bradley Hand","Comic Sans MS",cursive!important;
+  font-family:"Helvetica Neue","Arial Narrow","Roboto Condensed",Arial,sans-serif!important;
   font-style:italic!important;
   font-weight:800!important;
   font-size:3.1rem!important;
@@ -1572,7 +1572,7 @@ footer{
   align-items:center!important;
   justify-content:center!important;
   line-height:.75!important;
-  font-family:Arial Black,Inter,sans-serif!important;
+  font-family:"Helvetica Neue","Arial Narrow","Roboto Condensed",Arial,sans-serif!important;
   font-weight:900!important;
   letter-spacing:-.12em!important;
   margin-top:-2px!important;
@@ -1646,7 +1646,7 @@ footer{
 /* Reference-like main page proportions */
 .main-nav{
   min-height:60px!important;
-  background:#071f63!important;
+  background:#006dae!important;
   padding:0 3.5%!important;
   gap:5px!important;
 }
@@ -1655,7 +1655,7 @@ footer{
   border-radius:0 0 22px 22px!important;
 }
 .main-nav a.active{
-  background:#e5232b!important;
+  background:#0a2e6d!important;
   box-shadow:none!important;
 }
 @media(max-width:1200px){
@@ -1788,7 +1788,7 @@ footer{
   display:flex!important;
   align-items:center!important;
   gap:5px!important;
-  background:#071f63!important;
+  background:#006dae!important;
   padding:0 3.5%!important;
 }
 .header-partner-strip + .main-nav a{
@@ -1799,7 +1799,7 @@ footer{
   font-size:.88rem!important;
   font-weight:700!important;
 }
-.header-partner-strip + .main-nav a.active{background:#e5232b!important}
+.header-partner-strip + .main-nav a.active{background:#0a2e6d!important}
 @media(max-width:1050px){
   .header-partner-strip{
     grid-template-columns:140px 1px 220px 1fr 1px 1fr;
@@ -1908,7 +1908,7 @@ footer{
 .road-c{width:45%;left:44%;top:72%;transform:rotate(-50deg)}
 .map-label{position:absolute;z-index:2;display:grid;grid-template-columns:16px auto;column-gap:8px;align-items:center;background:#fff;padding:9px 12px;border-radius:12px;box-shadow:0 5px 18px rgba(31,58,72,.10);border:1px solid #e0e7e9}
 .map-label b{font-size:.78rem;color:#183451}.map-label small{grid-column:2;color:#72808a;font-size:.62rem;margin-top:1px}
-.map-dot,.legend-dot{width:12px;height:12px;border-radius:50%;display:inline-block}.map-dot.active,.legend-dot.active{background:#21a36b;box-shadow:0 0 0 4px rgba(33,163,107,.12)}.map-dot.coming,.legend-dot.coming{background:#e7a62a;box-shadow:0 0 0 4px rgba(231,166,42,.13)}
+.map-dot,.legend-dot{width:12px;height:12px;border-radius:50%;display:inline-block}.map-dot.active,.legend-dot.active{background:#1e9ba6;box-shadow:0 0 0 4px rgba(33,163,107,.12)}.map-dot.coming,.legend-dot.coming{background:#e7a62a;box-shadow:0 0 0 4px rgba(231,166,42,.13)}
 .label-chaah{left:10%;top:20%}.label-bekok{left:48%;top:15%}.label-segamat{right:8%;bottom:17%}
 .map-legend{display:flex;gap:20px;flex-wrap:wrap;margin-top:12px;color:#66757f;font-size:.72rem;font-weight:700}.map-legend span{display:flex;align-items:center;gap:7px}
 .station-story-grid article{min-height:170px}
@@ -1995,9 +1995,9 @@ footer{
   .main-weather>.current{grid-column:1/-1!important}
   .main-weather>.metric-card{grid-column:auto!important}
 }
-.station-status-card{border-top:4px solid #1a9b76!important}
-.station-status-card .station-online{color:#188b68!important;font-size:1.8rem!important}
-.station-status-card em{color:#536c66!important}
+.station-status-card{border-top:4px solid #006dae!important}
+.station-status-card .station-online{color:#006dae!important;font-size:1.8rem!important}
+.station-status-card em{color:#52666d!important}
 @media(max-width:900px){
   .current{width:100%!important}
   .main-weather>.metric-card{min-height:130px!important}
@@ -2125,7 +2125,7 @@ footer{
 }
 
 /* Single trend chart with selectable range */
-.trend-single{grid-column:1/-1}.trend-head{gap:14px}.trend-tabs{display:flex;gap:6px}.trend-tab{border:1px solid #d5e1dd;background:#fff;color:#52706a;border-radius:999px;padding:7px 12px;font-size:.72rem;font-weight:800;cursor:pointer}.trend-tab.active{background:#064f45;color:#fff;border-color:#064f45}.trend-single .big-chart{height:300px}
+.trend-single{grid-column:1/-1}.trend-head{gap:14px}.trend-tabs{display:flex;gap:6px}.trend-tab{border:1px solid #d5e1dd;background:#fff;color:#516771;border-radius:999px;padding:7px 12px;font-size:.72rem;font-weight:800;cursor:pointer}.trend-tab.active{background:#043451;color:#fff;border-color:#043451}.trend-single .big-chart{height:300px}
 @media(max-width:700px){.trend-single .big-chart{height:230px!important}.trend-head{align-items:flex-start!important;flex-direction:column}.trend-tabs{width:100%}.trend-tab{flex:1;padding:8px 7px;font-size:.7rem}}
 
 /* V19 — final desktop alignment: five weather cards in one row; trend + safety side-by-side */
@@ -2188,11 +2188,11 @@ footer{
 
 /* V21 — mobile-first header/footer cleanup */
 .site-footer{background:#fff!important;color:#19302d!important;border-top:1px solid #dce7e3!important;box-shadow:0 -2px 12px rgba(16,39,36,.04)!important;}
-.site-footer b{color:#173d37!important}
-.site-footer span{color:#61736e!important}
-.site-footer small{color:#657570!important}
-.site-footer .footer-note{color:#61736e!important}
-.site-footer .footer-note a{color:#0b6659!important}
+.site-footer b{color:#16303e!important}
+.site-footer span{color:#616f73!important}
+.site-footer small{color:#657275!important}
+.site-footer .footer-note{color:#616f73!important}
+.site-footer .footer-note a{color:#094568!important}
 .site-footer .footer-kkm{color:#132c28!important}
 .site-footer .footer-logo-row{align-items:center!important}
 .site-footer .research-footer{min-width:0!important}
@@ -2300,7 +2300,7 @@ footer{
 @media(max-width:700px){
   .main-weather{grid-template-columns:1fr!important;gap:10px!important}
   .main-weather>.current{grid-column:1!important}
-  .metric-mobile-group{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:0!important;background:#fff!important;border:1px solid #e1ebe7!important;border-radius:18px!important;box-shadow:0 7px 22px #123b350d!important;overflow:hidden!important;padding:4px!important}
+  .metric-mobile-group{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:0!important;background:#fff!important;border:1px solid #e1ebe7!important;border-radius:18px!important;box-shadow:0 7px 22px #0a2e6d0d!important;overflow:hidden!important;padding:4px!important}
   .metric-mobile-group>.metric-card{display:flex!important;min-height:108px!important;height:108px!important;border:0!important;border-radius:13px!important;box-shadow:none!important;padding:10px 5px!important;background:transparent!important;justify-content:center!important;align-items:center!important}
   .metric-mobile-group>.metric-card + .metric-card{border-left:1px solid #e5ece9!important}
   .metric-mobile-group .metric-card>span{font-size:1.55rem!important;line-height:1!important}
@@ -2383,7 +2383,7 @@ footer{
 /* V24 — station information moved into the top online status ribbon */
 .status-station-group{display:flex;flex-direction:column;gap:5px;min-width:0}
 .status-online-line{display:flex;align-items:center;gap:8px}
-.status-station-meta{display:flex;align-items:center;gap:16px;font-size:.78rem;color:#55706b;flex-wrap:wrap}
+.status-station-meta{display:flex;align-items:center;gap:16px;font-size:.78rem;color:#546771;flex-wrap:wrap}
 .status-station-meta b{color:#173e72}
 @media(max-width:700px){
  .status-bar{align-items:flex-start!important}
@@ -2398,12 +2398,12 @@ footer{
 /* V25 — station card now shows the full Station Information content */
 .station-info-card{align-items:center;text-align:center;}
 .station-info-card>span{font-size:1.8rem!important;line-height:1!important}
-.station-info-card>small{font-size:.65rem!important;letter-spacing:.08em!important;margin-top:9px!important;color:#657571!important}
+.station-info-card>small{font-size:.65rem!important;letter-spacing:.08em!important;margin-top:9px!important;color:#657175!important}
 .station-info-lines{width:100%;display:flex;flex-direction:column;align-items:center;gap:5px;margin-top:6px}
-.station-info-lines p{margin:0;color:#536c66;font-size:.68rem;line-height:1.35}
+.station-info-lines p{margin:0;color:#52666d;font-size:.68rem;line-height:1.35}
 .station-info-lines p b{color:#173e72;font-size:.66rem}
-.station-info-lines p span{color:#536c66}
-.station-info-lines .station-online{color:#188b68!important;font-size:1.45rem!important;margin-top:2px}
+.station-info-lines p span{color:#52666d}
+.station-info-lines .station-online{color:#006dae!important;font-size:1.45rem!important;margin-top:2px}
 @media(max-width:700px){
  .metric-mobile-group>.station-info-card{min-height:180px!important;height:auto!important;padding:14px 9px!important}
  .metric-mobile-group>.station-info-card>span{font-size:1.55rem!important}
@@ -2417,8 +2417,8 @@ footer{
 /* Bilingual station video polish */
 .station-video-section{margin-top:22px;padding-top:22px;border-top:1px solid #e5ecea}
 .station-video-section h2{font-size:1.45rem;color:#092f72;margin:6px 0 7px}
-.station-video-section>p{color:#667772;line-height:1.6;max-width:760px;margin:0 0 16px;font-size:.86rem}
-.station-video-card{display:none;background:#f8fbfa;border:1px solid #dfe9e6;border-radius:18px;overflow:hidden;box-shadow:0 7px 20px #123b3508}
+.station-video-section>p{color:#667477;line-height:1.6;max-width:760px;margin:0 0 16px;font-size:.86rem}
+.station-video-card{display:none;background:#f8fbfa;border:1px solid #dfe9e6;border-radius:18px;overflow:hidden;box-shadow:0 7px 20px #0a2e6d08}
 .station-video-card.is-active{display:block}
 .video-frame{position:relative;width:100%;aspect-ratio:16/9;background:#eef3f1;overflow:hidden}
 .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
@@ -2447,7 +2447,987 @@ button:focus-visible,a:focus-visible{outline:3px solid rgba(15,108,91,.28);outli
   .station-video-card{width:100%;}
 }
 
-/* THEME SYSTEM — campaign header is controlled from themes/theme-config.js */
+/* Campaign header styling */
 .approved-reference-header{
   background-image:var(--site-header-image, url("merdeka-main-header.png"))!important;
+}
+
+
+/* =========================================================
+   FINAL MONASH BRANDING CHECKLIST
+   - Arial / Helvetica typography
+   - Supplied Merdeka header artwork used unchanged
+   - Supplied Monash University + SEACO artwork used unchanged
+   - Correct partner hierarchy and alignment
+   - Monash-inspired navy/blue with restrained red accent
+   ========================================================= */
+
+html, body, button, input, select, textarea {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+body {
+  color: #111827;
+}
+
+/* Use the supplied campaign artwork exactly as the hero banner. */
+.approved-reference-header {
+  width: 100% !important;
+  aspect-ratio: 2048 / 575 !important;
+  min-height: 0 !important;
+  background-image: url("merdeka-main-header.png") !important;
+  background-size: 100% 100% !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Partner/funder strip: clean hierarchy, equal vertical alignment. */
+.header-partner-strip {
+  min-height: 116px !important;
+  grid-template-columns: 500px 1px 150px 1px 285px minmax(190px, 1fr) !important;
+  align-items: center !important;
+  gap: 18px !important;
+  padding: 10px 4.2% 12px !important;
+  background: #ffffff !important;
+  border-bottom: 1px solid #d9e2ea !important;
+  box-shadow: 0 2px 10px rgba(7, 31, 99, 0.05) !important;
+}
+
+.header-partner-strip > * {
+  transform: none !important;
+}
+
+.header-partner-strip small {
+  color: #173e72 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: .01em !important;
+  margin-bottom: 6px !important;
+}
+
+.partner-funder,
+.partner-collab,
+.partner-research {
+  align-items: flex-start !important;
+  justify-content: center !important;
+}
+
+.partner-funder img {
+  width: 76px !important;
+  height: 48px !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+}
+
+.partner-collab img {
+  width: 190px !important;
+  height: 48px !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+}
+
+.partner-divider {
+  height: 68px !important;
+  background: #cbd7e2 !important;
+}
+
+.partner-kkm {
+  justify-content: flex-start !important;
+  text-align: left !important;
+  color: #0a2e6d !important;
+}
+
+.partner-kkm strong {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 1rem !important;
+  line-height: 1.25 !important;
+  letter-spacing: .01em !important;
+}
+
+.partner-research-logos {
+  display: flex !important;
+  align-items: center !important;
+  gap: 22px !important;
+  min-width: 0 !important;
+}
+
+.partner-research-logos img {
+  display: block !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  flex: 0 0 auto !important;
+}
+
+/* Supplied artwork has different aspect ratios; these boxes preserve
+   the visual height so neither Monash nor SEACO looks vertically off. */
+.partner-monash {
+  width: 190px !important;
+  height: 60px !important;
+}
+
+.partner-seaco {
+  width: 205px !important;
+  height: 56px !important;
+}
+
+/* Navigation: Monash blue is the highly-visible primary colour; navy is used only as a tonal contrast for the active tab. */
+.header-partner-strip + .main-nav {
+  min-height: 58px !important;
+  background: #006dae !important;
+  padding: 0 4.2% !important;
+}
+
+.header-partner-strip + .main-nav a {
+  color: #ffffff !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 700 !important;
+  font-size: .8rem !important;
+  padding: 14px 15px !important;
+}
+
+.header-partner-strip + .main-nav a.active {
+  background: #0a2e6d !important;
+}
+
+.nav-language {
+  border-color: #ffffff !important;
+  border-radius: 7px !important;
+}
+
+.nav-language button {
+  color: #0a2e6d !important;
+  background: #ffffff !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.nav-language button.active {
+  background: #0a2e6d !important;
+  color: #ffffff !important;
+}
+
+/* Main UI text also uses the requested Arial/Helvetica family. */
+h1, h2, h3, h4, h5, h6,
+.panel-head h2,
+.overline,
+.metric-card small,
+.footer-brand b,
+.site-footer small,
+.site-footer span,
+.site-footer b {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+/* Exact project wordmark text requested in the checklist. */
+.footer-brand b {
+  font-size: 1rem !important;
+  font-weight: 800 !important;
+  color: #0a2e6d !important;
+  letter-spacing: 0 !important;
+}
+
+/* Footer partner logos: same visual-height discipline as the header. */
+.site-footer {
+  background: #ffffff !important;
+  color: #173e72 !important;
+  border-top: 1px solid #d9e2ea !important;
+}
+
+.site-footer .footer-logo-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 18px !important;
+}
+
+.site-footer .footer-monash-university {
+  width: 150px !important;
+  height: 50px !important;
+  object-fit: contain !important;
+}
+
+.site-footer .footer-seaco {
+  width: 170px !important;
+  height: 48px !important;
+  object-fit: contain !important;
+}
+
+.site-footer .footer-wellcome {
+  width: 100px !important;
+  height: 44px !important;
+  object-fit: contain !important;
+}
+
+.site-footer .footer-heidelberg {
+  width: 135px !important;
+  height: 44px !important;
+  object-fit: contain !important;
+}
+
+.site-footer .footer-kkm {
+  font-family: Arial, Helvetica, sans-serif !important;
+  color: #173e72 !important;
+  font-weight: 700 !important;
+}
+
+/* Responsive partner strip. */
+@media (max-width: 1250px) {
+  .header-partner-strip {
+    grid-template-columns: 1fr 1px 125px 1px 230px minmax(150px, 1fr) !important;
+    gap: 13px !important;
+    padding-left: 3% !important;
+    padding-right: 3% !important;
+  }
+  .partner-monash { width: 165px !important; height: 54px !important; }
+  .partner-seaco { width: 175px !important; height: 50px !important; }
+}
+
+@media (max-width: 1050px) {
+  .header-partner-strip {
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-areas:
+      "research fund"
+      "collab kkm" !important;
+    gap: 12px 22px !important;
+    padding: 12px 4% !important;
+  }
+  .header-partner-strip > .partner-divider { display: none !important; }
+  .header-partner-strip > .partner-funder { grid-area: fund !important; }
+  .header-partner-strip > .partner-collab { grid-area: collab !important; }
+  .header-partner-strip > .partner-kkm { grid-area: kkm !important; }
+  .header-partner-strip > .partner-research { grid-area: research !important; }
+  .partner-monash { width: 170px !important; height: 55px !important; }
+  .partner-seaco { width: 175px !important; height: 50px !important; }
+}
+
+@media (max-width: 700px) {
+  .approved-reference-header {
+    aspect-ratio: 2048 / 575 !important;
+    background-size: auto 100% !important;
+    background-position: center top !important;
+  }
+
+  .header-partner-strip {
+    grid-template-columns: 1fr !important;
+    grid-template-areas:
+      "research"
+      "fund"
+      "collab"
+      "kkm" !important;
+    gap: 11px !important;
+    padding: 14px 5% 16px !important;
+  }
+
+  .header-partner-strip > .partner-funder,
+  .header-partner-strip > .partner-collab,
+  .header-partner-strip > .partner-kkm,
+  .header-partner-strip > .partner-research {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .partner-research-logos {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 10px 16px !important;
+  }
+
+  .partner-monash {
+    width: 185px !important;
+    height: 58px !important;
+  }
+
+  .partner-seaco {
+    width: 190px !important;
+    height: 52px !important;
+  }
+
+  .partner-kkm {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .header-partner-strip + .main-nav {
+    min-height: 52px !important;
+    padding: 0 10px !important;
+    overflow-x: auto !important;
+  }
+
+  .header-partner-strip + .main-nav a {
+    flex: 0 0 auto !important;
+    padding: 12px 12px !important;
+    font-size: .72rem !important;
+  }
+
+  .site-footer .footer-logo-row {
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+  }
+
+  .site-footer .footer-monash-university {
+    width: 135px !important;
+    height: 46px !important;
+  }
+
+  .site-footer .footer-seaco {
+    width: 150px !important;
+    height: 44px !important;
+  }
+}
+
+
+/* =========================================================
+   FINAL LOGO ALIGNMENT — MATCH REFERENCE
+   Every partner logo sits on the same visual rail.
+   Supplied artwork is not edited; only its placement/scale
+   is controlled by CSS.
+   ========================================================= */
+
+/* Header logo rail */
+.header-partner-strip .partner-funder,
+.header-partner-strip .partner-collab,
+.header-partner-strip .partner-research {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  min-height: 82px !important;
+}
+
+.header-partner-strip .partner-funder > img,
+.header-partner-strip .partner-collab > img,
+.header-partner-strip .partner-research-logos > img {
+  display: block !important;
+  flex: 0 0 auto !important;
+  height: 58px !important;
+  width: auto !important;
+  max-width: none !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+.header-partner-strip .partner-research-logos {
+  height: 58px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 22px !important;
+}
+
+/* Monash University and SEACO specifically share EXACT visual height. */
+.header-partner-strip .partner-monash,
+.header-partner-strip .partner-seaco {
+  height: 58px !important;
+  width: auto !important;
+  max-width: none !important;
+}
+
+/* Keep the logo rail centred vertically against the partner labels. */
+.header-partner-strip .partner-funder small,
+.header-partner-strip .partner-collab small,
+.header-partner-strip .partner-research small {
+  min-height: 15px !important;
+  line-height: 15px !important;
+  margin: 0 0 5px !important;
+}
+
+.header-partner-strip .partner-divider {
+  align-self: center !important;
+}
+
+/* Footer: same alignment principle and same visual height. */
+.site-footer .footer-partner {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+}
+
+.site-footer .footer-partner > small {
+  min-height: 15px !important;
+  line-height: 15px !important;
+  margin-bottom: 5px !important;
+}
+
+.site-footer .footer-wellcome,
+.site-footer .footer-heidelberg,
+.site-footer .footer-monash-university,
+.site-footer .footer-seaco {
+  width: auto !important;
+  height: 50px !important;
+  max-width: none !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+.site-footer .footer-logo-row {
+  min-height: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 18px !important;
+}
+
+/* Prevent the KKM wordmark from sitting higher/lower than the logo rail. */
+.site-footer .footer-kkm {
+  align-self: center !important;
+  line-height: 1.2 !important;
+}
+
+/* Responsive: preserve equal-height logo alignment. */
+@media (max-width: 1050px) {
+  .header-partner-strip .partner-funder,
+  .header-partner-strip .partner-collab,
+  .header-partner-strip .partner-research {
+    min-height: 78px !important;
+  }
+  .header-partner-strip .partner-funder > img,
+  .header-partner-strip .partner-collab > img,
+  .header-partner-strip .partner-research-logos > img {
+    height: 54px !important;
+  }
+  .header-partner-strip .partner-research-logos {
+    height: 54px !important;
+  }
+  .header-partner-strip .partner-monash,
+  .header-partner-strip .partner-seaco {
+    height: 54px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-partner-strip .partner-funder,
+  .header-partner-strip .partner-collab,
+  .header-partner-strip .partner-research {
+    align-items: center !important;
+  }
+  .header-partner-strip .partner-funder > img,
+  .header-partner-strip .partner-collab > img,
+  .header-partner-strip .partner-research-logos > img {
+    height: 52px !important;
+  }
+  .header-partner-strip .partner-research-logos {
+    height: 52px !important;
+    justify-content: center !important;
+  }
+  .header-partner-strip .partner-monash,
+  .header-partner-strip .partner-seaco {
+    height: 52px !important;
+  }
+  .site-footer .footer-logo-row {
+    align-items: center !important;
+  }
+}
+
+
+/* =========================================================
+   FINAL LOGO ALIGNMENT — MATCH REFERENCE
+   Every partner mark sits on the same 58px visual rail.
+   Logos are centred vertically; artwork is never stretched.
+   ========================================================= */
+
+.header-partner-strip {
+  align-items: start !important;
+}
+
+.header-partner-strip .partner-funder,
+.header-partner-strip .partner-collab,
+.header-partner-strip .partner-kkm,
+.header-partner-strip .partner-research {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  min-height: 86px !important;
+}
+
+.header-partner-strip .partner-funder > small,
+.header-partner-strip .partner-collab > small,
+.header-partner-strip .partner-research > small {
+  height: 20px !important;
+  line-height: 20px !important;
+  margin: 0 0 6px !important;
+  white-space: nowrap !important;
+}
+
+/* One identical logo rail for ALL partner marks. */
+.header-partner-strip .partner-funder > img,
+.header-partner-strip .partner-collab > img,
+.header-partner-strip .partner-research-logos,
+.header-partner-strip .partner-kkm {
+  height: 58px !important;
+  min-height: 58px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Individual artwork is centred inside its rail. */
+.header-partner-strip .partner-funder > img {
+  width: 110px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+.header-partner-strip .partner-collab > img {
+  width: 190px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+.header-partner-strip .partner-research-logos {
+  gap: 22px !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+}
+
+.header-partner-strip .partner-research-logos .partner-monash {
+  width: 190px !important;
+  height: 58px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+.header-partner-strip .partner-research-logos .partner-seaco {
+  width: 205px !important;
+  height: 58px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+/* MOH is typography, so give it the exact same rail and centre it. */
+.header-partner-strip .partner-kkm {
+  justify-content: center !important;
+  align-items: flex-start !important;
+  text-align: left !important;
+  padding-top: 0 !important;
+}
+
+.header-partner-strip .partner-kkm strong {
+  display: block !important;
+  width: 100% !important;
+  line-height: 1.2 !important;
+  margin: 0 !important;
+}
+
+/* Keep the two separator lines centred against the same logo rail. */
+.header-partner-strip > .partner-divider {
+  align-self: center !important;
+  height: 68px !important;
+}
+
+/* Footer uses the same visual rail. */
+.site-footer .footer-partner {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+}
+
+.site-footer .footer-partner > small {
+  height: 20px !important;
+  line-height: 20px !important;
+  margin: 0 0 6px !important;
+  white-space: nowrap !important;
+}
+
+.site-footer .footer-logo-row {
+  min-height: 58px !important;
+  height: 58px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 18px !important;
+}
+
+.site-footer .footer-partner.funding > img {
+  height: 58px !important;
+  width: 110px !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+}
+
+.site-footer .footer-heidelberg {
+  height: 58px !important;
+  width: 145px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+.site-footer .footer-kkm {
+  height: 58px !important;
+  display: flex !important;
+  align-items: center !important;
+  line-height: 1.2 !important;
+}
+
+.site-footer .footer-monash-university {
+  width: 165px !important;
+  height: 58px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+.site-footer .footer-seaco {
+  width: 185px !important;
+  height: 58px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+@media (max-width: 1050px) {
+  .header-partner-strip .partner-research-logos {
+    gap: 14px !important;
+  }
+  .header-partner-strip .partner-research-logos .partner-monash {
+    width: 165px !important;
+  }
+  .header-partner-strip .partner-research-logos .partner-seaco {
+    width: 175px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-partner-strip .partner-funder,
+  .header-partner-strip .partner-collab,
+  .header-partner-strip .partner-kkm,
+  .header-partner-strip .partner-research {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .header-partner-strip .partner-funder > img,
+  .header-partner-strip .partner-collab > img {
+    object-position: center center !important;
+  }
+
+  .header-partner-strip .partner-kkm {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .header-partner-strip .partner-research-logos {
+    justify-content: center !important;
+    width: 100% !important;
+  }
+}
+
+/* =========================================================
+   FINAL: USE THE USER-SUPPLIED COMPLETE HEADER IMAGE
+   The image already contains the HEATCare/Merdeka artwork
+   AND the complete partner-logo strip.
+   ========================================================= */
+.approved-reference-header{
+  position:relative!important;
+  width:100%!important;
+  aspect-ratio:1397/455!important;
+  min-height:0!important;
+  overflow:hidden!important;
+  background:#fff url("merdeka-main-header.png") center top/100% 100% no-repeat!important;
+  border:0!important;
+  box-shadow:none!important;
+  z-index:10!important;
+}
+
+/* Do not render the separate logo strip — it is already inside the image. */
+.header-partner-strip{
+  display:none!important;
+}
+
+/* Navigation stays directly below the complete supplied header image. */
+.approved-reference-header + .header-partner-strip + .main-nav{
+  display:flex!important;
+}
+
+/* Mobile: keep the complete artwork visible without stretching vertically. */
+@media(max-width:700px){
+  .approved-reference-header{
+    aspect-ratio:1397/455!important;
+    background-size:cover!important;
+    background-position:center top!important;
+  }
+}
+
+/* FINAL FOOTER LOGO ARRANGEMENT */
+.site-footer{
+  grid-template-columns:1.15fr 2.4fr .8fr!important;
+  align-items:center!important;
+}
+.latest-footer-logos{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-width:0!important;
+}
+.latest-footer-logo-strip{
+  display:block!important;
+  width:min(100%, 980px)!important;
+  height:auto!important;
+  max-height:120px!important;
+  object-fit:contain!important;
+}
+@media(max-width:700px){
+  .site-footer{
+    grid-template-columns:1fr!important;
+    gap:16px!important;
+  }
+  .latest-footer-logos{
+    justify-content:flex-start!important;
+  }
+  .latest-footer-logo-strip{
+    width:100%!important;
+    max-height:none!important;
+  }
+}
+
+/* FINAL FOOTER SIZE FIX: remove reference-image whitespace and use a standard readable logo size */
+.latest-footer-logos{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-width:0!important;
+  width:100%!important;
+}
+.latest-footer-logo-strip{
+  display:block!important;
+  width:760px!important;
+  max-width:100%!important;
+  height:auto!important;
+  max-height:92px!important;
+  object-fit:contain!important;
+}
+@media(max-width:900px){
+  .latest-footer-logo-strip{
+    width:680px!important;
+    max-height:88px!important;
+  }
+}
+@media(max-width:700px){
+  .latest-footer-logo-strip{
+    width:100%!important;
+    max-height:none!important;
+  }
+}
+
+
+/* =========================================================
+   MONASH BRAND POLISH — FINAL PASS
+   ========================================================= */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Condensed:wght@400;700;900&display=swap");
+
+:root{
+  --monash-blue:#006DAE;
+  --black:#000000;
+  --white:#FFFFFF;
+  --grey-1:#5A5A5A;
+  --grey-2:#969696;
+  --grey-3:#E6E6E6;
+  --page-grey:#F5F6F7;
+  --blue-dark:#004A78;
+  --blue-light:#EAF5FB;
+}
+
+/* Typography: Helvetica Neue → Arial Narrow → Roboto web fallback */
+html,body,button,input,select,textarea,p,span,b,strong,small,em,a,li,dt,dd,label,figcaption,table,th,td{
+  font-family:"Helvetica Neue","Arial Narrow","Roboto",Arial,sans-serif!important;
+}
+h1,h2,h3,h4,h5,h6,.panel-head h2,.eyebrow,.overline,.metric-card small,
+.forecast-day strong,.station-story-head h2,.station-story-grid h3,
+.info-card h2,.info-hero h1{
+  font-family:"Helvetica Neue","Arial Narrow","Roboto Condensed",Arial,sans-serif!important;
+}
+
+/* Monash colour hierarchy */
+body{background:var(--page-grey)!important;color:#222!important}
+a{color:var(--monash-blue)}
+.main-nav,.header-partner-strip + .main-nav{background:var(--monash-blue)!important}
+.main-nav a{color:#fff!important}
+.main-nav a:hover,.main-nav a.active{background:var(--blue-dark)!important}
+.nav-language button{color:var(--monash-blue)!important;border-color:#B8CAD5!important}
+.nav-language button.active{background:var(--monash-blue)!important;color:#fff!important}
+
+/* White information surfaces with restrained grey */
+.panel,.current,.metric-card,.status-bar{
+  background:#fff!important;
+  border-color:var(--grey-3)!important;
+  box-shadow:0 6px 20px rgba(0,0,0,.06)!important;
+}
+.panel-head h2,.info-hero h1,.station-story-head h2,.station-story-grid h3,
+.info-card h2,.station-video-section h2{color:var(--monash-blue)!important}
+.eyebrow,.overline,.metric-card small,.info-card-tag,.station-number{color:var(--blue-dark)!important}
+.muted,.history-note,.chart-source,.forecast-day small,.station-card p,
+.info-card p,.info-hero p,.station-story-head p,.station-story-grid p{color:var(--grey-1)!important}
+
+/* Monash blue dominates the dashboard accents */
+.online,.station-status-card .station-online,.station-online,
+.heat-index strong,.metric-card strong,.current strong{color:var(--monash-blue)!important}
+.station-status-card,.air-quality{border-top-color:var(--monash-blue)!important}
+.today,.safety-grid>div,.info-banner,.info-strip,.heat-guide{background:var(--blue-light)!important}
+.info-strip{color:#222!important}
+.info-strip a{color:var(--monash-blue)!important;border-color:#8FB9CE!important}
+
+/* Charts use Monash Blue rather than warm orange */
+.big-chart{
+  background:repeating-linear-gradient(0deg,rgba(0,109,174,.10) 0,rgba(0,109,174,.10) 1px,transparent 1px,transparent 48px)!important;
+}
+.area-line{
+  background:linear-gradient(180deg,rgba(0,109,174,.16),transparent)!important;
+  border-bottom-color:var(--monash-blue)!important;
+}
+.now-label{border-color:var(--monash-blue)!important;color:var(--monash-blue)!important}
+.trend-tab.active{background:var(--monash-blue)!important;border-color:var(--monash-blue)!important}
+.trend-tab{color:#222!important;border-color:#C8D3DA!important}
+
+/* Health messaging remains blue-led */
+.heat-alert{
+  background:#EAF5FB!important;
+  border-color:#B9D8E8!important;
+  color:#17384B!important;
+}
+.heat-alert b{color:var(--monash-blue)!important}
+.station-community-note{
+  background:#EAF5FB!important;
+  border-color:#B9D8E8!important;
+}
+.station-community-note p,.station-community-note b{color:#17384B!important}
+
+/* Schematic map accents */
+.map-dot.active,.legend-dot.active{
+  background:var(--monash-blue)!important;
+  box-shadow:0 0 0 4px rgba(0,109,174,.14)!important;
+}
+.map-dot.coming,.legend-dot.coming{
+  background:var(--grey-2)!important;
+  box-shadow:0 0 0 4px rgba(150,150,150,.14)!important;
+}
+
+/* Footer: clean white Monash-style layout */
+.site-footer{
+  background:#fff!important;
+  color:#222!important;
+  border-top:1px solid var(--grey-3)!important;
+  box-shadow:0 -2px 14px rgba(0,0,0,.04)!important;
+  display:grid!important;
+  grid-template-columns:1.25fr 1.55fr 1.45fr .75fr!important;
+  gap:28px!important;
+  align-items:center!important;
+  padding:30px 4%!important;
+}
+.site-footer .footer-brand b{
+  color:var(--monash-blue)!important;
+  font-size:1.05rem!important;
+  font-weight:900!important;
+}
+.site-footer .footer-brand span{color:var(--grey-1)!important}
+.site-footer .footer-partner{
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:center!important;
+  align-items:flex-start!important;
+  min-width:0!important;
+}
+.site-footer .footer-partner small{
+  color:var(--grey-1)!important;
+  margin-bottom:8px!important;
+  font-size:.66rem!important;
+}
+.site-footer .footer-logo-row{
+  display:flex!important;
+  align-items:center!important;
+  gap:18px!important;
+  min-height:58px!important;
+}
+.site-footer .footer-monash-university{width:175px!important;height:58px!important;object-fit:contain!important}
+.site-footer .footer-seaco{width:180px!important;height:58px!important;object-fit:contain!important}
+.site-footer .footer-heidelberg{width:150px!important;height:58px!important;object-fit:contain!important}
+.site-footer .footer-wellcome{width:86px!important;height:58px!important;object-fit:contain!important}
+.site-footer .footer-kkm{
+  color:#222!important;
+  font-size:.72rem!important;
+  font-weight:800!important;
+  line-height:1.2!important;
+  max-width:150px!important;
+}
+.site-footer .footer-note{
+  grid-column:1/-1!important;
+  border-top:1px solid var(--grey-3)!important;
+  padding-top:14px!important;
+  color:var(--grey-1)!important;
+  text-align:right!important;
+}
+
+/* Supplied Merdeka artwork remains the campaign exception */
+.approved-reference-header{
+  aspect-ratio:1397/456!important;
+  background-image:url("merdeka-main-header.png")!important;
+  background-size:100% 100%!important;
+  background-position:center top!important;
+  background-repeat:no-repeat!important;
+  background-color:#fff!important;
+}
+.header-partner-strip{display:none!important}
+
+/* Layout polish */
+main{max-width:1440px!important;margin:0 auto!important}
+.status-bar{border-top:3px solid var(--monash-blue)!important}
+.panel{padding:22px!important}
+.panel-head h2{font-weight:900!important}
+.forecast-day{border-left-color:#D9E1E6!important}
+.forecast-day.today{box-shadow:inset 0 3px 0 var(--monash-blue)!important}
+
+/* Accessible focus state */
+button:focus-visible,a:focus-visible,select:focus-visible{
+  outline:3px solid rgba(0,109,174,.35)!important;
+  outline-offset:3px!important;
+}
+
+@media(max-width:1100px){
+  .site-footer{grid-template-columns:1fr 1fr!important}
+}
+@media(max-width:700px){
+  .approved-reference-header{
+    aspect-ratio:1397/456!important;
+    background-size:cover!important;
+    background-position:center top!important;
+  }
+  .site-footer{
+    grid-template-columns:1fr!important;
+    gap:20px!important;
+    padding:24px 5%!important;
+  }
+  .site-footer .footer-logo-row{flex-wrap:wrap!important}
+  .site-footer .footer-note{text-align:left!important}
+}
+
+/* FINAL FIX: keep the original header artwork unchanged; hide only its embedded
+   partner-logo strip by clipping the header at the artwork's main-banner height. */
+.approved-reference-header{
+  aspect-ratio:1397/347!important;
+  background-size:100% auto!important;
+  background-position:center top!important;
+  background-repeat:no-repeat!important;
+  overflow:hidden!important;
+}
+@media(max-width:700px){
+  .approved-reference-header{
+    aspect-ratio:1397/347!important;
+    background-size:100% auto!important;
+    background-position:center top!important;
+  }
+}
+.header-partner-strip{display:none!important}
+
+/* Visitor statistic — placed between station status and date */
+.status-bar .visitor-stat{
+  display:flex!important;
+  align-items:center!important;
+  gap:10px!important;
+  margin-left:auto!important;
+}
+.status-bar .visitor-stat span{
+  font-size:.68rem!important;
+  color:#73827e!important;
+}
+.status-bar .visitor-stat b{
+  font-size:.75rem!important;
+  color:#173e72!important;
+  font-weight:850!important;
+}
+@media(max-width:760px){
+  .status-bar .visitor-stat{margin-left:0!important}
 }

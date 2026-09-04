@@ -2,8 +2,16 @@
 <html lang="en"><head><meta charset="utf-8"><link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Weather Information — HEATCare Weather Station</title><link rel="stylesheet" href="style.css"></head><body>
-<div aria-label="HEATcare Merdeka 69 header" class="approved-reference-header"></div>
+<div aria-label="Heatcare@SEACO Merdeka 69 header" class="approved-reference-header"></div>
 <section aria-label="Project partners" class="header-partner-strip">
+<div class="partner-research">
+<small data-t="researchBy">Research and Data Collection by</small>
+<div class="partner-research-logos">
+<img alt="Monash University" class="partner-monash" src="monash-university.png"/>
+<img alt="Monash South East Asia Community Observatory (SEACO)" class="partner-seaco" src="seaco.png"/>
+</div>
+</div>
+<div aria-hidden="true" class="partner-divider"></div>
 <div class="partner-funder">
 <small data-t="fundedShort">Funded by</small>
 <img alt="Wellcome Trust" src="wellcome.svg"/>
@@ -15,14 +23,6 @@
 </div>
 <div class="partner-kkm">
 <strong data-t="kkmName" id="kkmName">MINISTRY OF HEALTH MALAYSIA</strong>
-</div>
-<div aria-hidden="true" class="partner-divider"></div>
-<div class="partner-research">
-<small data-t="researchBy">Research and Data Collection by</small>
-<div class="partner-research-logos">
-<img alt="Monash University" class="partner-monash" src="monash-university.png"/>
-<img alt="Monash South East Asia Community Observatory (SEACO)" class="partner-seaco" src="seaco.png"/>
-</div>
 </div>
 </section>
 <nav aria-label="Main navigation" class="main-nav">
@@ -80,16 +80,35 @@
 <div><div class="eyebrow" data-t="trendLabel">TODAY</div><h2 data-t="history">Weather History</h2></div>
 <span class="history-note" data-t="historyNote">Trend visualisation</span>
 </div>
-<div class="info-chart"><div class="info-chart-line"></div><div class="chart-labels"><span>00:00</span><span>06:00</span><span>12:00</span><span>18:00</span><span data-t="now">Now</span></div></div>
+<div class="info-chart"><div class="info-chart-line"></div><div class="chart-labels"><span>12am</span><span>6am</span><span>12pm</span><span>6pm</span><span data-t="now">Now</span></div></div>
 <p class="muted" data-t="chartNote">Temperature trend is currently based on Open-Meteo hourly weather data and will later be replaced by the project weather station data.</p>
 </section></main>
 <footer class="site-footer">
- <div class="footer-brand"><b>HEATCare @ SEACO</b><span data-t="footerText">Heat Risk Awareness and Technology-driven Care for Community Health</span></div>
- <div class="footer-partner funding"><small data-t="fundedBy">The project is funded by:</small><img class="user-logo footer-wellcome" src="wellcome.svg" alt="Wellcome Trust"></div>
- <div class="footer-partner collaboration"><small data-t="collab">In collaboration with:</small><div class="user-logos footer-logo-row"><img class="user-logo footer-heidelberg" src="heidelberg.svg" alt="Heidelberg Institute of Global Health"><span class="footer-kkm" data-t="kkmName">MINISTRY OF HEALTH MALAYSIA</span></div></div>
- <div class="footer-partner research-footer"><small data-t="researchBy">Research and Data Collection by</small><div class="user-logos footer-logo-row"><img class="user-logo footer-monash-university" src="monash-university.png" alt="Monash University"><img class="user-logo footer-seaco" src="seaco.png" alt="Monash South East Asia Community Observatory (SEACO)"></div></div>
- <div class="footer-note"><span data-t="updatedEvery">Updated every minute.</span></div>
+  <div class="footer-brand">
+    <b>Heatcare@SEACO</b>
+    <span data-t="footerText">Heat Risk Awareness and Technology-driven Care for Community Health</span>
+  </div>
+  <div class="footer-partner research-footer">
+    <small data-t="researchBy">Research and Data Collection by</small>
+    <div class="footer-logo-row">
+      <img class="user-logo footer-monash-university" src="monash-university.png" alt="Monash University">
+      <img class="user-logo footer-seaco" src="seaco.png" alt="Monash South East Asia Community Observatory (SEACO)">
+    </div>
+  </div>
+  <div class="footer-partner collaboration">
+    <small data-t="collab">In collaboration with</small>
+    <div class="footer-logo-row">
+      <img class="user-logo footer-heidelberg" src="heidelberg.svg" alt="Heidelberg Institute of Global Health">
+      <span class="footer-kkm" data-t="kkmName">MINISTRY OF HEALTH MALAYSIA</span>
+    </div>
+  </div>
+  <div class="footer-partner funding">
+    <small data-t="fundedBy">The project is funded by</small>
+    <img class="user-logo footer-wellcome" src="wellcome.svg" alt="Wellcome Trust">
+  </div>
+  <div class="footer-note">
+    <span data-t="updatedEvery">Updated every minute.</span>
+  </div>
 </footer>
-<script src="themes/theme-config.js"></script>
 <script src="script.js"></script>
 </body></html>

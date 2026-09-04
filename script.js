@@ -10,12 +10,12 @@ communitySafety:"COMMUNITY HEALTH & SAFETY",hydrate:"Stay Hydrated",hydrateText:
 cool:"Stay Cool",coolText:"Seek shade and stay in cool areas.",sun:"Sun Protection",sunText:"Wear a hat, sunglasses and sunscreen.",
 others:"Check on Others",othersText:"Look out for children, elderly and vulnerable people.",
 signs:"Know the signs of heat stress: headache, dizziness, nausea, heavy sweating.",learn:"Learn More ›",
-forecast:"FORECAST OVERVIEW",partlyCloudy:"Partly Cloudy",stationInfo:"STATION INFORMATION",
+forecast:"FORECAST OVERVIEW",sevenDays:"7 days",partlyCloudy:"Partly Cloudy",stationInfo:"STATION INFORMATION",
 stationStatus:"Station Status",online:"ONLINE",dateLabel:"Date",updated:"Last Updated",locationLabel:"Location",
-refresh:"Updates automatically",everyFive:"Every minute",fundedBy:"The project is funded by:",
-collab:"In collaboration with:",footerText:"Heat Risk Awareness and Technology-driven Care for Community Health",
+refresh:"Updates automatically",everyFive:"Every minute",fundedBy:"The project is funded by",
+collab:"In collaboration with",footerText:"Heat Risk Awareness and Technology-driven Care for Community Health",
 dataNote:"This website provides real-time weather information for Weather Station Sungai Segamat for community use.",
-updatedEvery:"Updated every minute.",aboutStation:"About This Station",healthSafety:"Health & Safety",
+updatedEvery:"Updated every minute.",visitors:"Visitors",aboutStation:"About This Station",healthSafety:"Health & Safety",
 whatItMeans:"WHAT IT MEANS",whyMatters:"Why it matters",
 tempWhy:"Higher temperatures can increase heat strain, especially outdoors.",
 humidityWhy:"High humidity can make hot weather feel more uncomfortable.",
@@ -52,7 +52,7 @@ stationStatus:"Status Stesen",online:"DALAM TALIAN",dateLabel:"Tarikh",updated:"
 refresh:"Dikemas kini secara automatik",everyFive:"Setiap minit",fundedBy:"Projek ini dibiayai oleh:",
 collab:"Dengan kerjasama:",footerText:"Kesedaran Risiko Haba dan Penjagaan Berasaskan Teknologi untuk Kesihatan Komuniti",
 dataNote:"Laman ini menyediakan maklumat cuaca masa nyata untuk Stesen Cuaca Sungai Segamat bagi kegunaan komuniti.",
-updatedEvery:"Dikemas kini setiap minit.",aboutStation:"Tentang Stesen Ini",healthSafety:"Kesihatan & Keselamatan",
+updatedEvery:"Dikemas kini setiap minit.",visitors:"Pelawat",aboutStation:"Tentang Stesen Ini",healthSafety:"Kesihatan & Keselamatan",
 whatItMeans:"MAKSUDNYA",whyMatters:"Mengapa penting",
 tempWhy:"Suhu yang lebih tinggi boleh meningkatkan tekanan haba, terutama di luar.",
 humidityWhy:"Kelembapan tinggi boleh menyebabkan cuaca panas terasa lebih tidak selesa.",
@@ -104,6 +104,19 @@ function lang(x){
   if(lastForecast)renderForecast(lastForecast);
 }
 document.querySelectorAll("[data-lang]").forEach(b=>b.onclick=()=>lang(b.dataset.lang));
+(function initVisitorCount(){
+  const key="heatcareVisitorCount";
+  const sessionKey="heatcareVisitorSession";
+  let count=parseInt(localStorage.getItem(key)||"0",10);
+  if(!sessionStorage.getItem(sessionKey)){
+    count += 1;
+    localStorage.setItem(key,String(count));
+    sessionStorage.setItem(sessionKey,"1");
+  }
+  const el=document.getElementById("visitorCount");
+  if(el) el.textContent=count.toLocaleString("en-US");
+})();
+
 lang(currentLang);
 
 function condition(apparent){
@@ -113,17 +126,59 @@ function condition(apparent){
   return{en:"LOW",ms:"RENDAH",icon:"🌿",level:"low"};
 }
 
+const MONTHS_EN=["January","February","March","April","May","June","July","August","September","October","November","December"];
+const MONTHS_MS=["Januari","Februari","Mac","April","Mei","Jun","Julai","Ogos","September","Oktober","November","Disember"];
+const MONTHS_EN_SHORT=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const MONTHS_MS_SHORT=["Jan","Feb","Mac","Apr","Mei","Jun","Jul","Ogos","Sep","Okt","Nov","Dis"];
+const WEEKDAYS_EN=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const WEEKDAYS_MS=["Ahad","Isnin","Selasa","Rabu","Khamis","Jumaat","Sabtu"];
+const WEEKDAYS_EN_SHORT=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+const WEEKDAYS_MS_SHORT=["Ahd","Isn","Sel","Rab","Kha","Jum","Sab"];
+
+// Resolve a UTC instant into its Kuala Lumpur calendar/clock parts.
+function klParts(value){
+  const d=new Date(value);
+  const parts=new Intl.DateTimeFormat("en-US",{
+    timeZone:"Asia/Kuala_Lumpur",year:"numeric",month:"numeric",day:"numeric",
+    hour:"numeric",minute:"numeric",hour12:false,weekday:"long"
+  }).formatToParts(d);
+  const map={};
+  parts.forEach(p=>map[p.type]=p.value);
+  return{
+    year:Number(map.year),month:Number(map.month),day:Number(map.day),
+    hour:Number(map.hour)%24,minute:Number(map.minute),weekdayIndex:WEEKDAYS_EN.indexOf(map.weekday)
+  };
+}
+
+// Monash editorial style: no space or full stop before am/pm, full stop between hours and minutes,
+// on-the-hour times drop the minutes (e.g. "8pm", "8.30pm").
 function fmtTime(value){
-  return new Date(value).toLocaleTimeString(currentLang==="ms"?"ms-MY":"en-MY",{hour:"2-digit",minute:"2-digit"});
+  const{hour,minute}=klParts(value);
+  let h12=hour%12; if(h12===0)h12=12;
+  const period=hour<12?"am":"pm";
+  if(minute===0)return`${h12}${period}`;
+  return`${h12}.${String(minute).padStart(2,"0")}${period}`;
 }
+
+// Monash editorial style: day of week first, no leading zero on the day, full month name, no "-st"/"-th".
 function fmtDate(value){
-  return new Date(value).toLocaleDateString(
-    currentLang==="ms"?"ms-MY":"en-MY",
-    {day:"2-digit",month:"short",year:"numeric",timeZone:"Asia/Kuala_Lumpur"}
-  );
+  const{year,month,day,weekdayIndex}=klParts(value);
+  const weekday=currentLang==="ms"?WEEKDAYS_MS[weekdayIndex]:WEEKDAYS_EN[weekdayIndex];
+  const monthName=currentLang==="ms"?MONTHS_MS[month-1]:MONTHS_EN[month-1];
+  return`${weekday} ${day} ${monthName} ${year}`;
 }
+
+// Short weekday label for compact forecast-day cards and chart axis ticks.
 function fmtDay(value){
-  return new Date(value+"T00:00:00").toLocaleDateString(currentLang==="ms"?"ms-MY":"en-MY",{weekday:"short"});
+  const d=new Date(value+"T00:00:00");
+  return(currentLang==="ms"?WEEKDAYS_MS_SHORT:WEEKDAYS_EN_SHORT)[d.getDay()];
+}
+
+// Short day-month label for the 30-day trend chart axis.
+function fmtDayMonth(value){
+  const d=new Date(value+"T00:00:00");
+  const monthShort=currentLang==="ms"?MONTHS_MS_SHORT:MONTHS_EN_SHORT;
+  return`${d.getDate()} ${monthShort[d.getMonth()]}`;
 }
 function weatherText(code){
   const x=weatherCode[code]||weatherCode[0];
@@ -199,7 +254,7 @@ function drawTrend(chartId, points, labels){
   });
   const line=coords.map(p=>p.join(",")).join(" ");
   const area=`M ${coords[0][0]} ${coords[0][1]} `+coords.slice(1).map(p=>`L ${p[0]} ${p[1]}`).join(" ")+` L ${coords.at(-1)[0]} 198 L ${coords[0][0]} 198 Z`;
-  svg.innerHTML=`<defs><linearGradient id="fill-${chartId}" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f0a143" stop-opacity=".28"/><stop offset="100%" stop-color="#f0a143" stop-opacity="0"/></linearGradient></defs><path d="${area}" fill="url(#fill-${chartId})"></path><polyline points="${line}" fill="none" stroke="#ed8a24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></polyline>${coords.map((p,i)=>`<circle cx="${p[0]}" cy="${p[1]}" r="4" fill="#fff" stroke="#ed8a24" stroke-width="3"><title>${labels[i]} — ${Number(points[i].value).toFixed(1)}°C</title></circle>`).join("")}`;
+  svg.innerHTML=`<defs><linearGradient id="fill-${chartId}" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#006DAE" stop-opacity=".28"/><stop offset="100%" stop-color="#006DAE" stop-opacity="0"/></linearGradient></defs><path d="${area}" fill="url(#fill-${chartId})"></path><polyline points="${line}" fill="none" stroke="#006DAE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></polyline>${coords.map((p,i)=>`<circle cx="${p[0]}" cy="${p[1]}" r="4" fill="#fff" stroke="#006DAE" stroke-width="3"><title>${labels[i]} — ${Number(points[i].value).toFixed(1)}°C</title></circle>`).join("")}`;
   chart.querySelector('.ylabels').innerHTML=[max,Math.round(max-range*.25),Math.round(max-range*.5),Math.round(max-range*.75),min].map(v=>`<span>${v}°</span>`).join('');
   chart.querySelector('.xlabels').innerHTML=labels.map(x=>`<span>${x}</span>`).join('');
 }
@@ -214,10 +269,10 @@ function renderTrendRange(range){
     drawTrend(chartId,points,points.map(p=>p.label));
   }else if(range==='7'){
     const points=trendData.days7;
-    drawTrend(chartId,points,points.map(p=>new Date(p.date+'T00:00:00').toLocaleDateString(currentLang==='ms'?'ms-MY':'en-US',{weekday:'short'})));
+    drawTrend(chartId,points,points.map(p=>fmtDay(p.date)));
   }else{
     const points=trendData.days30;
-    drawTrend(chartId,points,points.map((p,i)=>i%5===0?new Date(p.date+'T00:00:00').toLocaleDateString(currentLang==='ms'?'ms-MY':'en-US',{day:'numeric',month:'short'}):''));
+    drawTrend(chartId,points,points.map((p,i)=>i%5===0?fmtDayMonth(p.date):''));
   }
 }
 
