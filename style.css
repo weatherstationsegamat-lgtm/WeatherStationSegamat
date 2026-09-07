@@ -3506,3 +3506,74 @@ button:focus-visible,a:focus-visible,select:focus-visible{
   .status-bar #currentDate{font-size:.57rem!important}
   .status-bar #updatedTime{font-size:.62rem!important}
 }
+
+
+/* Footer logo separators — MU-SEACO stays together, with dividers between the other partner groups. */
+.site-footer{
+  grid-template-columns:minmax(220px,1.25fr) auto minmax(180px,.8fr) auto minmax(210px,1fr) auto minmax(180px,1fr);
+  column-gap:22px;
+  row-gap:18px;
+}
+.site-footer .footer-partner{min-width:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;}
+.site-footer .footer-logo-row{display:flex;align-items:center;gap:14px;margin-top:4px;}
+.site-footer .footer-partner>img{margin-top:4px;}
+.site-footer .footer-divider{width:1px;height:58px;background:#cfdad6;align-self:center;justify-self:center;}
+.site-footer .kkm-footer{align-items:center;text-align:center;}
+.site-footer .footer-kkm{display:block;color:#102724;font-size:.76rem;line-height:1.25;font-weight:800;}
+.site-footer .footer-note{grid-column:1/-1;border-top:1px solid #dfe7e4;padding-top:12px;text-align:right;}
+@media(max-width:1050px){
+  .site-footer{grid-template-columns:1.2fr 1fr auto 1fr auto 1fr auto 1fr;}
+  .site-footer .footer-kkm{font-size:.7rem;}
+}
+@media(max-width:760px){
+  .site-footer{grid-template-columns:1fr 1fr;column-gap:18px;}
+  .site-footer .footer-divider{display:none;}
+  .site-footer .footer-note{grid-column:1/-1;}
+}
+
+/* FINAL FOOTER ALIGNMENT FIX — keep all partner groups on one horizontal rail */
+.site-footer{
+  grid-template-columns: 1.15fr 2.4fr 1px .8fr 1.45fr 1px 1.35fr !important;
+  gap: 22px !important;
+  align-items: center !important;
+}
+.site-footer > .footer-divider{
+  width: 1px !important;
+  height: 58px !important;
+  background: #cbd7e2 !important;
+  align-self: center !important;
+}
+.site-footer .research-footer,
+.site-footer .funding,
+.site-footer .collaboration,
+.site-footer .kkm-footer{
+  min-width: 0 !important;
+}
+.site-footer .collaboration{
+  align-items: flex-start !important;
+}
+.site-footer .kkm-footer{
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+.site-footer .footer-kkm{
+  max-width: 170px !important;
+  text-align: center !important;
+}
+
+@media(max-width:1100px){
+  .site-footer{
+    grid-template-columns: 1fr 1.7fr 1px .8fr 1.35fr 1px 1.2fr !important;
+    gap: 14px !important;
+  }
+}
+@media(max-width:700px){
+  .site-footer{
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  .site-footer > .footer-divider{display:none !important;}
+  .site-footer .collaboration,
+  .site-footer .kkm-footer{align-items:center !important;text-align:center !important;}
+}
