@@ -100,6 +100,36 @@ Deliver a polished Android-first community weather app from Phase 1 through Phas
 - Sensor diagnostics
 - Station health score
 
+## Delivery gate
+A phase is complete only when its implementation, tests and release build pass in GitHub Actions.
+
+### Phase 1 gate
+Live cards, station status, refresh, Malaysia time, BM/English switch, safe missing-data handling.
+
+### Phase 2 gate
+All supported historical graphs, 1h/6h/24h/7d/30d range selector, date selection, min/avg/max and empty-state handling.
+
+### Phase 3 gate
+Compass, wind rose, dominant direction and direction-change view; no wind-speed invention.
+
+### Phase 4 gate
+Configurable alert thresholds/toggles with offline and stale-data safeguards.
+
+### Phase 5 gate
+CSV generation, sharing/download path, daily/weekly summaries and extremes.
+
+### Phase 6 gate
+Light/dark theme, BM/English, responsive layouts, cache/offline fallback and polished community-first UX.
+
+### Phase 7 gate
+Grounded weather Q&A and comparisons based only on available station history.
+
+### Phase 8 gate
+Station selector abstraction plus map support only for stations with real source coordinates.
+
+### Phase 9 gate
+Advanced calculations, anomaly/trend features, share card, deep-link architecture, notification architecture, diagnostics and health score.
+
 ## Quality gate for every phase
 1. Flutter formatting/checks
 2. `flutter analyze`
@@ -108,4 +138,4 @@ Deliver a polished Android-first community weather app from Phase 1 through Phas
 5. APK output verification
 6. Human-readable build summary
 
-A phase is not considered complete merely because code exists; it must pass the quality gate.
+The CI pipeline can verify and build every commit, but it does not invent future application code by itself.
