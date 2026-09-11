@@ -47,13 +47,16 @@ jobs:
           MANIFEST="${BUILD_DIR}/android/app/src/main/AndroidManifest.xml"
           python3 - <<'PY'
           from pathlib import Path
-          p=Path('/tmp/weather_app_build/android/app/src/main/AndroidManifest.xml')
-          text=p.read_text()
-          perm='    <uses-permission android:name="android.permission.INTERNET" />\n'
+          import re
+          p = Path('/tmp/weather_app_build/android/app/src/main/AndroidManifest.xml')
+          text = p.read_text()
+          perm = '    <uses-permission android:name="android.permission.INTERNET" />\n'
           if 'android.permission.INTERNET' not in text:
-              marker='\n\n    <application'
-              if marker not in text: raise SystemExit('Could not locate application tag')
-              text=text.replace(marker,'\n'+perm+marker,1)
+              match = re.search(r'(<manifest\b[^>]*>)', text, flags=re.IGNORECASE)
+              if not match:
+                  raise SystemExit('Could not locate manifest root tag')
+              insert_at = match.end()
+              text = text[:insert_at] + '\n' + perm + text[insert_at:]
               p.write_text(text)
           PY
           grep -q 'android.permission.INTERNET' "$MANIFEST"
