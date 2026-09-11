@@ -7,37 +7,112 @@ on:
       - 'weather_app/**'
       - '.github/workflows/build-weather-app.yml'
 
+permissions:
+  contents: read
+
+concurrency:
+  group: weather-app-build
+  cancel-in-progress: true
+
+env:
+  FLUTTER_VERSION: '3.35.1'
+  BUILD_DIR: /tmp/weather_app_build
+
 jobs:
   build:
+    name: Verify and Build APK
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.35.1'
+          flutter-version: ${{ env.FLUTTER_VERSION }}
           channel: stable
           cache: true
 
       - name: Create Android project shell
+        shell: bash
         run: |
-          flutter create /tmp/weather_app_build --org com.weatherstationsegamat --project-name weather_station_segamat
-          rm -rf /tmp/weather_app_build/lib
-          cp -r weather_app/lib /tmp/weather_app_build/lib
-          cp weather_app/pubspec.yaml /tmp/weather_app_build/pubspec.yaml
+          set -euo pipefail
+          rm -rf "${BUILD_DIR}"
+          flutter create "${BUILD_DIR}" \
+            --org com.weatherstationsegamat \
+            --project-name weather_station_segamat
+          rm -rf "${BUILD_DIR}/lib"
+          cp -r weather_app/lib "${BUILD_DIR}/lib"
+          cp weather_app/pubspec.yaml "${BUILD_DIR}/pubspec.yaml"
+
+      - name: Enable Internet access for Android app
+        shell: bash
+        run: |
+          set -euo pipefail
+          MANIFEST="${BUILD_DIR}/android/app/src/main/AndroidManifest.xml"
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path("/tmp/weather_app_build/android/app/src/main/AndroidManifest.xml")
+          text = p.read_text()
+          permission = '    <uses-permission android:name="android.permission.INTERNET" />\n'
+          if 'android.permission.INTERNET' not in text:
+              text = text.replace('<manifest ', '<manifest ', 1)
+              marker = '\n\n    <application'
+              if marker in text:
+                  text = text.replace(marker, '\n' + permission + marker, 1)
+              else:
+                  raise SystemExit('Could not locate <application> in AndroidManifest.xml')
+              p.write_text(text)
+          PY
+          grep -q 'android.permission.INTERNET' "$MANIFEST"
 
       - name: Get dependencies
-        working-directory: /tmp/weather_app_build
+        working-directory: ${{ env.BUILD_DIR }}
         run: flutter pub get
 
-      - name: Build APK
-        working-directory: /tmp/weather_app_build
+      - name: Analyze Flutter project
+        working-directory: ${{ env.BUILD_DIR }}
+        run: flutter analyze
+
+      - name: Run Flutter tests
+        working-directory: ${{ env.BUILD_DIR }}
+        run: flutter test
+
+      - name: Build release APK
+        working-directory: ${{ env.BUILD_DIR }}
         run: flutter build apk --release
 
-      - name: Upload APK
+      - name: Verify APK output
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK="${BUILD_DIR}/build/app/outputs/flutter-apk/app-release.apk"
+          test -s "$APK"
+          echo "APK verified: $APK"
+          ls -lh "$APK"
+
+      - name: Write build summary
+        shell: bash
+        run: |
+          {
+            echo '## SG Segamat Weather App — Build Pipeline'
+            echo
+            echo '- Flutter: 3.35.1 stable'
+            echo '- Checks: flutter analyze + flutter test'
+            echo '- Build: Android release APK'
+            echo '- Data source: GitHub data.json'
+            if [ -f weather_app/PHASE ]; then
+              echo "- Current phase: $(cat weather_app/PHASE)"
+            else
+              echo '- Current phase: Phase 1'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
           name: SG-Segamat-Weather-APK
-          path: /tmp/weather_app_build/build/app/outputs/flutter-apk/app-release.apk
+          path: ${{ env.BUILD_DIR }}/build/app/outputs/flutter-apk/app-release.apk
+          if-no-files-found: error
+          retention-days: 14
