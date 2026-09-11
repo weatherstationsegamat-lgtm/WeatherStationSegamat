@@ -1,0 +1,43 @@
+name: Build Weather Station APK
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'weather_app/**'
+      - '.github/workflows/build-weather-app.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.35.1'
+          channel: stable
+          cache: true
+
+      - name: Create Android project shell
+        run: |
+          flutter create /tmp/weather_app_build --org com.weatherstationsegamat --project-name weather_station_segamat
+          rm -rf /tmp/weather_app_build/lib
+          cp -r weather_app/lib /tmp/weather_app_build/lib
+          cp weather_app/pubspec.yaml /tmp/weather_app_build/pubspec.yaml
+
+      - name: Get dependencies
+        working-directory: /tmp/weather_app_build
+        run: flutter pub get
+
+      - name: Build APK
+        working-directory: /tmp/weather_app_build
+        run: flutter build apk --release
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: SG-Segamat-Weather-APK
+          path: /tmp/weather_app_build/build/app/outputs/flutter-apk/app-release.apk
