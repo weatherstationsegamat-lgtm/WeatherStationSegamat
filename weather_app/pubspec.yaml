@@ -2,6 +2,7 @@ name: weather_station_segamat
 description: Weather Station Sungai Segamat mobile app.
 publish_to: 'none'
 version: 1.0.0+1
+
 environment:
   sdk: '>=3.0.0 <4.0.0'
 dependencies:
@@ -10,5 +11,7 @@ dependencies:
   http: ^1.2.2
   fl_chart: ^0.69.0
   cupertino_icons: ^1.0.8
+  path_provider: ^2.1.5
+  share_plus: ^10.1.4
 flutter:
   uses-material-design: true
