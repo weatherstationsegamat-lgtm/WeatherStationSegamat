@@ -1,21 +1,6 @@
 [
   {
     "station_name": "SG_Segamat",
-    "timestamp": "2026-10-11 21:22:01",
-    "battery_v": -1.0,
-    "raw_wind_direction": 98.96,
-    "cali_degrees": 0.0,
-    "wind_direction": 98.96,
-    "temperature": 25.45,
-    "humidity": 99.1,
-    "visible_light": 76.0,
-    "ir": 231.0,
-    "uv": 0.1,
-    "pressure": 1009.88,
-    "altitude": 28.03
-  },
-  {
-    "station_name": "SG_Segamat",
     "timestamp": "2026-10-11 21:23:01",
     "battery_v": -1.0,
     "raw_wind_direction": 98.96,
@@ -7498,5 +7483,20 @@
     "uv": 12.6,
     "pressure": 1012.03,
     "altitude": 10.24
+  },
+  {
+    "station_name": "SG_Segamat",
+    "timestamp": "2026-10-12 10:25:01",
+    "battery_v": -1.0,
+    "raw_wind_direction": 205.4,
+    "cali_degrees": 0.0,
+    "wind_direction": 205.4,
+    "temperature": 32.72,
+    "humidity": 72.23,
+    "visible_light": 10628.0,
+    "ir": 31890.0,
+    "uv": 12.4,
+    "pressure": 1012.04,
+    "altitude": 10.25
   }
 ]
